@@ -63,7 +63,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Noto Sans KR", "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6199,7 +6199,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important; }
+  margin-bottom: 2rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -6313,7 +6313,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 2rem !important; }
 
 .pl-5,
 .px-5 {
@@ -7277,7 +7277,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Noto Sans KR", "Work Sans", Arial, sans-serif;
   background: #fff;
   font-size: 16px;
   line-height: 1.8;
@@ -7583,7 +7583,8 @@ h1, h2, h3, h4, h5,
       border-radius: 50%;
       background: #dadadc; }
       .owl-carousel .owl-dots .owl-dot.active {
-        background: #efac78; }
+        background: #1a4775;
+      }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
     opacity: 1; }
@@ -7615,29 +7616,29 @@ h1, h2, h3, h4, h5,
 
 .btn {
   cursor: pointer;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fce7f1;
-    border: 2px solid #fce7f1;
-    color: #ee76ad; }
+    background: #fff;
+    border: 2px solid #78d5ef;
+    color: #1a4775;}
     .btn.btn-primary:hover {
-      border: 2px solid #ee76ad;
+      border: 2px solid #78d5ef;
       background: transparent;
-      color: #ee76ad; }
+      color: #1a4775; }
     .btn.btn-primary.btn-outline-primary {
-      border: 2px solid #ee76ad;
+      border: 2px solid #78d5ef;
       background: transparent;
-      color: #ee76ad; }
+      color: #1a4775; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 2px solid transparent;
-        background: #ee76ad;
+        background: #78d5ef;
         color: #fff; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.8);
@@ -7873,12 +7874,24 @@ h1, h2, h3, h4, h5,
 
 .block-3 .text, .block-3 .image {
   width: 100%;
+  
   padding: 10% 7%;
   display: block; }
+  .block-3 .image {
+  border: 1px solid #78d5ef;}
+
+
   @media (min-width: 768px) {
-    .block-3 .text, .block-3 .image {
+    .block-3 .text{
       width: 50%;
-      padding: 10% 7%; } }
+      min-width: 410.5px;
+      padding: 10% 7%; }
+    .block-3 .image {
+      width: 50%;
+      min-width: 570px;
+      padding: 10% 7%; }
+      
+  }
 
 .block-3 .text .subheading {
   font-size: 13px;
@@ -7897,7 +7910,7 @@ h1, h2, h3, h4, h5,
 
 .block-3 .image {
   background-size: cover;
-  background-position: center center;
+  _background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
   .block-3 .image:after {
@@ -7907,8 +7920,8 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    -webkit-box-shadow: 20px 20px 0 0 #fce7f1;
-    box-shadow: 20px 20px 0 0 #fce7f1; }
+    -webkit-box-shadow: 15px 15px 0 0 #78d5ef;
+    box-shadow: 15px 15px 0 0 #78d5ef; }
   .block-3 .image.image-2:after {
     position: absolute;
     top: 0;
@@ -7916,8 +7929,8 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    -webkit-box-shadow: -20px 20px 0 0 #fce7f1;
-    box-shadow: -20px 20px 0 0 #fce7f1; }
+    -webkit-box-shadow: -15px 15px 0 0 #78d5ef;
+    box-shadow: -15px 15px 0 0 #78d5ef; }
   @media (max-width: 767.98px) {
     .block-3 .image {
       height: 300px; } }
@@ -8122,7 +8135,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 8em 0;
+  padding: 4em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -8314,7 +8327,8 @@ textarea.form-control {
   .testimony-wrap .user-img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    background-size:100%;
+    _border-radius: 50%;
     margin: 0 auto;
     position: relative; }
     .testimony-wrap .user-img .quote {
@@ -8334,10 +8348,10 @@ textarea.form-control {
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 0;
-    color: #efac78; }
+    color: #666; }
   .testimony-wrap .position {
     font-size: 13px;
-    color: #f4c8a6; }
+     }
 
 .image-popup {
   cursor: -webkit-zoom-in;

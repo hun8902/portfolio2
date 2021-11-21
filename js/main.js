@@ -66,8 +66,8 @@
 
 	var carousel = function() {
 		$('.carousel-testimony').owlCarousel({
-			center: true,
-			loop: true,
+			center: false,
+			loop: false,
 			items:1,
 			margin: 30,
 			stagePadding: 0,

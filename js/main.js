@@ -41,9 +41,11 @@
 
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
+		//$('.js-fullheight').css('height', $(window).height());
+		$('.js-fullheight').css('height', 500);
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+			$('.js-fullheight').css('height', 500);
+			//$('.js-fullheight').css('height', $(window).height());
 		});
 
 	};

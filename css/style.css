@@ -7375,7 +7375,9 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #ee76ad; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: rgba(255, 255, 255, 1); }
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+  }
   .ftco-navbar-light .navbar-toggler {
     border: none;
     color: rgba(255, 255, 255, 1) !important;
@@ -7463,7 +7465,7 @@ h1, h2, h3, h4, h5,
   z-index: 0; }
   .hero-wrap .overlay {
     position: absolute;
-    height: 500px;
+    height: 350px;
     top: 0;
     left: 0;
     right: 0;
@@ -7494,7 +7496,7 @@ h1, h2, h3, h4, h5,
 
 .slider-text {
   position: absolute;
-  top: 190px;
+  top: 160px;
   left: 0;
   right: 0;
   _bottom: 0;

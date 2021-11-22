@@ -25,109 +25,59 @@
       </div>
     </div>
 
-    <section class="ftco-section testimony-section bg-light">
+    <section class="ftco-section">
       <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
-            <span class="subheading">career</span>
-            <h2 class="mb-4">커리어</h2>
-            <p>경력이 간단히 최신순으로 정리되어있습니다.<br/>모바일, 태블릿에서는 슬라이드를 통한 이동이 가능합니다.</p>
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+            <span class="subheading">About me</span>
+            <h2 class="mb-4">5년차 중급 웹개발자</h2>
+            <p>인생에 한번 뿐인 인생을 행복하게 살기 위해 대다수가 선택하는 길보단 실패하더라도 후회하지 않는 선택을 하는 스타일입니다.  </p>
           </div>
         </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl pb-5">
-             
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/gosu.jpg)">
-                  </div>
-                  <div class="text">
-				            <p class="name">고수경제TV</p>
-                    <p class="mb-5">PHP개발, CMS기반 홈페이지 제작, JQuery,CSS3 등을 이용한 퍼블리싱</p>
-                    <p class="name">2020.07.16~ 2021.07.09</p>
-                    <span class="position">기획팀 - 웹개발자</span>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-3 d-flex justify-content-center mb-3"><span class="align-self-center icon-lightbulb-o"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">지역</h3>
+                <p>인천광역시 미추홀구 숭의동에 거주하고 있습니다.</p>
               </div>
-              
-              
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/free.jpg)">
-                  </div>
-                  <div class="text">
-				            <p class="name">프리랜서</p>
-                    <p class="mb-5">PHP개발, CMS기반 홈페이지 제작, JQuery,CSS3 등을 이용한 퍼블리싱</p>
-                    <p class="name">2017.01~ 현재</p>
-                    <span class="position">PHP 개발자, 퍼블리셔</span>
-                  </div>
-                </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-1 d-flex justify-content-center mb-3"><span class="align-self-center icon-laptop"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">취미</h3>
+                <p>여행, 영화감상, 컴퓨터게임, 자전거, 스노우보드, 야간 드라이브 </p>
               </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-2 d-flex justify-content-center mb-3"><span class="align-self-center icon-gear"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">개발 스킬</h3>
+                <p>PHP, MYSQL, AJAX, XHTML, CSS3, 인터랙티브 퍼블리싱 </p>
+              </div>
+            </div>    
+          </div>
 
-
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/whois.png)">
-                  </div>
-                  <div class="text">
-                    <p class="name">(주)후이즈홀딩스</p>
-                    <p class="mb-5">PHP 기반 MVC 프레임워크 개발 Json, Ajax를 기능 제작,간단한 맞춤 게시판 DB설게</p>
-                    <p class="name">2016.05.16 ~ 2016.11.26</p>
-                    <span class="position">ICT사업부 - 선임개발자</span>
-                  </div>
-                </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-4 d-flex justify-content-center mb-3"><span class="align-self-center icon-live_help"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">지향하는길</h3>
+                <p>마소, 구글 보단 애플같은 감성이 들어가 있는 개발을 지향합니다.</p>
               </div>
-
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/adintro.jpg)">
-                  </div>
-                  <div class="text">
-                    <p class="name">(주)애드인트로</p>
-                    <p class="mb-5">CMS 기반 홈페이지 제작 ,팀 내 홈페이지 제작 일정 관리</p>
-                    <p class="name">2015.03.02 ~ 2015.10.23</p>
-                    <span class="position">관리팀 - 웹개발자</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/iconlab.png)">
-                  </div>
-                  <div class="text">
-                    <p class="name">(주)아이콘랩</p>
-                    <p class="mb-5">PHP 기반 대학교 전차출첵 시스템 개발, 퍼블리싱</p>
-                    <p class="name">2014.02.13 ~ 2014.12.30</p>
-                    <span class="position">웹개발팀 사원</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img " style="background-image: url(icons/kdt.png)">
-                  </div>
-                  <div class="text">
-                    <p class="name">(주)케이디티</p>
-                    <p class="mb-5">어도비 FLEX 기반 홈페이지 제작, MSSQL 을 이용한 디비 생성</p>
-                    <p class="name">2010.07.11 ~ 2020.03.01</p>
-                    <span class="position">웹개발팀 사원</span>
-                  </div>
-                </div>
-              </div>
-           </div>
-           <div class="row">
-              <div class="col-md-12 text-center">
-                <span><a href="#" class="btn btn-primary py-3 px-5">경력기술서 상세보기</a></span>
-              </div>
-           </div>
-
+            </div>      
           </div>
         </div>
       </div>
     </section>
+
+
+   
 
 
     <section class="ftco-section">

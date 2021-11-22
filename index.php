@@ -1,63 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>YoungHun. 2022</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?php include_once("./include/header.php");?>
     
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+  <?php include_once("./include/nav.php");?>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">YoungHun.</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">처음으로</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">소개</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">경력기술서</a></li>
-          
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">개발</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
-              </div>
-          </li> -->
-          <li class="nav-item"><a href="services.html" class="nav-link">개발</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">퍼블리싱</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">기타</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">코드저장소</a></li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-    <!-- END nav -->
+  
     
     <!-- <div class="js-fullheight"> -->
     <div class="hero-wrap js-fullheight">
@@ -80,7 +31,7 @@
           <div class="col-md-12 text-center heading-section ftco-animate">
             <span class="subheading">career</span>
             <h2 class="mb-4">커리어</h2>
-            <p>경력을 쉽게 볼수 있는 공간입니다. 좌측에 있는 부분이 최신순입니다. <br/>모바일, 태블릿에서는 슬라이드를 통한 이동이 가능합니다.</p>
+            <p>경력이 간단히 최신순으로 정리되어있습니다.<br/>모바일, 태블릿에서는 슬라이드를 통한 이동이 가능합니다.</p>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -356,43 +307,15 @@
       </div>
     </section>
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include_once("./include/footer.php");?>
     
   
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+    <?php include_once("./include/js.php");?>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-
-  <script src="js/particles.min.js"></script>
-  <script src="js/particle.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
     
   </body>
 </html>

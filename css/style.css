@@ -9034,3 +9034,35 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+    .contTable01{width:100%; }
+    .contTable01 colgroup .ctCol01{width:30%;}
+    .contTable01 colgroup .ctCol02{width:70%;}
+    .contTable01 caption{padding: 1%;  caption-side:top;  color:#242424; font-weight:700; text-align:left; border-bottom: 1px solid #e1e1e1;}
+    
+    .contTable01_ caption{position:relative;padding:1% 5%; caption-side:top; font-size:1.333em;  color:#074358; text-align:left; border-bottom: 2px solid #074358;}
+    .contTable01_ caption:after{content:'';display:block;position:absolute;top:38%;left:0;width:0px;height:0px; width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 10px solid #074358;
+      border-bottom: 5px solid transparent;
+    }
+    .contTable01 thead th{padding:0.5em;   border-top: 1px solid #074358; border-bottom:1px solid #e1e1e1;}
+    .contTable01 tbody td:first-child{text-align:center;}
+    .contTable01 tbody td{padding:0.5em; text-align:left;  font-weight:300; background-color:rgba(255,255,255,0.4); border-right: 1px solid #e1e1e1; border-bottom:1px dashed #e1e1e1;}
+    .contTable01 tbody td:last-child{border-right: 0px;}
+    .contTable01 tbody td > dl dt{color:#17283B; font-weight:700;}
+    .contTable01 tbody td > dl dd{margin-left: 4%; margin-bottom: 2%; word-break:break-all;}
+    
+    
+    .contTable02{width:100%; }
+    .contTable02 colgroup .ctCol01{width:25%;}
+    .contTable02 colgroup .ctCol02{width:75%;}
+    .contTable02 caption{padding: 1%;  caption-side:top;  color:#8b8b92; font-weight:700; text-align:left; border-bottom: 1px solid #e1e1e1;}
+    .contTable02 thead th{padding:0.5em;  text-align:left;  border-top: 1px solid #074358; border-bottom: 1px dashed #e1e1e1;}
+    .contTable02 tbody td{padding:0.5em; text-align:left;  font-weight:400; color:#8b8b92; border-right: 1px solid #e1e1e1; border-bottom:1px dashed #e1e1e1;}
+    .contTable02 tbody td:last-child{border-right: 0px;}
+    
+    .w100{width:100%;}

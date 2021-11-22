@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>BF2E8C71-5D7C-4A7F-A5E7-EC085CF8FAD6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Mobile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_ANA_Home01" transform="translate(-20.000000, -827.000000)">
+            <g id="bottom" transform="translate(0.000000, 822.000000)">
+                <g id="btn_signal_normal" transform="translate(0.000000, 1.000000)">
+                    <g id="nav-bar/ic_signal_32px" transform="translate(20.000000, 4.000000)">
+                        <g id="Path">
+                            <polygon fill-opacity="0.01" fill="#FFFFFF" opacity="0.5" points="0 0 32 0 32 32 0 32"></polygon>
+                            <path d="M11.296104,19.5663406 C10.0417651,19.5663406 9,18.5750523 9,17.3330369 L9,6.23330369 C9,4.9912883 10.0417651,4 11.296104,4 L19.7985459,4 C21.3973801,4 22.5276572,5.56368712 21.9344696,7.03113255 L19.2447631,13.8664295 L20.7058187,13.8664295 C22.4687516,13.8664295 23.5956049,15.7308708 22.6730934,17.238908 L15.9432112,28.2203401 C15.08553,29.6014727 12.8883119,29.039582 12.8883119,27.384462 L12.8883119,19.5663406 L11.296104,19.5663406 Z M14.8883119,26.1141191 L20.9674212,16.1945508 C21.0545575,16.0521083 20.9423348,15.8664295 20.7058187,15.8664295 L16.3084845,15.8664295 L16.8460768,14.5002569 L20.0767948,6.29021478 C20.1289203,6.16125509 20.0123606,6 19.7985459,6 L11.296104,6 C11.1247285,6 11,6.11868502 11,6.23330369 L11,17.3330369 C11,17.4476556 11.1247285,17.5663406 11.296104,17.5663406 L14.8883119,17.5663406 L14.8883119,26.1141191 Z" fill="#ADADAD" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

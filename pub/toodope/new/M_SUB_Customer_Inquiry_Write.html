@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common bb_1">
+        <div class="title">1:1 문의</div>
+		
+        <button type="button" class="close" onclick="CFN.popupClose();"><i></i>닫기</button>
+    </header>
+	<main class="stock detail pt_56 ">
+		<div class="Inquiry_info">
+			궁금하신 사항은 <span>자주 묻는 질문</span>에서도<br/>찾아보실 수 있습니다.
+		</div>
+		<section class="Inquiry_write item">
+			<label>
+				<dl class="input">
+					<!-- <dt class="input_info">문의유형</dt> -->
+					<dd class="full Inquiry_select">
+						<select class="full" >
+							<option>문의 유형을 선택하세요</option>
+							<option>서비스문의</option>
+							<option>앱 이용 문의</option>
+							<option>가입/연장 문의</option>
+							<option>일시정지/환불 문의</option>
+							<option>기타 문의</option>
+						</select>
+					</dd>
+				</dl>
+			</label>
+			<label>
+				<textarea class="Inquiry_textarea"></textarea>
+			</label>
+			<div class="Inquiry_info1">
+				문의에 대한 답변은 <span>고객센터 > 내 문의내역</span>에서<br/>확인하실 수 있습니다.
+			</div>
+
+			
+		</section>
+
+		
+
+    </main>
+
+	<div class="foot_write"><button type="button" class="full" disabled>문의하기</button></div>
+   
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more_o" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+</body>
+</html>

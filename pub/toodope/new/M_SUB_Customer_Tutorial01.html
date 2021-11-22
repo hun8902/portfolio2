@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common bb_1">
+        <div class="title">사용방법 안내</div>
+		
+        <button type="button" class="close" onclick="CFN.popupClose();"><i></i>닫기</button>
+    </header>
+
+
+   <main class="stock detail pt_56">
+        <section class="banner_slide item ">
+			<!-- Link Swiper's CSS -->
+			  <link rel="stylesheet" href="../pub/swiper.css">
+
+			  <!-- Demo styles -->
+			  <style>
+				.swiper-container {
+				  width: 100%;
+				  margin:0px auto 0 auto;
+				}
+				.swiper-slide {
+				  font-size: 18px;
+				  _height: 127px;
+				  
+				  /* Center slide text vertically */
+				  display: -webkit-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  -webkit-box-pack: center;
+				  -ms-flex-pack: center;
+				  -webkit-justify-content: center;
+				  justify-content: center;
+				  -webkit-box-align: center;
+				  -ms-flex-align: center;
+				  -webkit-align-items: center;
+				  align-items: center;
+				}
+
+				
+			  </style>
+
+			  <!-- Swiper -->
+			  <div class="swiper-pagination"></div>
+			  <div class="swiper-container1">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+				  	<div class="swiper-slide_box">
+						<div class="tutorial_text1">
+							<p class="tutorial_t1">신호알림으로</p>
+							<p class="tutorial_t2">실시간 매매 타이밍 알림 받기</p></div>	
+							<div class="tutorial_img1"><img src="../pub/images/tutorial_img1.svg"></div>	
+					</div>
+				  </div>
+				<div class="swiper-slide">
+					<div class="swiper-slide_box">
+						<div class="tutorial_text2">
+							<p class="tutorial_t1">증시 분석 자료로</p>
+							<p class="tutorial_t2">신속하게 확인하는 흐름과 이슈</p>
+						</div>	
+						<div class="tutorial_img1"><img src="../pub/images/tutorial_img2.svg"></div>	
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+				  	<div class="swiper-slide_box">
+						<div class="tutorial_text3">
+							<p class="tutorial_t1">필터 설정으로</p>
+							<p class="tutorial_t2">꼭 필요한 신호만 보기</p>
+						</div>	
+						<div class="tutorial_img1"><img src="../pub/images/tutorial_img3.svg"></div>	
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+				  	<div class="swiper-slide_box">
+						<div class="tutorial_text4">
+							<p class="tutorial_t1">시세알림으로</p>
+							<p class="tutorial_t2">실시간 주가 알림 받기</p>
+						</div>	
+						<div class="tutorial_img1"><img src="../pub/images/tutorial_img4.svg"></div>	
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+				  	<div class="swiper-slide_box">
+						<div class="tutorial_text5">
+							<p class="tutorial_t1">키워드알림으로</p>
+							<p class="tutorial_t2">꼭 필요한 신호/분석 놓치지 않기</p>
+						</div>	
+						<div class="tutorial_img1"><img src="../pub/images/tutorial_img5.svg"></div>	
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+				  	<div class="swiper-slide_box">
+						<div class="tutorial_text5">
+							<p class="tutorial_t1">방해금지모드로</p>
+							<p class="tutorial_t2">특정 시간 알림 받지 않기</p>
+						</div>	
+						<div class="tutorial_img1"><img src="../pub/images/tutorial_img6.svg"></div>	
+					</div>
+				  </div>
+
+				</div>
+				<!-- Add Pagination -->
+				
+			  </div>
+			 
+			  <!-- Swiper JS -->
+			  <script src="../pub/swiper.js"></script>
+
+			 <script>
+				var swiper = new Swiper('.swiper-container1', {
+				  pagination: {
+					el: '.swiper-pagination',
+				  },
+
+
+				});
+				swiper.on('slideChange', function () {
+					console.log(swiper.activeIndex);
+					
+					if (swiper.activeIndex == "0")	{
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View01.html")
+					} else if(swiper.activeIndex == "1") {
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View02.html")
+					} else if(swiper.activeIndex == "2"){
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View03.html")
+					} else if(swiper.activeIndex == "3"){
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View04.html")
+					} else if(swiper.activeIndex == "4"){
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View05.html")
+					} else if(swiper.activeIndex == "5"){
+						$(".slide_btn").attr("href", "./M_SUB_Customer_Tutorial_View06.html")
+					}else{
+					}
+				});
+
+			  </script>
+		</section>
+       
+	
+    </main>
+
+
+
+	<div class="foot_joinbtn1"><a href="M_SUB_Customer_Tutorial_View01.html" class="slide_btn"><div>자세히 보기</div></a></div>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more_o" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

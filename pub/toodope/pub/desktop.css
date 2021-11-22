@@ -1,0 +1,135 @@
+@charset 'utf-8';
+
+/* app modify */
+header.common,
+footer.button { left: 152px; }
+header.common { top: 25px; border-bottom: 1px solid #ebebeb; }
+
+header.common em.title { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; line-height: 56px; text-align: center; font-size: 20px; color: #1b1b1b; }
+header.common button.alarm { width: 40px; height: 40px; border: 1px solid #000; right: 8px; top: 8px; border-radius: 50%; transition: border-color .3s; }
+header.common button.alarm:before { top: 10px; right: 10px; }
+header.common button.alarm:after { top: 0; left: 0; right: 0; bottom: 0; }
+header.common button.alarm.on { border-color: #6b40dd; background-image: url('../pub/images_desktop/alarm_on.png'); }
+
+label.switch i { width: 40px; height: 26px; border-radius: 4px; line-height: 22px; text-align: center; color: #adadad; font-size: 14px; font-weight: 500; overflow: hidden; white-space: nowrap; transition: all .3s; }
+label.switch i:before,
+label.switch i:after { content: 'OFF'; width: 38px; height: auto; background: transparent; border-radius: 0; box-shadow: none; display: inline-block; position: static; transition: all .3s; }
+label.switch i:after,
+label.switch input[type=checkbox] + i:after { content: 'ON'; width: 38px; display: inline-block; height: auto; }
+label.switch input[type=checkbox]:checked + i { border-color: #5532b1; background: #6b40dd; color: #fff; }
+label.switch input[type=checkbox]:checked + i:before { margin-left: -100%; }
+
+.dimm { left: 152px; }
+section.alarm { z-index: 99; background: #fff; width: 312px; height: 0; left: auto; right: 16px; top: 76px; box-shadow: 0 2px 8px rgba(0,0,0,.24), 0 0 8px rgba(0,0,0,.12); }
+section.alarm.on { height: 427px; }
+.alarm header.common { left: 0; top: 0; }
+
+button[role=select] { display: inline-block; vertical-align: middle; box-sizing: border-box; border: 1px solid #484848; background: #fff; position: relative; padding: 7px 40px 9px 16px; border-radius: 4px; font-size: 16px; color: #1b1b1b; text-align: left; transition: background .3s, border .3s; }
+button[role=select] i { position: absolute; width: 32px; height: 24px; background: transparent url('../pub/images/select_arrow.svg') center no-repeat; right: 0; top: 0; bottom: 0; margin: auto 0; }
+button[role=select]:hover,
+button[role=select]:focus { border-color: #6b40dd; }
+button[role=select]:hover i,
+button[role=select]:focus i { background-image: url('../pub/images/select_arrow_on.svg'); }
+ul[role=option] { margin-top: 2px; border: 1px solid #6b40dd; border-radius: 4px; box-sizing: border-box; overflow: hidden; opacity: 0; height: 0; transition: all .3s .3s; }
+ul[role=option] li + li { border-top: 1px solid #ebebeb; }
+ul[role=option] button { display: block; width: 100%; box-sizing: border-box; text-align: left; color: #777; font-size: 16px; background: #fff; padding: 8px 12px 9px; height: 41px; }
+ul[role=option] button i { width: 24px; height: 24px; display: inline-block; vertical-align: middle; margin-right: 8px; position: relative; opacity: 0; }
+ul[role=option] button i:before,
+ul[role=option] button i:after { content: ''; display: block; height: 2px; width: 7px; background: #6b40dd; position: absolute; border-radius: 1px; }
+ul[role=option] button i:before { transform-origin: right center; transform: rotate(45deg); top: 15px; left: 3px; }
+ul[role=option] button i:after { transform-origin: left center; transform: rotate(-45deg); top: 15px; left: 9px; width: 0; transition: all .3s; }
+ul[role=option] button:hover,
+ul[role=option] button:focus,
+ul[role=option] button.on { color: #6b40dd; }
+ul[role=option] button.on { background: #f8f8f8; }
+ul[role=option] button.on i { opacity: 1; }
+ul[role=option] button.on i:after { width: 16px; }
+button[role=select]:focus + ul[role=option] { opacity: 1; transition: all .3s; }
+button[role=select]:focus + ul[role=option].ea1 { height: calc(42px * 1 + 1px); }
+button[role=select]:focus + ul[role=option].ea2 { height: calc(42px * 2 + 1px); }
+button[role=select]:focus + ul[role=option].ea3 { height: calc(42px * 3 + 1px); }
+button[role=select]:focus + ul[role=option].ea4 { height: calc(42px * 4 + 1px); }
+button[role=select]:focus + ul[role=option].ea5 { height: calc(42px * 5 + 1px); }
+button[role=select]:focus + ul[role=option].ea6 { height: calc(42px * 6 + 1px); }
+button[role=select]:focus + ul[role=option].ea7 { height: calc(42px * 7 + 1px); }
+button[role=select]:focus + ul[role=option].ea8 { height: calc(42px * 8 + 1px); }
+button[role=select]:focus + ul[role=option].ea9 { height: calc(42px * 9 + 1px); }
+button[role=select]:focus + ul[role=option].ea10 { height: calc(42px * 10 + 1px); }
+
+/* desktop only */
+body { opacity: 1; }
+
+aside.desktop { width: 152px; position: relative; height: 100%; z-index: 301; background: #fff; box-shadow: 0 0 4px rgba(0,0,0,.12); }
+aside.desktop h1 { background: #6b40dd; background: #6b40dd url('../pub/images_desktop/lock_logo.png') center no-repeat; background-size: 88px 40px; height: 81px; text-indent: -999px; }
+aside.desktop button.brand { margin: 12px 16px; height: 44px; width: 120px; border-radius: 22px; background: #fff; box-shadow: 1px 1px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12); font-size: 18px; color: #6d40dd; }
+aside.desktop button.brand:hover,
+aside.desktop button.brand:focus { background: #f3f0fc; }
+aside.desktop ul.brand { position: absolute; left: 144px; top: 93px; border-radius: 4px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.26), 0 0 8px rgba(0,0,0,.12); z-index: 400; width: 0; overflow: hidden; box-sizing: border-box; opacity: 0; transition: opacity .3s .1s, width 0s .4s; }
+aside.desktop button.brand:hover + ul.brand,
+aside.desktop button.brand:focus + ul.brand,
+aside.desktop ul.brand:hover,
+aside.desktop ul.brand:focus { width: 216px; opacity: 1; transition: opacity .3s; }
+aside.desktop ul.brand li { padding: 10px 16px; }
+aside.desktop ul.brand li + li { padding-top: 12px; }
+aside.desktop ul.brand li button { display: block; width: 100%; text-align: left; line-height: 40px; font-size: 16px; color: #1b1b1b; }
+aside.desktop ul.brand li button:hover,
+aside.desktop ul.brand li button:focus { color: #6d40dd; }
+aside.desktop ul.brand li figure { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; float: left; margin-right: 10px; position: relative; }
+aside.desktop ul.brand li figure img { max-width: 100%; max-height: 100%; }
+aside.desktop ul.brand li figure i { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: #6b40dd; opacity: 0; transition: opacity .3; transition: all .3s; }
+aside.desktop ul.brand li figure i:before,
+aside.desktop ul.brand li figure i:after { content: ''; display: block; height: 2px; width: 7px; background: #fff; border-radius: 1px; position: absolute; }
+aside.desktop ul.brand li figure i:before { transform-origin: right center; transform: rotate(45deg); top: 25px; left: 11px; }
+aside.desktop ul.brand li figure i:after { transform-origin: left center; transform: rotate(-45deg); top: 25px; left: 17px; width: 0; transition: all .3s; }
+aside.desktop ul.brand li button.on figure i { opacity: .6; }
+aside.desktop ul.brand li button.on figure i:after { width: 16px; }
+aside.desktop nav { position: absolute; top: 149px; left: 0; right: 0; bottom: 92px; overflow: auto; border-top: 1px solid #777; padding-top: 17px; }
+aside.desktop nav button { display: block; width: 100%; box-sizing: border-box; height: 48px; font-size: 18px; color: #1b1b1b; text-align: left; padding-left: 16px; position: relative; }
+aside.desktop nav button:before { content: ''; display: block; position: absolute; width: 136px; left: -136px; top: 0; bottom: 0; background: #6b40dd; opacity: 0; border-radius: 0 24px 24px 0; transition: all .3s; }
+aside.desktop nav button:hover,
+aside.desktop nav button:focus,
+aside.desktop nav button.on { color: #6b40dd; }
+aside.desktop nav button.on:before { left: 0; opacity: .08; }
+aside.desktop .function { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 0; }
+aside.desktop .function button { display: block; height: 32px; padding-left: 16px; font-size: 14px; color: #777; width: 100%; box-sizing: border-box; text-align: left; position: relative; }
+aside.desktop .function button:hover,
+aside.desktop .function button:focus { background: #f3f0fc; }
+aside.desktop .function button.setting i { width: 24px; height: 24px; position: absolute; display: block; right: 8px; top: 0; bottom: 0; margin: auto 0; }
+aside.desktop .function button.setting i:before,
+aside.desktop .function button.setting i:after { content: ''; display: block; width: 8px; height: 2px; border-radius: 1px; background: #777; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+aside.desktop .function button.setting i:before { transform: rotate(45deg); transform-origin: right bottom; }
+aside.desktop .function button.setting i:after { transform: rotate(-45deg); transform-origin: right top; }
+aside.desktop .function ul.setting { position: absolute; left: 144px; bottom: 15px; background: #f0f0f0; width: 0; opacity: 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.24), 0 0 8px rgba(0,0,0,.12); overflow: hidden; transition: opacity .3s .1s, width 0s .4s; z-index: 400; }
+aside.desktop .function button.setting:hover + ul.setting,
+aside.desktop .function button.setting:focus + ul.setting,
+aside.desktop .function ul.setting:hover,
+aside.desktop .function ul.setting:focus { opacity: 1; width: 108px; transition: opacity .3s; }
+aside.desktop .function ul.setting button { padding-left: 20px; line-height: 20px; color: #1b1b1b; font-size: 14px; text-align: left; }
+aside.desktop .function ul.setting button:hover,
+aside.desktop .function ul.setting button:focus { background: #fff; }
+
+.app { position: absolute; left: 152px; right: 0; top: 25px; bottom: 0; transition: all .3s; overflow: auto; }
+.app.appear { opacity: 0; }
+.app.appear.on { opacity: 1; }
+
+.opacity { position: absolute; right: 0; top: 0; left: 152px; height: 25px; background: #fff; z-index: 100; }
+.opacity .slider { width: 52px; height: 2px; border-radius: 1px; background: #6d40dd; position: absolute; top: 14px; right: 16px; }
+.opacity .slider .ui-slider-handle { width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0px 1px 1px rgba(0,0,0,.26), 0 0 1px rgba(0,0,0,.12); position: absolute; margin: -5px 0 0 -5px; }
+
+.desktop.lock { padding-top: 57px; max-width: 328px; margin: 0 auto; }
+.desktop.lock h1 { width: 141px; height: 64px; background: url('../pub/images_desktop/lock_logo.png') center no-repeat; text-indent: -999px; overflow: hidden; margin: 0 auto 40px; }
+.desktop.lock p.message { text-align: center; font-size: 16px; color: #1b1b1b; margin-bottom: 38px; line-height: 24px; }
+.desktop.lock p.message:before { content: ''; display: block; width: 120px; height: 120px; border-radius: 50%; background: #484848 url('../pub/images_desktop/lock_icon.svg'); margin: 0 auto 11px; }
+.desktop.lock dl { font-size: 16px; line-height: 24px; font-weight: 500; color: #1b1b1b; margin: 0 auto; }
+.desktop.lock dt { float: left; width: 94px; }
+.desktop.lock dd { overflow: hidden; }
+.desktop.lock label { display: block; margin: 19px auto 48px; }
+.desktop.lock label dt { padding: 7px 0 11px; }
+.desktop.lock button { display: block; width: 100%; border-radius: 4px; background: #6d40dd; color: #fff; font-weight: 500; font-size: 18px; height: 44px; }
+.desktop.lock button:hover { background: #7a4aff; }
+
+.desktop.setting .alarm.singleRow dt { float: left; line-height: 40px; }
+.desktop.setting .alarm.singleRow dd { overflow: hidden; text-align: right; }
+.desktop.setting .alarm.singleRow button[role=select],
+.desktop.setting .alarm.singleRow ul[role=option] { width: 160px; display: block; float: right; clear: both; }
+

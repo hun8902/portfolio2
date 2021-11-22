@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+        <div class="title_left">
+			정보
+		</div>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+	<header class="common_ana">
+		<div class="anabox">
+			<div class="ana_txt1">누적 상승률</div>
+			<div class="ana_txt2"><span class="up">+89.02</span>%</div>
+			
+		</div>
+		<a href="#">
+		<div class="anabox2">
+			<div class="name"><span>김희중</span> 회원님</div>
+			<div class="sevice">‘레드파트너스’ 이용 중</div>			
+		</div>
+
+		<i class="ana_arrow"></i>
+		</a>
+	</header>
+
+	<main class="stock detail pt_200">
+		<div class="nav_line"></div>
+		<div id="touchNav" class="nav_h_type">
+			<ul>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'" >홈</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Theme.html'">테마</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'">업종</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'">상승</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Down.html'">하락</button></li>
+				<li class="on"><button type="button" onclick="location.href='M_INF_News.html'">뉴스</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'">시세알림</button></li>
+			</ul>			
+		</div>
+		<article class="bb_1">
+			<nav class="news_all">
+				<button type="button" class="on">전체</button>
+				
+			</nav>
+			<button type="button" class="news_top">코스피 <img src="../pub/images/ic_delete_16_px.png"></button>
+			<button type="button" class="news_top">코스닥 <img src="../pub/images/ic_delete_16_px.png"></button>
+			<i class="news_arrow_c" onclick="location.href='M_INF_News.html'"></i>
+			<div class="graph"></div>
+			<div class="graph"></div>
+		</article>
+		<section class="customer_input">
+            <input type="text" placeholder="예) 삼성전자, 5G, 철강 등">
+            <button type="button" class="search" title="검색">검색<i></i></button>
+        </section>
+
+        <section class="news_write item">
+			키워드를 설정하면 해당하는 기사를 불러옵니다.
+
+			<button type="button" class="full" disabled>키워드 추가하기</button>
+		</section>
+		
+    </main>
+
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info_o" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

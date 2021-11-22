@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common bb_1">
+        <div class="title">키워드 알림</div>
+		<button type="button" class="back"><i></i>뒤로</button>
+    </header>
+	<main class="stock detail pt_56 ">
+		
+
+		<div class="option_alarm_top">
+			<div class="oa_title">등록된 키워드에 따라 알림</div>
+			<div class="oa_subtitle">설정한 키워드가 포함된 신호, 분석 발생 시<br>실시간으로 알림을 보내드립니다.</div>
+		</div>
+
+		 <ul class="customer_infolist pl_16">
+            <li>
+				<button type="button">
+					키워드 알림: 신호
+					<div id="toggles">
+					  <input type="checkbox" name="checkbox1" id="checkbox1" class="ios-toggle" checked/>
+					  <label for="checkbox1" class="checkbox-label" ></label>			  
+					</div>
+				</button>
+			</li>
+			 <li>
+				<button type="button">
+					키워드 알림: 분석
+					<div id="toggles">
+					  <input type="checkbox" name="checkbox2" id="checkbox2" class="ios-toggle" />
+					  <label for="checkbox2" class="checkbox-label" ></label>			  
+					</div>
+				</button>
+			</li>
+			
+        </ul>
+		<section class="option_alarm_1">
+            <article>
+                <h4>알림받을 키워드 (2/10)</h4>
+				<dl>
+					<dd>
+						<ul>
+							<li>
+								삼성전자
+								<button type="button" class="del">삭제<i></i></button>
+							</li>
+							<li>
+								삼성전자
+								<button type="button" class="del">삭제<i></i></button>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="keyword">
+					<input type="text" id="search" placeholder ="키워드를 입력해주세요."/>
+					  <button type="button" id="searchclear" class="input_delete" title="삭제">삭제<i></i></button>
+				</div>
+			</article>
+        </section>
+
+		<div class="option_add">
+			<span class="more_text">+ 키워드 추가하기</span> 
+		</div>
+
+
+		<div class="option_alarm_bottom">
+			<div class="oab_title">키워드 알림</div>
+			<div class="oab_subtitle">설정한 키워드가 포함된 신호가 발생하거나 분석이 업데이트 됐을 때, 실시간으로 알림을 보내드립니다.</div>
+			<div class="oab_subtitle">등록된 키워드가 포함된 신호나 분석은 해당 알림이 꺼져 있어도 푸시 알림을 받게 됩니다.</div>
+		</div>
+
+		
+    </main>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more_o" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+</body>
+</html>

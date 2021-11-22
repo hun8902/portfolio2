@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/jquery-ui.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+         <div id="inf_top" class="title_left">
+			분석
+		</div>
+		 <div id="inf_top_s" class="title">
+			+89.02%<span>레드파트너스</span>
+		</div>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+	<header class="common_ana">
+		<div class="anabox">
+			<div class="ana_txt1">누적 상승률</div>
+			<div class="ana_txt2"><span class="up">+89.02</span>%</div>
+			
+		</div>
+		<a href="#">
+		<div class="anabox2">
+			<div class="name"><span>김희중</span> 회원님</div>
+			<div class="sevice">‘레드파트너스’ 이용 중</div>			
+		</div>
+
+		<i class="ana_arrow"></i>
+		</a>
+	</header>
+
+   <main class="stock detail pt_200">
+   		<div class="nav_line"></div>
+   		<div id="touchNav" class="nav_h_type">
+			<ul>
+				<li><button type="button" onclick="location.href='M_ANA_Home.html'" >홈</button></li>
+				<li><button type="button" onclick="location.href='M_ANA_Market.html'">시황</button></li>
+				<li><button type="button" onclick="location.href='M_ANA_Home.html'">섹터분석</button></li>
+				<li><button type="button" onclick="location.href='M_ANA_Home.html'">종목리포트</button></li>
+				<li><button type="button" onclick="location.href='M_ANA_Home.html'">관심종목</button></li>
+				<li><button type="button" onclick="location.href='M_ANA_Home.html'">사후분석</button></li>
+				<li class="on"><button type="button" onclick="location.href='M_ANA_Calendar.html'">증시일정</button></li>
+			</ul>			
+		</div>
+		
+        <section class="date_position item ">
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+			<div id="datepicker"></div>
+
+			<script>
+				$(function() {
+				  var dayrates = [1, 2, 5, 9, 5, 4, 3];
+					$.datepicker.setDefaults({
+						dateFormat: 'yy-mm-dd',
+						prevText: '이전 달',
+						nextText: '다음 달',
+						monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+						monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+						dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+						dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+						dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+						showMonthAfterYear: true,
+						showOtherMonths: true, // 나머지 날짜도 화면에 표시
+						yearSuffix: '년'
+					});
+					$("#datepicker").datepicker({
+						beforeShowDay: function(date) {
+						  var selectable = true;
+						  var classname = "";
+						  var title = "" + dayrates[date.getDay()];
+						  //var title = "1";
+						  return [selectable, classname, title];
+						}
+					});
+				});
+			</script>
+			<style>
+					.ui-datepicker {
+						padding-bottom:17px;
+					}
+					.ui-datepicker-calendar > thead th:first-child span { 
+					COLOR: #e12301; 
+					}
+					.ui-datepicker td[title]::after {
+					  content: attr(title);
+					  display: block;
+					  position: absolute;
+					  width:13px;
+					  height:13px;
+					  line-height:13px;
+					  background:#6b40dd;
+					  font-size: 10px;
+					  border-radius: 50%;
+					  color:#fff;
+					  top:0;
+					  margin-top:2px;
+					  margin-left:6px;
+					  left:50%; 
+					 text-align: center;
+					}
+					.ui-datepicker td[title].ui-state-disabled::after {
+						display:none !important;
+					}
+					.ui-datepicker .ui-datepicker-next {
+						right: 0px !important
+					}
+			</style>
+		</section>
+		<section class="news item pl_16">
+			<dl>                   
+				<dt><a href="#">프랑스, 디지털세 도입 예정</a></dt>
+				<p>페이스북, 구글 등과 같은 미국 인터넷 대기업을 겨냥한 과세 예정</p>
+			</dl>
+			<dl>                   
+				<dt><a href="#">프랑스, 디지털세 도입 예정</a></dt>
+				<p>페이스북, 구글 등과 같은 미국 인터넷 대기업을 겨냥한 과세 예정</p>
+			</dl>
+			<dl>                   
+				<dt><a href="#">프랑스, 디지털세 도입 예정</a></dt>
+				<p>페이스북, 구글 등과 같은 미국 인터넷 대기업을 겨냥한 과세 예정</p>
+			</dl>
+		</section>
+    </main>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis_o" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

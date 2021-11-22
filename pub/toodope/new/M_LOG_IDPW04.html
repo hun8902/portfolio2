@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+
+	<script src="../pub/function.js"></script>
+</head>
+<body>
+    <header class="common bb_1">
+        <div class="title">ID/비밀번호 찾기</div>
+		<button type="button" class="back"><i></i>뒤로</button>
+        <button type="button" class="close" onclick="CFN.popupClose();"><i></i>닫기</button>
+    </header>
+	<main class="idpw detail pt_56">
+		<div class="idpw_top">
+			<div class="idpw_top_info">휴대전화 본인인증을 통해<br/>ID와 비밀번호를 찾으실 수 있습니다.</div>
+		</div>
+		 <section class="login input">
+			  <div class="wrapper">
+				<fieldset class="formRow">
+					<div class="formRow--item">
+						<label for="firstname" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="firstname" placeholder="이름">
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="formRow">
+					<div class="formRow--item">
+						<label for="lastname" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="lastname" placeholder="주민등록번호" value="">
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="formRow">
+					<div class="formRow--item">
+						<label for="input3" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="input3" placeholder="휴대전화 번호">
+						</label>
+					</div>
+				</fieldset>
+			</div>
+			<script src="../pub/inputjs.js"></script>
+		
+			<nav class="id_option">
+				<button type="button" class="idpw" onclick="location.href='M_SUB_Customer.html'">휴대전화 본인인증에 어려움이 있으신가요?<i></i></button>
+			</nav>
+		</section>
+	</main>
+
+	<div class="foot_obtn" onclick="location.href='M_LOG_IDPW_Fail.html'">본인인증 하기</div>
+
+   
+</body>
+</html>

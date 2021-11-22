@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>E87D040E-0FE2-48EE-BC7C-7774471C17A4</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Mobile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_SIG_View02_1" transform="translate(-164.000000, -701.000000)">
+            <g id="bottom" transform="translate(0.000000, 696.000000)">
+                <g id="btn_Info_normal" transform="translate(144.000000, 1.000000)">
+                    <g id="nav-bar/ic_info_32px" transform="translate(20.000000, 4.000000)">
+                        <g>
+                            <rect id="path" fill-opacity="0.01" fill="#FFFFFF" opacity="0.5" x="0" y="0" width="32" height="32"></rect>
+                            <path d="M21.0537015,18.9288278 L28.2279221,26.1030483 C28.8137085,26.6888348 28.8137085,27.6385822 28.2279221,28.2243687 C27.6421356,28.8101551 26.6923882,28.8101551 26.1066017,28.2243687 L18.9329173,21.0506843 C17.2732376,22.2758192 15.2211895,23 13,23 C7.4771525,23 3,18.5228475 3,13 C3,7.4771525 7.4771525,3 13,3 C18.5228475,3 23,7.4771525 23,13 C23,15.2193655 22.2770081,17.2698672 21.0537015,18.9288278 Z M13,21 C17.418278,21 21,17.418278 21,13 C21,8.581722 17.418278,5 13,5 C8.581722,5 5,8.581722 5,13 C5,17.418278 8.581722,21 13,21 Z" id="Combined-Shape" fill="#ADADAD" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

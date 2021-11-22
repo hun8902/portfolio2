@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common bb_1">
+        <div class="title">일시정지 신청</div>
+		
+        <button type="button" class="close" onclick="CFN.popupClose();"><i></i>닫기</button>
+    </header>
+
+	<main class="stock detail pt_56">
+		<div class="pause_info">일시정지 신청은<br/>1회, 10영업일까지 가능합니다.</div>
+		<div class="pause_form1 join">
+			<div class="pause_form1_title">일시정지 신청서</div>
+			<section>
+				<label>
+					<span class="title">이용서비스</span>
+					<span class="pause_data">레드파트너스</span>
+				</label>
+				<label>
+					<span class="title">이름</span>
+					<span class="pause_data">홍길동</span>
+				</label>
+				<label>
+					<span class="title">휴대폰 번호</span>
+					<input type="text" value="010-1111-1111">
+				</label>
+				<label class="full">
+					<span class="title">이메일</span>
+					<input type="text" class="half" value="abc1@naver.com">
+					<select class="half">
+						<option>직접입력</option>
+					</select>
+				</label>
+			</section>
+		</div>
+		<div class="pause_form1 join">
+			<div class="pause_form1_title">서비스 일시정지 기간</div>
+			<div class="too_pptext1"  onclick="CFN.pp_my_popup();">
+				<div class="top_pp_left1"><span class="start-date-visible">2019.05.14</span> ~ <span class="end-date-visible">2019.05.29</span></div>
+				<div class="top_pp_right1"></div>
+			</div>
+		</div>
+		<div class="pause_form1 join">
+			<div class="pause_form1_title">서비스 일시정지 사유 입력</div>
+			<div>	<textarea class="pause_textarea">서비스 일시정지 사유를 입력해주세요.</textarea></div>
+		</div>
+
+		<section class="agreement">
+			<div class="pause_form1_title">일시정지 약관</div>
+            <ul>
+                <li>
+                    <label><input type="checkbox"><i></i> 서비스 일시정지 동의</label>
+                    <button type="button" class="more">자세히 보기<i></i></button>
+                </li>
+            </ul>
+        </section>
+		
+		<section class="pause_form_btn">
+			<button type="button" class="full" disabled="">일시정지 신청하기</button>
+		</section>
+		
+	</main>
+
+	<div class="priceAlarm_mask "></div>
+	<div class="pp_my_popup_date ">
+		
+		<div class="pp_my_popup3 ">
+			<div class="check_title">기간 설정</div>
+			<table class="check_table2">
+				<tbody>
+					<tr>
+						<td class="on"><div>전체</div></td>
+						<td><div>1개월</div></td>
+						<td><div>3개월</div></td>
+						<td onclick="CFN.pp_my_popup_date_option();"><div>직접입력</div></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="date_option ">
+			<input type="text" id="start-date" style="display:none">
+			<input type="text" id="end-date"style="display:none">
+			<span class="start-date-visible"></span> ~ <span class="end-date-visible"></span>
+			</div>
+			
+		</div>
+		<div class="date_select ">
+		
+
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<link rel="stylesheet" href="../pub/jquery-ui.css"><!-- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" /> -->
+
+<div id="datepicker"></div>
+    <script type="text/javascript">
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+var firstMonth = moment(new Date()).month();
+
+function setButton() {
+  for (var i = 0; i < 12; i++) {
+    var classs = "months active";
+    if (i > 2) {
+      classs = "months";
+    }
+    $("#list").append("<span class='" + classs + "'>" + monthNames[firstMonth++] + "</span>");
+    if (firstMonth == 12) firstMonth = 0;
+  }
+}
+
+setButton();
+
+$(document).on("click", ".ui-datepicker-next", function() {
+  $(".months").remove();
+  firstMonth += 1;
+  if (firstMonth > 11) {
+    firstMonth = 0;
+  }
+  setButton();
+});
+
+
+$(document).on("click", ".ui-datepicker-prev", function() {
+  $(".months").remove();
+
+  firstMonth -= 1;
+  if (firstMonth == -1) {
+    firstMonth = 11;
+  }
+  setButton();
+});
+
+$(document).on("click", ".months:not(.active)", function() {
+  $(".ui-datepicker-next").trigger('click');
+})
+
+$("#datepicker").datepicker({
+prevText: '이전 달',
+nextText: '다음 달',
+monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+numberOfMonths: 2,
+showMonthAfterYear:true,
+showButtonPanel: false,
+dateFormat: 'yy.mm.dd',
+minDate: 0,
+maxDate: new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000),
+  beforeShowDay: function(date) {
+    var startDate = $.datepicker.parseDate('yy.mm.dd', $('#start-date').val());
+    var endDate = $.datepicker.parseDate('yy.mm.dd', $('#end-date').val());
+    if (startDate && endDate && startDate - endDate) {
+      if (endDate <= date && date <= startDate) {
+        if (startDate && date && (startDate.getTime() === date.getTime())) {
+          // console.log('from end to start - backward - red-start ');
+          return [true, 'ui-red-end', ''];
+        }
+        if (endDate && date && (endDate.getTime() === date.getTime())) {
+          //    console.log('from end to start - backward - red-end ');
+          return [true, 'ui-red-start', ''];
+        }
+        //  console.log('from end to start - backward');
+        return [true, 'ui-state-selected-range', ''];
+      }
+    }
+    if (startDate <= date && date <= endDate) {
+      //console.log('from start to end - forward');
+      if (startDate && date && (endDate.getTime() === date.getTime())) {
+        // console.log('from start to end - forward - red-end');
+        return [true, 'ui-red-end', ''];
+      }
+      if (endDate && date && (startDate.getTime() === date.getTime())) {
+        //  console.log('from start to end - forward - red-start');
+        return [true, 'ui-red-start', ''];
+      }
+    }
+    if (startDate <= date && date <= endDate) {
+      //    console.log('from start to end');
+      return [true, 'ui-state-selected-range', ''];
+    }
+    return [true, '', ''];
+  },
+  onSelect: function(dateText, inst) {
+    var startDate = $.datepicker.parseDate('yy.mm.dd', $('#start-date').val());
+    var endDate = $.datepicker.parseDate('yy.mm.dd', $('#end-date').val());
+    if (!startDate || endDate) {
+      $('#start-date').val(dateText);
+      $('.start-date-visible').text(dateText);
+      $('#end-date').val('');
+      $('.end-date-visible').text('');
+      $(this).datepicker('option', dateText);
+    } else {
+      if (new Date(dateText) < startDate) {
+        var sDate = $('#start-date').val();
+        $('.start-date-visible').text(dateText);
+        $('#start-date').val(dateText);
+        //$(this).datepicker('option', null);
+        $('.end-date-visible').text(sDate);
+        $('#end-date').val(sDate);
+
+      } else {
+        $('.end-date-visible').text(dateText);
+        $('#end-date').val(dateText);
+       // $(this).datepicker('option', null);
+      }
+    }
+  }
+});
+// start date on default
+$('#start-date').val($.datepicker.formatDate('yy.mm.dd', new Date()));
+$('.start-date-visible').text($.datepicker.formatDate('yy.mm.dd', new Date()));
+// end date on default
+$('#end-date').val($.datepicker.formatDate('yy.mm.dd', new Date(new Date().getTime() +
+  6 * 24 * 60 * 60 * 1000)));
+$('.end-date-visible').text($.datepicker.formatDate('yy.mm.dd', new Date(new Date().getTime() +
+  6 * 24 * 60 * 60 * 1000)));
+    </script>
+		
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.pp_my_popup_date();">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more_o" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

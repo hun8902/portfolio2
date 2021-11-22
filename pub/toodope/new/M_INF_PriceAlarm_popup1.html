@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+        <div class="title_left">
+			정보
+		</div>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+	<header class="common_ana">
+		<div class="anabox">
+			<div class="ana_txt1">누적 상승률</div>
+			<div class="ana_txt2"><span class="up">+89.02</span>%</div>
+			
+		</div>
+		<a href="#">
+		<div class="anabox2">
+			<div class="name"><span>김희중</span> 회원님</div>
+			<div class="sevice">‘레드파트너스’ 이용 중</div>			
+		</div>
+
+		<i class="ana_arrow"></i>
+		</a>
+	</header>
+
+	<main class="stock detail pt_200">
+		<div class="nav_line"></div>
+		<div id="touchNav" class="nav_h_type">
+			<ul>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'" >홈</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Theme.html'">테마</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'">업종</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Index.html'">상승</button></li>
+				<li><button type="button" onclick="location.href='M_INF_Down.html'">하락</button></li>
+				<li><button type="button" onclick="location.href='M_INF_News.html'">뉴스</button></li>
+				<li class="on"><button type="button" onclick="location.href='M_INF_PriceAlarm.html'">시세알림</button></li>
+			</ul>			
+		</div>
+		<section class="pricealarm item ">
+             <dl>
+				<dt class="folding opened">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="folding open">
+					<button type="button">
+						<dt class="pa_1">일신석재</dt>
+						<dl class="pa_2">
+							<dd>KOSPI</dd>
+							<dd>유통</dd>
+							<dd>건축자제</dd>
+						</dl>
+						<dl class="pa_3">
+							<dd >
+								<div class="pa_ag1">1,980</div>
+							</dd>
+							<dd >
+								+2.53%<div class="up">70</div>
+							</dd>
+						</dl>
+						<i></i>
+					</button>
+				</dt>
+				 <dd>
+					<ul>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+						<li>
+							 2,130원 (+3%)
+							<button type="button" class="del">삭제<i></i></button>
+						</li>
+					</ul>
+					<div class="rank_more bt_1" onclick="CFN.priceAlarm_popup1();">
+						<span class="more_text">+ 알람 추가하기</span>
+					</div>
+				</dd>
+			</dl>
+            </section>
+			
+		
+    </main>
+	
+	<div class="priceAlarm_mask on"></div>
+	<div class="priceAlarm_popup4">
+		<div class="popup4_title bb_1">
+			<dt class="popup4top_1">일신석재</dt>
+				<dl class="popup4top_2">
+					<dd>KOSPI</dd>
+					<dd>유통</dd>
+					<dd>건축자제</dd>
+				</dl>
+				<dl class="popup4top_3">
+					<dd >
+						<div class="popup4top_ag1">1,980</div>
+					</dd>
+					<dd >
+						<span class="down">+2.53%</span><div class="down"><img src="../pub/images/ic_down_16_px.svg" class="popup_updown_icon">70</div>
+						<!-- <span class="up">+2.53%</span><div class="up"><img src="../pub/images/ic_up_16_px.svg" class="popup_updown_icon">70</div> -->
+					</dd>
+				</dl>
+				<i></i>
+		
+		</div>
+		
+		<div class="priceAlarm_p4_content">
+		<article class="priceAlarm_subtitle">
+			<div class="pa_sub1">시세알림 목록 (5/5)</div>
+			
+		</article>
+		<ul class="priceAlarm_p4_infolist ">
+            <li><button type="button" class="del">2,130원 (+3%)<i></i></button></li>
+            <li><button type="button" class="del">2,130원 (+3%)<i></i></button></li>
+			<li><button type="button" class="del">2,130원 (+3%)<i></i></button></li>
+            <li><button type="button" class="del">2,130원 (+3%)<i></i></button></li>
+        </ul>
+		</div>
+		<div class="priceAlarm_p4_bottom pl_16">
+			<section class="popup_add_alarm item ">
+				<article>
+					<h4>시세알림 추가<img src="../pub/images/ic_question_24_px.png"></h4>
+				
+				 <label>
+					<table class="input_info_table">
+						<tr>
+							<td style="padding:0 10px 0 0 "><div class="input_info">지정가격</div><input type="text" dir="rtl" value="1961"></td>
+							<td style="width:72px;">
+								<table class="btn_set_table">
+									<tr>
+										<td><i class="ic_minus"></i></td>
+										<td><i class="ic_plus"></i></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</label>
+				 <label>
+					<dl class="input">
+						<dt class="input_info">현재가 대비</dt>
+						<dd class="full">
+							<select class="full" dir="rtl">
+								<option>0.00%</option>
+								<option>0.00%</option>
+								<option>0.00%</option>
+							</select>
+						</dd>
+					</dl>
+				</label>
+				 <label>
+					<button type="button" class="full"  onclick="CFN.popupOpen($('.popupExample'));">지정가 추가하기</button>
+				</label>
+				</article>
+			</section>
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.priceAlarm_popup4();"><img src="../pub/images/ic_refresh_24_px.png">초기화</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="priceAlarm_popup3 ">
+		<div class="popup_title">시세알람 설정<img src="../pub/images/ic_question_24_px.png"></div>
+		
+		<section class="customer_input_icon">
+            <input type="text" placeholder="삼성" value="">
+            <button type="button" class="search" title="검색">검색<i></i></button>
+			<button type="button" class="delete" title="삭제">삭제<i></i></button>
+        </section>
+		<div class="priceAlarm_p1_content">
+		<ul class="priceAlarm_p2_infolist ">
+            <li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+          
+        </ul>
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.priceAlarm_popup3();"><img src="../pub/images/ic_refresh_24_px.png">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="priceAlarm_popup2">
+		<div class="popup_title">시세알람 설정<img src="../pub/images/ic_question_24_px.png"></div>
+		
+		<section class="customer_input_icon">
+            <input type="text" placeholder="삼성" value="">
+            <button type="button" class="search" title="검색">검색<i></i></button>
+        </section>
+		<div class="priceAlarm_p1_content">
+		<ul class="priceAlarm_p2_infolist ">
+            <li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+			<li><button type="button" class=""><span>삼성</span>전자<i></i></button></li>
+          
+        </ul>
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.priceAlarm_popup2();"><img src="../pub/images/ic_refresh_24_px.png">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="priceAlarm_popup1 on">
+		<div class="popup_title">시세알람 설정<img src="../pub/images/ic_question_24_px.png"></div>
+		
+		<section class="customer_input_icon">
+            <input type="text" placeholder="종목명 혹은 종목코드" value="">
+            <button type="button" class="search" title="검색">검색<i></i></button>
+        </section>
+		<div class="priceAlarm_p1_content">
+		<article class="priceAlarm_subtitle">
+			<div class="pa_sub1">최근검색<span class="pa_sub2">전체삭제</span></div>
+			
+		</article>
+		<ul class="priceAlarm_p1_infolist ">
+            <li><button type="button" class="del">신호<i></i></button></li>
+            <li><button type="button" class="del">분석<i></i></button></li>
+			<li><button type="button" class="del">정보<i></i></button></li>
+            <li><button type="button" class="del">투자내역<i></i></button></li>
+        </ul>
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.priceAlarm_popup1();"><img src="../pub/images/ic_refresh_24_px.png">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- <div class="foot_popup">
+		시세 알림이 삭제 되었습니다.
+	</div> -->
+
+	<div class="test_popup">
+	
+		<button type="button" class="" onclick="CFN.priceAlarm_popup1();">시세알림 (목록)팝업 테스트</button>
+		<button type="button" class="" onclick="CFN.priceAlarm_popup2();">시세알림 (설정)팝업 테스트</button>
+		<button type="button" class="" onclick="CFN.priceAlarm_popup3();">시세알림 (검색)팝업 테스트</button>
+		<button type="button" class="" onclick="CFN.priceAlarm_popup4();">시세알림 (추가)팝업 테스트</button>
+
+	</div>
+	<style>
+		.test_popup{position:absolute; bottom:150px; left:0; right:0; width:200px; margin:0 auto; padding:5px 0; text-align:center;    background: #6b40dd; color:#fff;}
+		.test_popup button {margin:5px 0;}
+	</style>
+
+	<footer class="memo">		 
+        <button type="button" class="memo">메모</button>
+        <!-- <button type="button" class="list">목록</button>
+        <button type="button" class="write">작성</button> -->
+    </footer>	
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info_o" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

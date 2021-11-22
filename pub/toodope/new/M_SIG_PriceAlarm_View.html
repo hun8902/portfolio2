@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+        <div id="inf_top" class="title_line2">
+			일신석재
+			<dl class="sub_title">
+				<dd>KOSPI</dd>
+				<dd>유통</dd>
+				<dd>건축자제</dd>
+			</dl>
+		</div>
+		<div id="inf_top_s" class="title">
+			<span class="top_company">매수</span>+89.02% 1,980
+		</div>
+        <button type="button" class="back"><i></i>뒤로</button>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+    <main class="stock detail">
+        <header class="contents ">
+			<div class="top_stats">홀딩</div>
+            <h2 class="pl_68">1,980 </h2>
+            <dl class="point up pl_68">				
+                <dd>+3.15%</dd>
+                <dd class="arrow">70</dd>
+            </dl>
+			<div class="topchart_1"><img src="../pub/images/topchart_1.png" alt="차트 들어가는부분"></div>
+
+			 <div class="fav_icon"><p>1,382</p></div>
+			
+			<div class="topchart_2">	
+				<div class="grp_wrap">
+					<img src="../images/common/arr_blue_down02.png" alt="" class="arr_l">
+					<img src="../images/common/arr_red_up02.png" alt="" class="arr_r">
+
+					<div class="grp_bar">
+						<div class="b_red ty_arr" style="left:25%; width:45%;">
+							<span class="line"></span>
+							<div>+2.53%</div>
+						</div>
+						<div class="b_gray" style="width:25%;">
+							<span class="line"></span>							
+							<div><span>추천가</span><br/>1,930</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btm_info_wrap">
+						<div class="bx_l">
+							<span class="line"></span>
+							<div><span>손절가</span><br/>1,930</div>
+						</div>
+						<div class="bx_r">
+							<span class="line"></span>
+							<div><span>1차 목표가</span><br/>2,130</div>
+						</div>
+					</div>
+			</div>
+
+        </header>
+		<div class="nav_line"></div>
+		<div id="touchNav" class="nav_h_type">
+			<ul>
+				<li><button type="button" onclick="location.href='M_SIG_View.html'" >신호</button></li>
+				<li><button type="button" onclick="location.href='M_SIG_Company_info.html'">기업정보</button></li>
+				<li><button type="button" onclick="location.href='M_SIG_Chart.html'">차트</button></li>
+				<li><button type="button" onclick="location.href='M_SIG_News.html'">뉴스</button></li>
+				<li class="on"><button type="button" onclick="location.href='M_SIG_PriceAlarm_View.html'">시세알림</button></li>
+			</ul>			
+		</div>
+		<section class="add_alarm item  pl_16">
+            <article class="">
+                <h4>시세알림 추가<i class="question_icon" onclick="CFN.popupOpen($('.pricealarm_alert'));"></i></h4>
+				<table class="input_info_table">
+					<tr>
+						<td style="padding:0 10px 0 0 "><div class="input_info">지정가격</div><input type="text" dir="rtl" value="1961"></td>
+						<td style="width:72px;">
+							<table class="btn_set_table">
+								<tr>
+									<td><i class="ic_minus"></i></td>
+									<td><i class="ic_plus"></i></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+
+				<dl class="input">
+                    <dt class="input_info">현재가 대비</dt>
+                    <dd class="full">
+                        <select class="full" dir="rtl">
+                            <option>0.00%</option>
+							<option>0.00%</option>
+							<option>0.00%</option>
+                        </select>
+                    </dd>
+                </dl>
+	
+				<div class="btn_add_alarm">
+					<button type="button" class="full"  >알람 추가하기</button>
+				</div>
+			</article>
+        </section>
+
+
+		<section class="add_alarm_2 item bt_1 ">
+            <article>
+                <h4>시세알림 목록</h4>
+				<dl>
+					<dd>
+						<ul>
+							<li>
+								2,130원 (+3%)	<i></i>
+							</li>
+							<li>
+								2,130원 (+3%)<i></i>
+							</li>
+							<li>
+								2,130원 (+3%)<i></i>
+							</li>
+							<li>
+								2,130원 (+3%)<i></i>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</article>
+        </section>
+    </main>
+
+	<div class="foot_popup">
+		시세 알림이 추가 되었습니다.
+	</div>
+
+	  <div class="priceAlarm_mask"></div>
+	<div class="dimm pricealarm_alert">
+        <section class="popup">
+            <header>시세 알림 안내</header>
+			<div class="pt_27">지정가격 도달 시 알림이 발송됩니다.</div>
+            <div>최초 도달 후 한 시간동안은 알림이<br/>재발송 되지 않습니다</div>
+            <footer>
+                <button type="button" class="popup_submit" onclick="CFN.popupClose($('.pricealarm_alert'));">확인</button>
+            </footer>
+        </section>
+    </div>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal_o" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+  
+</body>
+</html>

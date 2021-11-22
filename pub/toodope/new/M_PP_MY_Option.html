@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+        <div class="title_left">
+			투자내역
+		</div>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+	<header class="common_pp">
+		<div class="too_pptext">
+			<div class="top_pp_left">기간 별 투자결과</div>
+			<div class="top_pp_right"  onclick="CFN.pp_my_popup();">01/02 ~ 02/11</div>
+		</div>
+		<dl class="pp_avg">
+			<dd>
+				<div class="pp_avg_txt1">누적 상승률</div>
+				<div class="pp_avg_txt2"><span class="up">89.02</span>%</div>
+			</dd>
+			<dd>
+				<div class="pp_avg_txt1">승률</div>
+				<div class="pp_avg_txt2"><span class="up">89.02</span>%</div>
+			</dd>
+		</dl>
+	</header>
+
+   <main class="stock detail pt_225">
+		<article class="detail_btn">
+			<div class="detail_title">투자진행중</div>
+			<!-- <div class="detail_more">전체보기</div> -->
+		</article>
+       <section class="mypage_chart item ">
+			<!-- Link Swiper's CSS -->
+			  <link rel="stylesheet" href="../pub/swiper.css">
+
+			  <!-- Demo styles -->
+			  <style>
+				.swiper-container {
+				  width: 100%;
+				  margin:0px auto 0 auto;
+				}
+				.swiper-slide {
+				  font-size: 18px;
+				  _height: 127px;
+				  
+				  /* Center slide text vertically */
+				  display: -webkit-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  -webkit-box-pack: center;
+				  -ms-flex-pack: center;
+				  -webkit-justify-content: center;
+				  justify-content: center;
+				  -webkit-box-align: center;
+				  -ms-flex-align: center;
+				  -webkit-align-items: center;
+				  align-items: center;
+				}
+
+				
+			  </style>
+			  <!-- Swiper -->
+			  <div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+						<table class="my_chart">
+							<tr>
+								<td class="my_chart_1">
+									<div><img src="../pub/images/mypage_chart_exapmle.png"></div>
+								</td>
+								<td class="my_chart_2">
+									<div class="chart_data_td"><div class="title_dot dot_1"></div><div class="chart_title">테마</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_2"></div><div class="chart_title">세력</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_3"></div><div class="chart_title">차트</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_4"></div><div class="chart_title">수급</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_5"></div><div class="chart_title">현금</div> <span>17%</span></div>
+								</td>
+							</tr>
+						</table>
+				  </div>
+				 <div class="swiper-slide">
+						<table class="my_chart">
+							<tr>
+								<td class="my_chart_1">
+									<div><img src="../pub/images/mypage_chart_exapmle.png"></div>
+								</td>
+								<td class="my_chart_2">
+									<div class="chart_data_td"><div class="title_dot dot_1"></div><div class="chart_title">테마</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_2"></div><div class="chart_title">세력</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_3"></div><div class="chart_title">차트</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_4"></div><div class="chart_title">수급</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_5"></div><div class="chart_title">현금</div> <span>17%</span></div>
+								</td>
+							</tr>
+						</table>
+				  </div>
+
+				</div>
+				<!-- Add Pagination -->
+				
+			  </div>
+			  <div class="swiper-pagination"></div>
+			  <!-- Swiper JS -->
+			  <script src="../pub/swiper.js"></script>
+
+			 <script>
+				var swiper = new Swiper('.swiper-container', {
+				  pagination: {
+					el: '.swiper-pagination',
+				  },
+				});
+			  </script>
+		</section>
+		<section class="pp_position item bt_1">
+			<table class="pp_table">
+				<colgroup>
+					<col width="52px">
+					<col width="*">
+					<col width="50px">
+					<col width="70px">
+					<col width="80px">
+					
+				</colgroup>
+				<thead>
+					<tr>
+						<td><p class="align_list">성향<img src="../pub/images/ic_align_down_16_px.svg"></p></td>
+						<td><div class="align_list">종목<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">비중<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">전일대비<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">상승률<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><div class="table_dot dot_1"></div></td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_2"></div></td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_3"></div></td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td><span class="down_text">+3.54%</span></td>
+						<td><div class="down">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_4"></div></td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_5"></div></td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					
+
+				</tbody>
+			</table>
+			<div class="rank_more">
+				<span class="more_text">+ 불러오기</span> <span class="more_page">40</span> / 52
+			</div>
+			
+		</section>
+		<section class="more_line"></section>
+		<article class="detail_btn">
+			<div class="detail_title">투자종료</div>
+			<!-- <div class="detail_more">전체보기</div> -->
+		</article>
+
+        <section class="pp_position item ">
+			<table class="pp_table">
+				<colgroup>
+					<col width="52px">
+					<col width="*">
+					<col width="50px">
+					<col width="70px">
+					<col width="80px">
+					
+				</colgroup>
+				<thead>
+					<tr>
+						<td><p class="align_list">매수일<img src="../pub/images/ic_align_down_16_px.svg"></p></td>
+						<td><div class="align_list">종목<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">비중<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">매도일<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">상승률<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="down">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="down">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="up">+27.55%</div></td>
+					</tr>
+					<tr>
+						<td>4/1</td>
+						<td class="compnay">오성첨단소재</td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><div class="down">+27.55%</div></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div class="rank_more">
+				<span class="more_text">+ 불러오기</span> <span class="more_page">40</span> / 52
+			</div>
+			
+		</section>
+
+	
+    </main>
+
+	<div class="priceAlarm_mask on"></div>
+	<div class="pp_my_popup_date on dateon">
+		
+		<div class="pp_my_popup3 on">
+			<div class="check_title">기간 설정</div>
+			<table class="check_table2">
+				<tbody>
+					<tr>
+						<td class="on"><div>전체</div></td>
+						<td><div>1개월</div></td>
+						<td><div>3개월</div></td>
+						<td onclick="CFN.pp_my_popup_date_option();"><div>직접입력</div></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="date_option on">
+			<input type="text" id="start-date" style="display:none">
+			<input type="text" id="end-date"style="display:none">
+			<span class="start-date-visible"></span> ~ <span class="end-date-visible"></span>
+			</div>
+			
+		</div>
+		<div class="date_select on">
+		
+
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<link rel="stylesheet" href="../pub/jquery-ui.css"><!-- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" /> -->
+
+<div id="datepicker"></div>
+    <script type="text/javascript">
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+var firstMonth = moment(new Date()).month();
+
+function setButton() {
+  for (var i = 0; i < 12; i++) {
+    var classs = "months active";
+    if (i > 2) {
+      classs = "months";
+    }
+    $("#list").append("<span class='" + classs + "'>" + monthNames[firstMonth++] + "</span>");
+    if (firstMonth == 12) firstMonth = 0;
+  }
+}
+
+setButton();
+
+$(document).on("click", ".ui-datepicker-next", function() {
+  $(".months").remove();
+  firstMonth += 1;
+  if (firstMonth > 11) {
+    firstMonth = 0;
+  }
+  setButton();
+});
+
+
+$(document).on("click", ".ui-datepicker-prev", function() {
+  $(".months").remove();
+
+  firstMonth -= 1;
+  if (firstMonth == -1) {
+    firstMonth = 11;
+  }
+  setButton();
+});
+
+$(document).on("click", ".months:not(.active)", function() {
+  $(".ui-datepicker-next").trigger('click');
+})
+
+$("#datepicker").datepicker({
+prevText: '이전 달',
+nextText: '다음 달',
+monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+numberOfMonths: 2,
+showMonthAfterYear:true,
+showButtonPanel: false,
+dateFormat: 'yy.mm.dd',
+minDate: 0,
+maxDate: new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000),
+  beforeShowDay: function(date) {
+    var startDate = $.datepicker.parseDate('yy.mm.dd', $('#start-date').val());
+    var endDate = $.datepicker.parseDate('yy.mm.dd', $('#end-date').val());
+    if (startDate && endDate && startDate - endDate) {
+      if (endDate <= date && date <= startDate) {
+        if (startDate && date && (startDate.getTime() === date.getTime())) {
+          // console.log('from end to start - backward - red-start ');
+          return [true, 'ui-red-end', ''];
+        }
+        if (endDate && date && (endDate.getTime() === date.getTime())) {
+          //    console.log('from end to start - backward - red-end ');
+          return [true, 'ui-red-start', ''];
+        }
+        //  console.log('from end to start - backward');
+        return [true, 'ui-state-selected-range', ''];
+      }
+    }
+    if (startDate <= date && date <= endDate) {
+      //console.log('from start to end - forward');
+      if (startDate && date && (endDate.getTime() === date.getTime())) {
+        // console.log('from start to end - forward - red-end');
+        return [true, 'ui-red-end', ''];
+      }
+      if (endDate && date && (startDate.getTime() === date.getTime())) {
+        //  console.log('from start to end - forward - red-start');
+        return [true, 'ui-red-start', ''];
+      }
+    }
+    if (startDate <= date && date <= endDate) {
+      //    console.log('from start to end');
+      return [true, 'ui-state-selected-range', ''];
+    }
+    return [true, '', ''];
+  },
+  onSelect: function(dateText, inst) {
+    var startDate = $.datepicker.parseDate('yy.mm.dd', $('#start-date').val());
+    var endDate = $.datepicker.parseDate('yy.mm.dd', $('#end-date').val());
+    if (!startDate || endDate) {
+      $('#start-date').val(dateText);
+      $('.start-date-visible').text(dateText);
+      $('#end-date').val('');
+      $('.end-date-visible').text('');
+      $(this).datepicker('option', dateText);
+    } else {
+      if (new Date(dateText) < startDate) {
+        var sDate = $('#start-date').val();
+        $('.start-date-visible').text(dateText);
+        $('#start-date').val(dateText);
+        //$(this).datepicker('option', null);
+        $('.end-date-visible').text(sDate);
+        $('#end-date').val(sDate);
+
+      } else {
+        $('.end-date-visible').text(dateText);
+        $('#end-date').val(dateText);
+       // $(this).datepicker('option', null);
+      }
+    }
+  }
+});
+// start date on default
+$('#start-date').val($.datepicker.formatDate('yy.mm.dd', new Date()));
+$('.start-date-visible').text($.datepicker.formatDate('yy.mm.dd', new Date()));
+// end date on default
+$('#end-date').val($.datepicker.formatDate('yy.mm.dd', new Date(new Date().getTime() +
+  6 * 24 * 60 * 60 * 1000)));
+$('.end-date-visible').text($.datepicker.formatDate('yy.mm.dd', new Date(new Date().getTime() +
+  6 * 24 * 60 * 60 * 1000)));
+    </script>
+		
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.pp_my_popup_date();">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="foot_joinbtn">가입하러 가기	</div>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal_o" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

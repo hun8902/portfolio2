@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>458F8894-E2A3-477A-9239-3A91949FDA1F</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Mobile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_SUB_Customer" transform="translate(-220.000000, -163.000000)" fill="#FFFFFF">
+            <g id="body" transform="translate(0.000000, 80.000000)">
+                <g id="top">
+                    <g id="btns" transform="translate(16.000000, 69.000000)">
+                        <g id="btn_chat" transform="translate(165.000000, 0.000000)">
+                            <g id="contents/ic_talk_wh_20px" transform="translate(39.000000, 14.000000)">
+                                <g>
+                                    <rect id="bounds" fill-opacity="0.01" opacity="0.5" x="0" y="0" width="20" height="20"></rect>
+                                    <path d="M10,2 C5.0275,2 1,5.24805492 1,9.26781084 C1.13775875,11.9766804 2.77675447,14.3661942 5.21875,15.4183829 C5.08375,15.9021358 4.33,18.5512586 4.3075,18.7585813 C4.3075,18.7585813 4.3075,18.9198322 4.38625,18.9774218 C4.45446634,19.0075261 4.53178366,19.0075261 4.6,18.9774218 C4.88125,18.9774218 7.885,16.7774981 8.4025,16.4089245 C8.93201247,16.4825905 9.46562954,16.5210641 10,16.5241038 C14.9725,16.5241038 19,13.2645309 19,9.25629291 C19,5.24805492 14.9725,2 10,2 Z" id="Path" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

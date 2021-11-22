@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common">
+        <div class="title_left">
+			투자내역
+		</div>
+		<button type="button" class="seach" onclick="location.href='M_GL_Search_01.html'">검색</button>
+		<button type="button" class="alarm ">알림</button>
+    </header>
+	<header class="common_pp pl_16">
+		<div class="too_pptext">
+			<div class="top_pp_left">기간 별 투자결과</div>
+			<div class="top_pp_right"  onclick="CFN.pp_my_popup();">01/02 ~ 02/11</div>
+		</div>
+		<dl class="pp_avg">
+			<dd>
+				<div class="pp_avg_txt1">누적 상승률</div>
+				<div class="pp_avg_txt2"><span class="up">89.02</span>%</div>
+			</dd>
+			<dd>
+				<div class="pp_avg_txt1">승률</div>
+				<div class="pp_avg_txt2"><span class="up">89.02</span>%</div>
+			</dd>
+		</dl>
+	</header>
+
+   <main class="stock detail pt_225">
+		<article class=" ">
+			<div class="detail_title">투자진행중</div>
+			<!-- <div class="detail_more">전체보기</div> -->
+		</article>
+        <section class="mypage_chart item ">
+			<!-- Link Swiper's CSS -->
+			  <link rel="stylesheet" href="../pub/swiper.css">
+
+			  <!-- Demo styles -->
+			  <style>
+				.swiper-container {
+				  width: 100%;
+				  margin:0px auto 0 auto;
+				}
+				.swiper-slide {
+				  font-size: 18px;
+				  _height: 127px;
+				  
+				  /* Center slide text vertically */
+				  display: -webkit-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  -webkit-box-pack: center;
+				  -ms-flex-pack: center;
+				  -webkit-justify-content: center;
+				  justify-content: center;
+				  -webkit-box-align: center;
+				  -ms-flex-align: center;
+				  -webkit-align-items: center;
+				  align-items: center;
+				}
+
+				
+			  </style>
+			  <!-- Swiper -->
+			  <div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+						<table class="my_chart">
+							<tr>
+								<td class="my_chart_1">
+									<div><img src="../pub/images/mypage_chart_exapmle.png"></div>
+								</td>
+								<td class="my_chart_2">
+									<div class="chart_data_td"><div class="title_dot dot_1"></div><div class="chart_title">테마</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_2"></div><div class="chart_title">세력</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_3"></div><div class="chart_title">차트</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_4"></div><div class="chart_title">수급</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_5"></div><div class="chart_title">현금</div> <span>17%</span></div>
+								</td>
+							</tr>
+						</table>
+				  </div>
+				 <div class="swiper-slide">
+						<table class="my_chart">
+							<tr>
+								<td class="my_chart_1">
+									<div><img src="../pub/images/mypage_chart_exapmle.png"></div>
+								</td>
+								<td class="my_chart_2">
+									<div class="chart_data_td"><div class="title_dot dot_1"></div><div class="chart_title">테마</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_2"></div><div class="chart_title">세력</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_3"></div><div class="chart_title">차트</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_4"></div><div class="chart_title">수급</div> <span>17%</span></div>
+									<div class="chart_data_td"><div class="title_dot dot_5"></div><div class="chart_title">현금</div> <span>17%</span></div>
+								</td>
+							</tr>
+						</table>
+				  </div>
+
+				</div>
+				<!-- Add Pagination -->
+				
+			  </div>
+			  <div class="swiper-pagination"></div>
+			  <!-- Swiper JS -->
+			  <script src="../pub/swiper.js"></script>
+
+			 <script>
+				var swiper = new Swiper('.swiper-container', {
+				  pagination: {
+					el: '.swiper-pagination',
+				  },
+				});
+			  </script>
+		</section>
+        <section class=" item bt_1">
+			<table class="pp_table">
+				<colgroup>
+					<col width="58px">
+					<col width="*">
+					<col width="50px">
+					<col width="70px">
+					<col width="80px">
+					
+				</colgroup>
+				<thead>
+					<tr>
+						<td><div class="align_list">성향<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">종목<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">비중<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">전일대비<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">상승률<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><div class="table_dot dot_1"></div></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_2"></div></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_3"></div></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td><span class="down_text">+3.54%</span></td>
+						<td><span class="down">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_4"></div></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><div class="table_dot dot_5"></div></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td><span class="up_text">+3.54%</span></td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					
+
+				</tbody>
+			</table>
+			
+			
+		</section>
+		<section class="">
+			<div class="rank_more">
+				<span class="more_text">+ 불러오기</span> <span class="more_page">40</span> / 52
+			</div>
+		</section>
+		<section class="more_line"></section>
+		<article class="detail_btn">
+			<div class="detail_title">투자종료</div>
+			<!-- <div class="detail_more">전체보기</div> -->
+		</article>
+
+        <section class=" item  ">
+			<table class="pp_table1">
+				<colgroup>
+					<col width="70px">
+					<col width="*">
+					<col width="50px">
+					<col width="70px">
+					<col width="80px">
+					
+				</colgroup>
+				<thead>
+					<tr>
+						<td><p class="align_list">매수일<img src="../pub/images/ic_align_down_16_px.svg"></p></td>
+						<td><div class="align_list">종목<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">비중<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">매도일<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+						<td><div class="align_list">상승률<img src="../pub/images/ic_align_down_16_px.svg"></div></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="down">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="down">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="up">+27.55%</span></td>
+					</tr>
+					<tr>
+						<td><span class="date">4/1</span></td>
+						<td class="compnay"><a href="M_SIG_View.html">오성첨단소재</a></td>
+						<td>15%</td>
+						<td>4/4</td>
+						<td><span class="down">+27.55%</span></td>
+					</tr>
+
+				</tbody>
+			</table>
+			
+			
+		</section>
+		<section class="pb_60 ">
+			<div class="rank_more">
+				<span class="more_text">+ 불러오기</span> <span class="more_page">40</span> / 52
+			</div>
+		</section>
+	
+    </main>
+
+	<div class="priceAlarm_mask"></div>
+	<div class="pp_my_popup">
+		<div class="pp_my_popup1">
+			<div class="check_title">브랜드 선택</div>
+			<table class="check_table">
+				<tr>
+					<td>
+						<input type="checkbox" id="box1"><label for="box1"><div>A브랜드</div></label>
+					<td>
+					<td>
+						<input type="checkbox" id="box2"><label for="box2"><div>B브랜드</div></label>
+					<td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="box3"><label for="box3"><div>C브랜드</div></label>
+					<td>
+					<td>
+						<input type="checkbox" id="box4"><label for="box4"><div>D브랜드</div></label>
+					<td>
+				</tr>
+			</table>
+		</div>
+		<div class="pp_my_popup2">
+			<div class="check_title">상품 선택</div>
+			<table class="check_table">
+				<tr>
+					<td>
+						<input type="checkbox" id="box5"><label for="box5"><div>레드파트너스</div></label>
+					<td>
+					<td>
+						<input type="checkbox" id="box6"><label for="box6"><div>레드파트너스</div></label>
+					<td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="box7"><label for="box7"><div>레드파트너스</div></label>
+					<td>
+					<td>
+						<input type="checkbox" id="box8"><label for="box8"><div>레드파트너스</div></label>
+					<td>
+				</tr>
+			</table>
+		</div>
+		<div class="pp_my_popup3">
+			<div class="check_title">기간 설정</div>
+			<table class="check_table2">
+				<tbody>
+					<tr>
+						<td class="on"><div>전체</div></td>
+						<td><div>1개월</div></td>
+						<td><div>3개월</div></td>
+						<td><div>직접입력</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">완료</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.pp_my_popup();">취소</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="foot_joinbtn" onclick="location.href='M_LOG01.html'">가입하러 가기	</div>
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal_o" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+
+</body>
+</html>

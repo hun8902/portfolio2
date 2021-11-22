@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>7B9C29A8-3BDA-4750-A6E3-0EE01E3A4948</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Mobile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_SUB_Customer" transform="translate(-55.000000, -163.000000)" fill="#FFFFFF">
+            <g id="body" transform="translate(0.000000, 80.000000)">
+                <g id="top">
+                    <g id="btns" transform="translate(16.000000, 69.000000)">
+                        <g id="btn_call">
+                            <g id="contents/ic_call_wh_20px" transform="translate(39.000000, 14.000000)">
+                                <g id="Path">
+                                    <polygon fill-opacity="0.01" opacity="0.5" points="0 0 20 0 20 20 0 20"></polygon>
+                                    <path d="M16.025,12.7166667 L13.9083333,12.475 C13.4,12.4166667 12.9,12.5916667 12.5416667,12.95 L11.0083333,14.4833333 C8.65,13.2833333 6.71666667,11.3583333 5.51666667,8.99166667 L7.05833333,7.45 C7.41666667,7.09166667 7.59166667,6.59166667 7.53333333,6.08333333 L7.29166667,3.98333333 C7.19166667,3.14166667 6.48333333,2.50833333 5.63333333,2.50833333 L4.19166667,2.50833333 C3.25,2.50833333 2.46666667,3.29166667 2.525,4.23333333 C2.96666667,11.35 8.65833333,17.0333333 15.7666667,17.475 C16.7083333,17.5333333 17.4916667,16.75 17.4916667,15.8083333 L17.4916667,14.3666667 C17.5,13.525 16.8666667,12.8166667 16.025,12.7166667 Z" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

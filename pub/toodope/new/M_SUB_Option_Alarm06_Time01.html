@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>투돕</title>
+	<link rel="stylesheet" href="../pub/style.css">
+	<link rel="stylesheet" href="../pub/owl.carousel.min.css">
+	<link rel="stylesheet" href="../pub/lib/drum.css">
+	<script src="../pub/jquery-3.3.1.min.js"></script>
+	<script src="../pub/function.js"></script>
+    <script src="../pub/owl.carousel.min.js"></script>
+	<script src="../pub/jquery.touchFlow.js"></script>
+
+
+	<script src="../pub/lib/drum.js"></script>
+	<script src="../pub/lib/hammerjs/hammer.min.js"></script>
+	<script src="../pub/lib/hammerjs/hammer.fakemultitouch.js"></script>
+    <script>
+        fn_stockDetail();
+    </script>
+</head>
+<body>
+	<header class="common bb_1">
+        <div class="title">방해금지 모드</div>
+		<button type="button" class="back"><i></i>뒤로</button>
+    </header>
+	<main class="stock detail pt_56 ">
+		
+
+		<div class="option_alarm_top">
+			<div class="oa_title">방해금지 시간 동안 알림 중지</div>
+			<div class="oa_subtitle">설정한 방해금지 시간 동안에는<br/>알림을 보내지 않습니다.	</div>
+		</div>
+
+		 <ul class="customer_infolist pl_16">
+            <li>
+				<button type="button">
+					방해금지 모드
+					<div id="toggles">
+					  <input type="checkbox" name="checkbox1" id="checkbox1" class="ios-toggle" checked/>
+					  <label for="checkbox1" class="checkbox-label" ></label>			  
+					</div>
+				</button>
+			</li>
+			
+        </ul>
+		<section class="option_alarm_1">
+            <article>
+                <h4>방해금지 시간 설정</h4>
+				<dl>
+					<dd>
+						<ul>
+							<li>
+								<span class="start_time">A.M. 09:00</span>~<span class="end_time">A.M. 09:00</span>
+								<button type="button" class="del">삭제<i></i></button>
+							</li>
+							<li>
+								<span class="start_time">A.M. 09:00</span>~<span class="end_time">A.M. 09:00</span>
+								<button type="button" class="del">삭제<i></i></button>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</article>
+        </section>
+
+		<div class="time_add"  onclick="CFN.priceAlarm_popup5();">
+			<span class="more_text"> + 방해금지 시간 설정하기</span> 
+		</div>
+
+		<div class="option_alarm_bottom">
+			<div class="oab_title">방해금지 모드란?</div>
+			<div class="oab_subtitle">알림을 받지 않고자 하는 시간을 설정하면 해당 시간 동안 모든 알림이 중지 됩니다.</div>
+			<div class="oab_subtitle">업무, 수면 등 원하시는 시간을 설정해주세요.</div>
+		</div>
+
+		
+    </main>
+	<div class="search_popup">
+		방해금지 시간이 추가 되었습니다.
+	</div>
+	
+	<div class="priceAlarm_mask on"></div>
+	<div class="priceAlarm_popup5 on">
+		
+	<div class="priceAlarm_p5_content">
+		
+		<article class="priceAlarm_p5_subtitle">
+			<div class="pa_sub1">방해금지 시간 설정 (5/5)</div>			
+		</article>
+		<ul class="priceAlarm_p5_infolist ">
+            <li><button type="button" class="del"><span class="start_time">A.M. 09:00</span>~<span class="end_time">A.M. 09:00</span><i></i></button></li>
+            <li><button type="button" class="del"><span class="start_time">A.M. 09:00</span>~<span class="end_time">A.M. 09:00</span><i></i></button></li>
+        </ul>
+	</div>
+		<div class="priceAlarm_p5_bottom pl_16">
+			<table class="time_selet">
+				<tr>
+					<td>
+						<div class="time_selet_title" >시작시간</div>
+						<select>
+							<option value="0">A.M. 00:00</option>
+							<option value="1">A.M. 01:00</option>
+							<option value="2">A.M. 02:00</option>
+							<option value="3">A.M. 03:00</option>
+							<option value="4">A.M. 04:00</option>
+							<option value="5">A.M. 05:00</option>
+							<option value="6">A.M. 06:00</option>
+							<option selected value="7">A.M. 07:00</option>
+							<option value="8">A.M. 08:00</option>
+							<option value="9">A.M. 09:00</option>
+							<option value="10">A.M. 10:00</option>
+							<option value="11">A.M. 11:00</option>
+							<option value="12">A.M. 12:00</option>
+							<option value="13">P.M. 01:00</option> 
+							<option value="14">P.M. 02:00</option>
+							<option value="15">P.M. 03:00</option>
+							<option value="16">P.M. 04:00</option>
+							<option value="17">P.M. 05:00</option>
+							<option value="18">P.M. 06:00</option>
+							<option value="19">P.M. 07:00</option> 
+							<option value="20">P.M. 08:00</option>
+							<option value="21">P.M. 09:00</option>
+							<option value="22">P.M. 10:00</option>
+							<option value="23">P.M. 11:00</option>
+							<option value="24">P.M. 12:00</option>
+						</select>
+						<script>
+							$("select").drum({ panelCount: 24 });
+						</script>
+					</td>
+					<td>
+						<div class="time_selet_title" >종료시간</div>
+						<select>
+							<option value="0">A.M. 00:00</option>
+							<option value="1">A.M. 01:00</option>
+							<option value="2">A.M. 02:00</option>
+							<option value="3">A.M. 03:00</option>
+							<option value="4">A.M. 04:00</option>
+							<option value="5">A.M. 05:00</option>
+							<option value="6">A.M. 06:00</option>
+							<option selected value="7">A.M. 07:00</option>
+							<option value="8">A.M. 08:00</option>
+							<option value="9">A.M. 09:00</option>
+							<option value="10">A.M. 10:00</option>
+							<option value="11">A.M. 11:00</option>
+							<option value="12">A.M. 12:00</option>
+							<option value="13">P.M. 01:00</option> 
+							<option value="14">P.M. 02:00</option>
+							<option value="15">P.M. 03:00</option>
+							<option value="16">P.M. 04:00</option>
+							<option value="17">P.M. 05:00</option>
+							<option value="18">P.M. 06:00</option>
+							<option value="19">P.M. 07:00</option> 
+							<option value="20">P.M. 08:00</option>
+							<option value="21">P.M. 09:00</option>
+							<option value="22">P.M. 10:00</option>
+							<option value="23">P.M. 11:00</option>
+							<option value="24">P.M. 12:00</option>
+						</select>
+						<script>
+							$("select").drum({ panelCount: 24 });
+						</script>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+		<table class="priceAlarm_pbtn">
+			<tr>
+				<td class="pbtn1"><div class="priceAlarm_ok">방해금지 시간 추가하기</div></td>
+				<td><div class="priceAlarm_back" onclick="CFN.priceAlarm_popup5();"><img src="../pub/images/ic_refresh_24_px.png">초기화</div></td>
+			</tr>
+		</table>
+	</div>
+
+
+	 <footer class="button ">
+		 <nav class="menu">
+			<button type="button" class="signal" onclick="location.href='M_SIG_List.html'">신호<div>1</div></button>
+			<button type="button" class="analysis" onclick="location.href='M_ANA_Home.html'">분석<div>7</div></button>
+			<button type="button" class="info" onclick="location.href='M_INF_Index.html'">정보</button>
+			<button type="button" class="history_normal" onclick="location.href='M_PP_MY_Index.html'">투자내역</button>
+			<button type="button" class="more_o" onclick="location.href='M_SUB_Index.html'">더보기</button>
+		</nav>
+	</footer>
+</body>
+</html>

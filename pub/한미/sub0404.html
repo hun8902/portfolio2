@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="viewport" content="width=720, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>한미교육원</title>
+  <!--css import-->
+  <link rel="stylesheet" type="text/css" href="css/common_m.css">
+  <link rel="stylesheet" type="text/css" href="css/main_m.css">
+  <link rel="stylesheet" type="text/css" href="css/appear.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
+
+ <link rel="stylesheet" href="css/slicarousel.css">
+ <link rel="stylesheet" href="css/visual_style.css">
+
+  <!--js import---->
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script><!--easing-->
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="http://jillix.github.io/jQuery-sidebar/js/handlers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+  <script src="js/main.js"></script>	
+  <script src="js/appear.js"></script>	
+  <!--js import end---->	
+
+ <script src="js/slicarousel.js"></script>
+
+
+ </head>
+ <body>
+ 	<div id="mask"></div>
+	<div class="sidebars">
+		<div class="sidebar left">
+			<div class="login_popup">
+				<div id="container">
+					<div class="gnb_popupbg">
+					<ul class="tabs">
+						<li class="active" rel="tab1">교육원소개</li>
+						<li rel="tab2">미주주립대 장학생 신편입</li>
+						<li rel="tab3">미국대학 준비과정</li>
+					</ul>
+					</div>
+					<div class="tab_container">
+						<div id="tab1" class="tab_content">
+							<ul>
+								<li><a href="sub0101.html">인사말</a>
+								</li>
+								<li><a href="sub0102.html">연혁</a>
+								</li>
+								<li><a href="#">언론보도</a>
+								</li>
+								<li><a href="sub0404.html">위치안내</a>
+								</li>
+							</ul>
+						</div>
+						<!-- #tab1 -->
+						<div id="tab2" class="tab_content">
+							<ul>
+								<li><a href="sub0101.html">인사말</a>
+								</li>
+								<li><a href="sub0102.html">연혁</a>
+								</li>
+								<li><a href="#">언론보도</a>
+								</li>
+								<li><a href="sub0404.html">위치안내</a>
+								</li>
+							</ul>
+						</div>
+						<!-- #tab2 -->
+						<div id="tab3" class="tab_content">
+							<ul>
+								<li><a href="sub0101.html">인사말</a>
+								</li>
+								<li><a href="sub0102.html">연혁</a>
+								</li>
+								<li><a href="#">언론보도</a>
+								</li>
+								<li><a href="sub0404.html">위치안내</a>
+								</li>
+							</ul>
+						</div>
+						<!-- #tab3 -->
+					</div>
+					<!-- .tab_container -->
+				</div>
+				<!-- #container -->
+			</div>
+		
+		</div>
+	</div>
+
+
+	<div id="warp">
+		<div id="top_banner" class="pc">
+			<div class="container">
+				<ul class="sns">
+					<li><a href="#"><img src="img/icontop_tw.png" alt="sns"></a></li>
+					<li><a href="#"><img src="img/icontop_fb.png" alt="sns"></a></li>
+					<li><a href="#"><img src="img/icontop_bl.png" alt="sns"></a></li>
+					<li><a href="#"><img src="img/icontop_sms.png" alt="sns"></a></li>
+				</ul>
+				<ul class="login">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<div class="rang"><a href="#">ENG ></a></div>
+			</div>
+		</div>
+
+		<div id="top_banner" class="mobile">
+			<div class="container">
+				<ul class="login">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<div class="rang"><a href="#">ENG ></a></div>
+			</div>
+		</div>
+
+		<div id="header"  class="pc">
+			<div class="container">
+				<div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>			
+				<ul class="gnb">
+					<li><a href="sub0101.html">교육원소개</a></li>
+					<li><a href="sub0201.html">미주주립대 장학생 신편입</a></li>
+					<li><a href="sub0301.html">미국대학 준비과정</a></li>
+					<li><a href="sub0401.html">명문대 진학과정</a></li>
+					<li><a href="#">캘리포니아/뉴욕 주립대</a></li>
+					<li><a href="#">업무지원센터</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="header"  class="mobile">
+			<div class="container">
+				<div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>	
+				<div class="gnb"><a href="#" class="top_left1 btn btn-primary" data-action="toggle" data-side="left"><img src="img/gnb_open.png" alt="logo"></a></div>	
+			</div>
+		</div>
+
+		<div id="subvisual" class="sub04">
+			<div class="container">
+				<div class="sub_title">미국대학 준비과정</div>			
+			</div>
+		</div>
+
+		<div id="subcontent">
+			<div class="container">
+				<div class="left_c">
+					<div class="lnb_title"><span class="s_title">미국대학<br/>준비과정</span></div>	
+					<ul class="lnb">
+						<li><a href="sub0401.html">특징</a></li>
+						<li><a href="sub0402.html">교육과정</a></li>
+						<li><a href="sub0403.html">학사관리</a></li>
+						<li class="on"><a href="sub0404.html">위치안내</a></li>
+						<li><a href="sub0405.html">미국 퍼블릭 아이비리그</a></li>
+						<li><a href="#">한국명문대 편입</a></li>
+						<li><a href="#">장학생 TAG 과정</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="right_c">
+					<div class="c_nav">위치안내
+						<ul class="c_ul">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">미국대학 준비과정</a></li>
+							<li><a href="#" class="active">위치안내</a></li>
+						</ul>
+					</div>	
+					
+					<div class="sub_cont">
+						<div class="sub04_img2">
+							<img src="img/sub0404_img1.png" alt="imh">
+						</div>
+						<div class="sub0404_txt1">
+						미국에는 하버드대학, 예일대학, 프린스턴대학을 포함한 8개의 아비비리그(Ivy League)대학과 에모리대학, 뉴욕대학교,  보스턴대학 등 새롭게 떠오르는 
+						30개의 뉴 아이비리그(New Ivies) 대학이 있듯이 이들 대학에 버금가는 30개의 명문 주립대학이 있는데  이를 퍼블릭 아이비리그(Public Ivy League) 
+						대학이라고 합니다.<br/><br/>
+
+						퍼블릭 아이비리그 대학은 각 주를 대표하는 최고의 주립대학으로서 아이비리그 수준의 교육과정을 경험하지만 학비가 2/3 수준에 불과하여 미국의 최우수 
+						학생들에게도 매우 인기가 있는 주립대학교이기도 합니다. <br/><br/>
+
+						국제학생들이 퍼블릭 아이비리그 대학에 바로 진학하는 것은 매우 힘들지만 같은 주에 협약이 맺어 있는 주립대학을 통하여 편입하는 것은 아주 쉽게 이루
+						어지고 있습니다.<br/><br/>
+
+						한미교육원을 통하여 일반 주립대학에 장학생으로 진학한 학생들이 이러한 방법을 통하여 뉴욕주립대-빙햄톤, 위스콘신 대학교-매디슨, 일리노이대학교 
+						어바나-삼페인, 조지아대학교 그리고 조지아텍에 진학한 학생들이 많습니다.
+							
+						</div>
+						<ul class="sub04_ul">
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example1.png" alt="imh">
+									<div class="sub04_ul_t1">미시건 대학교- 앤아버</div>	
+									<div class="sub04_ul_t2">University of Michigan-Ann Arbor</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 미시건주 앤아버
+											</td>
+											<td>개교 : 1817년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 29,820명
+											</td>
+											<td>학비 : $49,400
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위             
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 18위
+											</td>
+											<td>공학 랭킹 : 6위
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="https://umich.edu" target="_blank">https://umich.edu</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example2.png" alt="imh">
+									<div class="sub04_ul_t1">일리노이대 어바나-샴페인</div>	
+									<div class="sub04_ul_t2">University of illinois Urbana-Champaign</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 일리노이주 샴페인
+											</td>
+											<td>개교 : 1867년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 33,950명
+											</td>
+											<td>학비 : $32,600
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위             
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 18위
+											</td>
+											<td>공학 랭킹 : 6위
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="http://www.illinois.edu"  target="_blank">http://www.illinois.edu</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example3.png" alt="imh">
+									<div class="sub04_ul_t1">미시건 대학교- 앤아버</div>	
+									<div class="sub04_ul_t2">University of Michigan-Ann Arbor</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 조지아주 애선스
+											</td>
+											<td>개교 : 1785년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 28,840명
+											</td>
+											<td>학비 : $30,500
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 21위
+											</td>
+											<td>
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="https://www.uga.edu"  target="_blank">https://www.uga.edu</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example1.png" alt="imh">
+									<div class="sub04_ul_t1">미시건 대학교- 앤아버</div>	
+									<div class="sub04_ul_t2">University of Michigan-Ann Arbor</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 미시건주 앤아버
+											</td>
+											<td>개교 : 1817년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 29,820명
+											</td>
+											<td>학비 : $49,400
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위             
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 18위
+											</td>
+											<td>공학 랭킹 : 6위
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="https://umich.edu" target="_blank">https://umich.edu</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example2.png" alt="imh">
+									<div class="sub04_ul_t1">일리노이대 어바나-샴페인</div>	
+									<div class="sub04_ul_t2">University of illinois Urbana-Champaign</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 일리노이주 샴페인
+											</td>
+											<td>개교 : 1867년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 33,950명
+											</td>
+											<td>학비 : $32,600
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위             
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 18위
+											</td>
+											<td>공학 랭킹 : 6위
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="http://www.illinois.edu"  target="_blank">http://www.illinois.edu</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="sub04_sh">
+									<img src="img/sub0404_example3.png" alt="imh">
+									<div class="sub04_ul_t1">미시건 대학교- 앤아버</div>	
+									<div class="sub04_ul_t2">University of Michigan-Ann Arbor</div>
+									<table class="sub04_ul_table1">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>위치 : 조지아주 애선스
+											</td>
+											<td>개교 : 1785년
+											</td>
+										</tr>
+										<tr>
+											<td>학생수(학부) : 28,840명
+											</td>
+											<td>학비 : $30,500
+											</td>
+										</tr>
+									
+									</table>
+
+									<table class="sub04_ul_table2">
+										<colgroup>
+											<col width="184px" />
+											<col width="*" />
+										</colgroup>
+										<tr>
+											<td>주립대 랭킹 : 13위
+											</td>
+											<td> 전미 랭킹 : 46위
+											</td>
+										</tr>
+										<tr>
+											<td>경영학 랭킹 : 21위
+											</td>
+											<td>
+											</td>
+										</tr>
+									
+									</table>
+									<div class="sub04_link"><a href="https://www.uga.edu"  target="_blank">https://www.uga.edu</a></div>
+								</div>
+							</li>
+
+						</ul>
+						<div class="sub04_title">
+							Public Ivy League
+						</div>
+						<div class="sub04_img2">
+							<img src="img/sub0404_rank.png" alt="imh">
+						</div>
+						<div class="sub04_title">
+							퍼블릭 아이비리그 편입 사례
+						</div>
+						<div class="sub04_img2">
+							<img src="img/sub0404_member.png" alt="imh">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<div class="footer_logo"><a href="#"><img src="img/footer_logo.png" alt="logo"></a></div>		
+				<div class="footer_text">한미교육원 대표번호: 1588-9774ㅣ이메일 : info@koramedu.comㅣ사업자등록번호: 180-20-42689ㅣ주소: 서울특별시강남구 역삼동 649번지 지원빌딩  <br/>전화: 02-523-7002ㅣ팩스: 02-523-9966
+				<p class="copyright">Copyright ⓒ  KOREAN-AMERICAN EDUCATION CENTER </p>
+				</div>	
+				<div class="footer_text_m mobile" >한미교육원 대표번호: 1588-9774ㅣ이메일 : info@koramedu.com<br/>
+				사업자등록번호: 180-20-42689ㅣ주소: 서울특별시강남구 역삼동 649번지 지원빌딩  <br/>
+				전화: 02-523-7002ㅣ팩스: 02-523-9966
+
+				<p class="copyright">Copyright ⓒ  KOREAN-AMERICAN EDUCATION CENTER </p>
+				</div>			
+			</div>			
+		</div>
+		
+
+
+	</div>
+ </body> 
+ </html>

@@ -1,0 +1,345 @@
+/*************************************************
+      SlidePanel CSS 
+      @author Fabio Mangolini
+      http://www.responsivewebmobile.com
+**************************************************/
+.pannel_hide{
+	width: 282px;
+	overflow:hidden;
+}
+
+#slidein-panel .menu_close{
+	position:absolute;
+	margin: 14px 0 0 240px;
+
+	
+}
+#slidein-panel {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height:100%;
+	background: #f2f2f2;
+	width: 282px;
+	z-index:1001;
+	overflow:hidden;
+	overflow-y:auto;
+	display:none;
+	-webkit-overflow-scrolling:touch;
+}
+#slidein-panel .pannel_ul1 {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#slidein-panel .pannel_ul1 span{
+	color: #555555;
+}
+#slidein-panel .pannel_ul1 li {
+	display: block;
+	border-bottom: 1px solid #dadada;
+	line-height:45px;
+	height:45px;
+}
+#slidein-panel .pannel_ul1 li:last-child {
+	border-bottom: 0px solid #dadada;
+}
+#slidein-panel .pannel_ul1 li a{
+	color: #959595;
+}
+#slidein-panel .pannel_ul1 li a:hover{
+	_color: #ffffff;
+}
+#slidein-panel .pannel_ul1 li a:link,
+#slidein-panel .pannel_ul1 li a:visited {
+  display: block;
+  text-decoration: none;
+  font-size:15px;
+  font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+  font-weight: bold;
+  
+}
+#slidein-panel .pannel_ul1 li:first-child { 
+  background-color: #515151;
+  color:#ffffff;
+}
+#slidein-panel .pannel_ul1 li:first-child a{ 
+  color:#ffffff;
+}
+#slidein-panel .pannel_ul1 .active {
+  background-color: #515151;
+  color:#ffffff;
+}
+
+#slidein-panel .pannel_login{
+	width:286px;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#slidein-panel .pannel_login li {
+	background:#959595;
+	width:141px;
+	float:left;
+	border-right:1px solid #515151;
+}
+#slidein-panel .pannel_login li.logout {
+	background:#515151;
+	width:141px;
+	float:left;
+	border-right:1px solid #515151;
+}
+
+#slidein-panel .pannel_login li a{
+	color:#ffffff;
+	text-align:center;
+	font-size:15px;
+	line-height:60px;
+	height:60px;
+	font-weight:700;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+}
+
+#slidein-panel .whitebox{
+	background:#fff url(../images/whitebox_bg.png) no-repeat 84px 13px;  
+	margin:20px 0 10px 15px;
+	width:252px;
+	height:41px;
+}
+#slidein-panel .whitebox p{
+	padding:13px 0 0 15px;
+	font-weight:700;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+	color:#515151;
+	font-size:15px;
+	letter-spacing:-1.25px;
+	float:left;
+}
+#slidein-panel .pannel_search_check{
+	padding: 0 0 0 15px;
+	font-weight:500;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+	color:#959595;
+	font-size:14px;
+	letter-spacing:-1.25px;
+	float:left;
+
+}
+
+
+#slidein-panel .whitebox .where {
+  display: block;
+  font-size: 14px;
+  color: #4f4f4f;
+  text-decoration: none;
+  font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+  font-weight:500;
+} 
+
+#slidein-panel .whitebox select {
+	width: 154px;
+	padding:0 0 0 9px;
+	margin:6px 0 0 18px;
+	height:28px;
+	line-height:28px;
+	background: url(../images/720/selectbox_arrow.png) no-repeat 95% 50%;  
+	background-size: 10px 6px;
+	-webkit-appearance: none;
+	 -moz-appearance: none;
+		  appearance: none;
+	border: 0;
+	_border-left:5px solid #959595;
+	border-radius: 0px;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+	font-weight:500;
+	font-size:14px;
+}
+
+
+
+#slidein-panel-container {
+  position: relative;
+}
+
+
+
+#slidein-panel .pannel_ul2  {
+	border-top:1px solid #c9c9c9;
+
+}
+
+#slidein-panel .pannel_ul2 li {
+	background:#dfdfdf;
+	border-bottom:1px solid #c9c9c9;
+	
+}
+#slidein-panel .pannel_ul2 li div {
+	background:#dfdfdf url("../images/720/arrow.png") no-repeat 262px 50% ;
+	background-size: 8px 14px;
+	height:44px;
+	line-height:44px;
+	padding:0 0 0 15px;
+	
+}
+
+#slidein-panel .pannel_ul2 li a{
+	color:#959595;
+	font-size:15px;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+	letter-spacing:-1.25px;
+	font-weight:500;
+}
+
+#slidein-panel .pannel_button{
+	background:#f2f2f2;
+	width:286px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-bottom:1px solid #d7d7d7;
+}
+
+
+#slidein-panel .pannel_button li{
+	width:70px;
+	height:80px;
+	text-align:center;
+	float:left;
+	border-right:1px solid #d7d7d7;
+}
+
+#slidein-panel .pannel_button li a{
+	font-size:12px;
+	line-height:14px;
+	color:#959595;
+	font-weight:700;
+}
+#slidein-panel .pannel_button div{
+	padding-top:17px;
+	height:24px;
+}
+#slidein-panel .pannel_button p{
+	padding-top:5px;
+}
+#slidein-panel .pannel_button p.p1line{
+	padding-top:10px;
+}
+
+#slidein-panel .pannel_icon5{
+	width:25px;
+	height:21px;
+}
+#slidein-panel .pannel_icon6{
+	width:21px;
+	height:23px;
+}
+#slidein-panel .pannel_icon7{
+	width:24px;
+	height:24px;
+}
+#slidein-panel .pannel_icon8{
+	width:27px;
+	height:23px;
+}
+
+#slidein-panel .pannel_button:after {
+	content:" ";
+	display:block;
+	clear:both;
+}
+#slidein-panel .pannel_search{
+	height:117px;
+	background:#f2f2f2;
+}
+#slidein-panel .pannel_footer{
+	background-color: #f2f2f2;
+	font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+	font-weight:500;
+	line-height:40px;
+	height:40px;
+	padding:0 0 0 15px;
+	font-size:12px;
+}
+
+
+#slidein-panel .checks {position: relative;}
+
+#slidein-panel .checks input[type="checkbox"] {  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip:rect(0,0,0,0);
+   border: 0
+}
+#slidein-panel .checks input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-family: 'Malgun Gothic','맑은 고딕',Arial,sans-serif;
+  font-weight:500;
+}
+#slidein-panel .checks input[type="checkbox"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 20px;  /* 체크박스의 너비를 지정 */
+  height: 20px;  /* 체크박스의 높이를 지정 */
+  line-height: 20px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #f8f8f8;
+  border: 1px solid #515151;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+#slidein-panel .checks input[type="checkbox"] + label:active:before,
+#slidein-panel .checks input[type="checkbox"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+#slidein-panel .checks input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #f8f8f8;
+  border-color: #515151;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.my_at_add{
+	position:absolute;
+	margin: 150px 0 0 248px;
+}
+.my_at_add img{
+	width: 20px;
+	height: 20px;
+}
+.pannel_list_a li{
+	padding:0;
+	margin-bottom:9px;
+}
+.pannel_ul2_back{
+	position:absolute;
+}
+.pannel_list_a {
+	margin-top:9px;
+	margin-left:15px;
+}
+.pannel_list_a img{
+	width: 31px;
+	height: 31px;
+	vertical-align:middle;
+}
+.pannel_list_a span{
+	margin-left:10px;
+	color:#555555;
+	font-size:12px;
+	font-weight:700;
+}

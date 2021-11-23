@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+#plugin-help {
+	margin-bottom: 10px;
+}
+
+input[type=file].file-selector {
+	display: block;
+	position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+	height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#add-file {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	cursor: cell;
+}
+
+#add-file.state-hover {
+	/*background: #FFC107;*/
+}
+
+#add-file.state-added .guide {
+	display: none !important;
+}
+
+
+
+#add-file:hover {
+	background: #eee;
+}
+
+#add-file .guide {
+	display: block;
+}
+
+#add-file.state-added:hover {
+	background: transparent;
+}
+
+#add-file .plus-sign {
+	display: block;
+	background: url('../img/round_plus.png') no-repeat center center;
+	background-size: 32px auto;
+	margin-bottom: 15px;
+    height: 32px;
+}
+
+.file {
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	width: 217px;
+	height: 127px;
+	cursor: pointer;
+}
+
+#file-list {
+	position: absolute;
+    
+}
+
+#file-list.multi {
+	position: absolute;
+    width: 100%;
+}
+
+#file-list.single .file {
+	width: 100%;
+	height: auto;
+}
+
+#file-list.single .file .image {
+	width: 100%;
+	height: auto;
+	z-index: 100;
+}
+
+#file-list.single .file .pdf {
+	width: 100%;
+	height: 500px;
+	z-index: 100;
+}
+
+#file-list.multi .file .image, #file-list.multi .file .pdf {
+	width: 217px;
+	height: 127px;
+}
+
+.file .del {
+	position: absolute;
+	background: #333;
+	opacity: 0;
+	margin-left: 70px;
+	margin-top: -114px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.file .del.hover {
+	opacity: 1.0;
+}
+
+.file .progress {
+	position: absolute;
+	background: #999;
+	border: 1px groove #999;
+	border-radius: 30px;
+	opacity: 0.8;
+	margin-left: 1px;
+	margin-top: -80px;
+	width: 212px;
+	height: 20px;
+}
+
+.file .progress span {
+	color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+	z-index: 100;
+}
+
+.file .progress div {
+	background-color: #0ba1b5; 
+	border-radius: 7px;
+	margin-left: 1px;
+	margin-top: -16px;
+    width: 0px;
+    height: 16px;
+}
+
+.file .info {
+	position: absolute;
+	background: #333;
+	margin-top: -39px;
+	opacity: 0.6;
+	font-size: 12px;
+    line-height: 17px;
+	color: #fff;
+	letter-spacing: 0px;
+	width: 217px;
+	z-index: 10;
+}
+
+.file .info .name {
+	white-space: nowrap !important;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.list.file {
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	height: 15px;
+	cursor: pointer;
+}
+
+.list.file .del {
+	float: left;
+	position: relative;
+	background: #fff;
+	opacity: 1.0;
+	margin: 0;
+	color: #333;
+	line-height: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+.list.file .del:hover {
+	background: #868383;
+	border: 1px solid #868383;
+	border-radius: 3px;
+	line-height: 13px;
+	color: #fff;
+}
+
+.list.file .info {
+	background: #fff;
+	opacity: 1.0;
+	margin: 0;
+	font-size: 12px;
+    line-height: 17px;
+	color: #333;
+	letter-spacing: 0px;
+	width: 71%;
+	z-index: 10;
+}
+
+.list.file .info div {
+	display: inline;
+}
+
+.list.file .info .name {
+	float: left;
+	text-align: left;    
+}
+
+.list.file .info .size {
+	float: right;
+	margin-right: 3px;
+	text-align: right;    
+}

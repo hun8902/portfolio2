@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+.keyboard{
+    z-index: 10002;
+    opacity: 1;
+	background:#98a9ae;
+    position: fixed;
+    top: 150%;
+    width: 980px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	padding:20px 50px 30px; 50px;
+    list-style: none;
+    text-align: center;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    /* ie10 */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.keyobardclose{
+	right: 0;
+	background: #eee;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 10px 10px 91.5%;
+	width: 6%;
+	background: #fbfcfc;
+	height: 30px;
+	line-height: 30px;
+	color: #000000;
+	_border: 1px ridge white;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+
+.keyboard span.null{
+    opacity: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.kr {
+    display: none;
+}
+
+.others{
+    display:none;
+}
+
+.upper{
+    display: none;
+}
+
+.on {
+    display: none;
+}
+
+.symbol:not(.null):hover, .letter:not(.null):hover, .number:not(.null):hover{
+    position: relative;
+    _top: 1px;
+    _left: 1px;
+    _border-color: black;
+    cursor: pointer;
+}
+
+.symbol{
+    float: left;
+    margin: 0 0 1% 0;
+    width: 7%;
+    height: 40px;
+    line-height: 40px;
+    background: #fbfcfc;
+    color: #000000;
+    border: 1px ridge white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+}
+
+.symbol.null{
+    width: 4%;
+}
+
+.symbol.del {
+    _width: 16%;
+    font-size: 15px;
+    background: #fbfcfc;
+}
+
+.symbol.tab{
+    _width: 12%;
+    background: #fbfcfc;
+}
+
+.symbol.enter{
+    _width: 20%;
+    background: #fbfcfc;
+}
+
+.symbol.shift{
+    _width: 28%;
+    background: #fbfcfc;
+}
+
+.symbol.space{
+    width: 79%;
+    background: #fbfcfc;
+}
+
+.symbol.local{
+    width: 10.5%;
+    background: #fbfcfc;
+}
+
+.symbol.specials{
+    width: 10.5%;
+    background: #fbfcfc;
+    color: #000;
+}
+
+span[class="off"], span[class="on"]{
+    pointer-events: none;
+}
+
+.letter{
+    float: left;
+      margin: 0 1% 0.5% 0%;
+    width: 5.85%;;
+    height: 40px;
+    line-height: 40px;
+    background: #fbfcfc;
+    color: #000000;
+    border: 1px ridge white;
+	box-shadow: 1px 1px 1px 1px #999;
+	-moz-box-shadow: 1px 1px 1px 1px #999;
+	　-webkit-box-shadow: 1px 1px 1px 1px #999;
+　
+}
+.line3>.letter.null{
+    _width: 5%;
+}
+
+.letter.null{
+    _width: 4%;
+}
+
+.letter.local{
+    background: #fbfcfc;
+    font-size: 20px;
+    _width: 24%;
+}
+
+.letter.⌫{
+    background: #fbfcfc;
+    font-size: 20px;
+    _width: 16%;
+}
+
+.letter.del{
+    background: #fbfcfc;
+    font-size: 20px;
+    _width: 16%;
+}
+
+.letter.enter{
+    background: #fbfcfc;
+    font-size: 15px;
+    width: 12.9%;
+}
+
+.letter.shift{
+    background: #fbfcfc;
+    font-size: 15px;
+    width: 12.9%;
+}
+
+.letter.space{
+    background: #fbfcfc;
+    font-size: 15px;
+    width: 90.4%;
+}
+
+.number{
+    float: left;
+    margin: 0 0% 1% 0;
+    margin-left: 4%;
+    margin-right: 1%;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    background: floralwhite;
+    border: 2px ridge white;
+    font-size: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.number.lastitem{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.number.close, .number.enter, .number.del, .number.reset{
+    margin-left: 5%;
+    margin-right: 0%;
+    background: skyblue;
+    color: whitesmoke;
+}
+
+.number.del{
+    margin-left: 5%;
+    margin-right: 0%;
+    background: indianred;
+    color: whitesmoke;
+}
+
+@media (min-height: 700px) {
+    /** 대화면 tablet, laptop **/
+    .number{
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+
+    .letter{
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+    }
+
+    .symbol{
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+    }
+}
+
+@media (min-height: 1500px){
+    /** 데스크탑 환경 **/
+    .number{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .letter{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .symbol{
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+}

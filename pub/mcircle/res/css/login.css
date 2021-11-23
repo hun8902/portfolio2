@@ -1,0 +1,183 @@
+/*나눔고딕 불러오기 */
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/NanumGothic-Bold.eot");
+    src: url("fonts/NanumGothic-Bold.eot?#iefix") format('embedded-opentype'),url(fonts/NanumGothic-Bold.woff) format('woff'),url(fonts/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/NanumGothic-Regular.eot");
+    src: url("fonts/NanumGothic-Regular.eot?#iefix") format('embedded-opentype'),url(fonts/NanumGothic-Regular.woff) format('woff'),url(fonts/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/NanumGothic-Light.eot");
+    src: url("fonts/NanumGothic-Light.eot?#iefix") format('embedded-opentype'),url(fonts/NanumGothic-Light.woff) format('woff'),url(fonts/NanumGothic-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/NanumGothic-ExtraBold.eot");
+    src: url("fonts/NanumGothic-ExtraBold.eot?#iefix") format('embedded-opentype'),url(fonts/NanumGothic-ExtraBold.woff) format('woff'),url(fonts/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+	background:#d9dadc; 
+	font-family: 'Nanum Gothic';
+    font-style: normal;
+	letter-spacing: -0.25px;
+}
+
+#loginWarp{
+	margin: 0 auto;
+	width:372px;
+	height:729px;
+	background: url("../img/login_box.png") no-repeat;
+	text-align:left;
+}
+#loginWarp .boxarea{
+	padding: 310px 0 0 60px;
+	width:260px;
+}
+#loginWarp .product_text{
+	font-size:40px;
+	font-weight:700;
+	letter-spacing: -0.25px;
+	text-align:center;
+	padding-top:35px;
+}
+
+#loginWarp .info_text{
+	font-size: 12px;
+	font-weight:400;
+	line-height:22px;
+	color:#838383;
+	text-align:center;
+	padding-top:8px;
+	padding-bottom:5px;
+}
+
+#loginWarp .login_input{
+	font-size: 12px;
+	font-weight:400;
+	line-height:22px;
+	color:#555555;
+	padding: 15px 0 0 24px;
+}
+#loginWarp .login_input div{
+	padding-bottom:7px;
+}
+#loginWarp .login_input .text{
+	display:inline-block;
+	width:60px;
+}
+#loginWarp .login_input input[type=text], #loginWarp .login_input input[type=password] {
+	width: 148px;
+	border: 1px solid #d7d7d7;
+	padding: 0 0 0 10px;
+	height:24px;
+	color:#555555;
+}
+#loginWarp .login_input input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color:#bfbfbf;
+}
+#loginWarp .login_input input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#bfbfbf;
+}
+#loginWarp .login_input input::-ms-input-placeholder { /* Microsoft Edge */
+    color:#bfbfbf;
+}
+#loginWarp .login_input input[type=checkbox] {
+	width:11px;
+	height:11px;
+	background:#fff;
+	border: 1px solid #d7d7d7;
+	line-height:11px;
+	font-size:0;
+}
+#loginWarp .login_input input label {
+	vertical-align:top;
+}
+#loginWarp .login_input .loginbtn{
+	text-align:right;
+	width:220px;
+	padding-bottom:14px;
+}
+#loginWarp .login_input .ch_text{
+	vertical-align:top;
+}
+#loginWarp .login_input input[type=button]{
+	background:#00a5e8;
+	height:25px;
+	width: 83px;
+	text-align:center;
+	color:#fff;
+	border:0;
+	outline:0;
+	margin-left:10px;
+	cursor: pointer;
+}
+#loginWarp .login_input input[type=button]:hover{
+	background:#059cd9;
+}
+#loginWarp .foot_logo{
+	margin-top:10px; 
+	text-align:center;
+}

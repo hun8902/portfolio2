@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="viewport" content="width=1920, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>오디오락</title>
+  <!--css import-->
+  <link rel="stylesheet" type="text/css" href="css/nanumbarungothic.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/jPages.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/keybord.css"/>
+
+  <!-- 메인슬라이더 -->
+  <link rel="stylesheet" href="css/slider.css">
+  <!-- 컨텐츠슬라이더 -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+  <!--css import end-->
+
+
+ </head>
+ <body>
+	<div id="warp">
+		<div id ="popup_mask" ></div> <!-- 팝업 배경 DIV -->
+		
+		<div class="popup_style1">
+			<div class="popup_logo"></div>
+			<div class="popup_content h310">
+				<div class="popup_txt1">
+					나의 오디오북에 추가되었습니다.
+				</div>
+				<div class="popup_txt2">
+					추가된 오디오북은 오디오락 pc 및 모바일의<br/>“나의 오디오북”에서 청취가 가능합니다.
+				</div>
+				<a href="javascript:;"><div class="popup_close">닫 기</div></a>
+			</div>		
+		</div>
+
+		<div class="popup_style2">
+			<div class="popup_logo">
+				<div class="popup_close1"><a href="javascript:;"><img src="images/popup_login_close.png"/></a></div>
+			</div>
+			<div class="popup_content h388">
+				<div class="popup_txt1">
+					이용자 인증
+				</div>
+				<div class="popup_txt3">
+					인증을 위해 아이디와 성명을 입력하여 주세요.
+				</div>
+				<div class="popup_txt4">
+					*PC에서 1회 이상 로그인한 이용자만 인증이 가능합니다.
+				</div>
+				<div class="popup_form">
+					<input type="text"  class="nameField poup_input" placeholder="아이디" value=""/>
+					<input type="text"  class="nameField poup_input" placeholder="성명" value=""/>
+				</div>
+				<a href="javascript:;"><div class="popup_close">닫 기</div></a>
+			</div>		
+		</div>
+
+		<div class="popup_style3">
+			<div class="popup_tab">
+				<div class="tab_close"><a href="javascript:;"class="close_popup3"><img src="images/popup_style2_close.png"/></a></div>
+				<ul class="tab">
+					<li class="current" data-tab="tab1"><a href="javascript:;">간편검색</a></li>
+					<li data-tab="tab2"><a href="javascript:;">상세검색</a></li>
+				</ul>
+
+				<div id="tab1" class="tabcontent current">
+					<form id="search_1">
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+				
+						</div>
+						<input  type="image" src="images/btn_popup_search.png" class="btn_popup_search" alt="검색"/>
+						<div class="clear"></div>
+						
+					</div>
+					</form>
+					
+					
+				</div>
+
+				<div id="tab2" class="tabcontent">
+					<form id="search_2">
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+							<div class="serach_select1">
+								<select id="" name="" size="" class="w90" data-msg="">
+									<option value="">AND</option>
+									<option value="">OR</option>
+								</select>
+							</div>
+						</div>
+						<input  type="image" src="images/btn_popup_search.png" class="btn_popup_search" alt="검색"/>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+							<div class="serach_select1">
+								<select id="" name="" size="" class="w90" data-msg="">
+									<option value="">AND</option>
+									<option value="">OR</option>
+								</select>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select_year">
+								<select id="" name="" size="" class="w115_b" data-msg="">			
+									<option value="">제작년도</option>
+								</select>
+							</div>
+							<div class="serach_select_month">
+								<select id="year_start" name="" size="" class="w145" data-msg="">
+									<option value="">선 택</option>
+								</select>
+							</div>
+							<div class="serach_select_day">
+								<select id="year_end" name="" size="" class="w166" data-msg="">
+									<option value="">선 택</option>
+								</select>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					</form>
+
+
+				</div>
+
+
+			</div>
+		</div>
+		
+
+		<div class="slider" id="slider">
+			<div class="container">
+				<div class="top_btn_pos">
+					<ul class="top_qbtn">
+						<li><a href="#"><img src="images/btn_logout.png"/></a></li>
+						<li><a href="index.html"><img src="images/btn_home.png"/></a></li>
+						<li><a href="javascript:;"class="popup_search"><img src="images/btn_search.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="slItems">
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+			</div>
+		</div>
+
+		<div id="top_gnb">
+			<div class="container">
+				<div class="gnb_slide_more">
+					<div class="gnb_slide_prev"><span id="gnb_slide_prev"><a href="#"><img src="images/visual_left.png"></a></span></div>
+					<div class="gnb_slide_next"><span id="gnb_slide_next"><a href="#"><img src="images/visual_right.png"></a></span></div>
+				</div>
+				
+				<div id="sample2-4" class="carousel horizontal unit" style="width:860px; padding:0 0 0 60px;">
+					<div class="container-fluid">
+						<div class="carousel-listWrapper">
+							<ul class="ui-carousel-list gnb_ul">
+								<li class="ui-carousel-item menu" style="width:110px;"><a class="gnb_tit">자기개발</a></li>			 
+								<li class="ui-carousel-item menu" style="width:160px;"><a class="gnb_tit">CEO/리더십</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">글로벌 경제/트렌드</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">커뮤니케이션/심리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:170px;"><a class="gnb_tit">경제/자산관리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:90px;"><a class="gnb_tit">소설</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">글로벌 경제/트렌드</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">커뮤니케이션/심리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:170px;"><a class="gnb_tit">경제/자산관리</a>	</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="top_gnb2">
+			<ul class="sub_tit">
+				<div class="container">
+					<li><a href="#">유머 (47)</a></li>
+					<li><a href="#">자기계발 (47)</a></li>
+					<li><a href="#">자녀교육 (47)</a></li>
+					<li><a href="#">인문 (47)</a></li>
+					<li><a href="#">성공/Biz특강 (47)</a></li>
+					<li><a href="#">취업/창업 (47)</a></li>
+					<li><a href="#">지식마을 투어 (47)</a></li>
+					<li><a href="#">소통 (47)</a></li>
+					<li><a href="#">건강 (47)</a></li>
+					<li><a href="#">면접 (47)</a></li>
+					<li><a href="#">직무 (47)</a></li>
+					<li><a href="#">철학/풍수지리 (47)</a></li>
+					<li><a href="#">교육지도 (47)</a></li>
+					<li><a href="#">문학 (47)</a></li>		
+				</div>
+			</ul>
+			<ul class="sub_tit">
+				<div class="container">
+					<li><a href="#">두번째 탭 (47)</a></li>
+				</div>
+			</ul>
+		</div>
+
+		<div class="sub_content">
+			<div class="container">
+				<!-- 좌측 부분-->
+				<div class="sub_left">
+					<a href="#"><div class="slider_top_btn"></div></a>
+					<div class="left_nav_position">
+						<ul class="left_nav">
+							<li><a href="갤러리리스트.html">면접 (71)</a></li>
+							<li><a href="갤러리리스트.html">자녀교육 (71)</a></li>
+							<li><a href="갤러리리스트.html" class="active">지식마을 투어 (50)</a></li>
+							<li><a href="갤러리리스트.html">철학/풍수지리 (4)</a></li>
+							<li><a href="갤러리리스트.html">성공/Biz특강 (122)</a></li>
+							<li><a href="갤러리리스트.html">문학 (6)</a></li>
+							<li><a href="갤러리리스트.html">철학/풍수지리 (4)</a></li>
+							<li><a href="갤러리리스트.html">성공/Biz특강 (122)</a></li>
+							<li><a href="갤러리리스트.html">문학 (6)</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<a href="#"><div  class="slider_botto_btn"></div></a>
+				</div>
+				<!-- 좌측 부분-->
+				<!-- 좌측 부분-->
+				<div class="sub_right">
+					<!-- 타이틀 -->
+					<div class="title_box">
+						<div class="sub_title">Title</div>
+						<div class="btn_back"><a href="갤러리리스트.html"><img src="images/content/btn_back.png"></a></div>
+					</div>
+					<!-- 타이틀 -->
+					<div class="subright_content">
+						<div class="player_info">미리 듣기 중입니다. 화면 오른쪽의 이어폰 단자에 이어폰을 연결하세요.</div>
+						<div class="view_leftbox1">
+							<div class="book_photo"> 
+								<img src="images/content/example_gallery.png" />
+							</div>
+							<div class="book_detail"> 
+								출판일 : 2017-03-14 <br/>
+								저작사 : 국가경영전략연구소<br/>
+								제   공 :(주)컨텐츠포탈
+							</div>
+						</div>
+						<div class="view_leftbox2">
+							<div class="view_leftbox2_t1"> 
+								경제/자산관리 > 경제일반
+							</div>
+							<div class="view_leftbox2_t2"> 
+								청년아 울더라도<br/>뿌려야 한다
+							</div>
+							<div class="view_leftbox2_t3"> 
+								저자 : 심동희
+							</div>
+							<div class="book_info">책소개</div>
+							<div class="view_leftbox2_t5"> 
+								 영국이 낳은 19세기의 위대한 사회사상가이자
+								예술비평가 존 러스킨의 『나중에 온 이 사람에
+								게도』 죽음에 맞선 '생명의 경제학', 악마에 맞
+								선 '천국의 경제학', 그리고 뜨거운 피가 흐르는
+								'인간의 경제학'을 주장한 저자의 신념이 그대
+								로 녹아져 있다. 특히 화려한 물질문명의 풍요
+								로움에 가려진 노동자와 실직자뿐 아니라, 인간
+								에 의해 망가진 자연을 위한 생명의 경제학을
+								설파한다
+							</div>
+						</div>
+						<div class="view_leftbox3">
+							<div class="sub_galley_view_btn">
+								<ul class="galley_view_btn">
+									
+									<li class="mr_10">
+										<div class="main_player">
+											<table>
+												<tr>
+													<td class="player_btn">
+														<a href="#"><img src="images/content/main_player_prev.png" alt="prev"/></a>
+														<a href="#"><img src="images/content/main_player_play.png" alt="play"/></a>
+														<!-- <a href="#"><img src="images/content/main_player_stop.png" alt="stop"/></a> -->
+														<a href="#"><img src="images/content/main_player_next.png" alt="next"/></a>
+													</td>
+													<td class="player_time">
+														<span>00:00</span> / 00:00
+													</td>
+													<td class="player_bar">
+														<div class="play_bar_size">
+															<div id="myProgress">
+															  <div id="myBar" style="width:40%"></div>
+															</div>
+														</div>
+													</td>
+													<td class="player_sound">
+														<a href="#"><img src="images/content/main_player_sound.png" class="main_player_sound" /></a>
+														<!-- <a href="#"><img src="images/content/main_player_sound_mute.png" class="mute" /></a> -->
+														<div class="sound_bar_size">
+															<div id="sound_Progress">
+															  <div id="sound_Bar" style="width:40%"></div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									
+									</li>
+									<li><a  href="javascript:;" class="popup_save"><img src="images/content/audio_fav.png"/></a></li>
+								<ul>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="left3_table_box"> 
+								<div style="padding:22px 24px;">
+								<table class="view_list_table">
+									<thead>
+										<tr>
+											<td class="view_list_td1">선택</td>
+											<td class="view_list_td2">제목</td>
+											<td class="view_list_td3">재생시간</td>										
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											
+											<td class="view_list_td1">1화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>부동산 경매란 무엇인가</a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+										<tr>
+											
+											<td class="view_list_td1">2화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>초보자들이 경매 뛰어드는 방법</a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+										<tr>
+											
+											<td class="view_list_td1">3화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>권리분석의 중요성</a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+										<tr>
+											
+											<td class="view_list_td1">4화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>등기부 구성 및 주요 권리 내용 확인 방법 </a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+										<tr>
+											
+											<td class="view_list_td1">5화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>인수 권리 분석</a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+										<tr>
+											
+											<td class="view_list_td1">6화</td>
+											<td class="view_list_td2"><a href="#"><img src="images/content/view_list_table_play.png"/>주택 임대차 보호법 적용범위 </a></td>
+											
+											<td class="view_list_td3">0:00:00</td>										
+										</tr>
+									</tbody>
+								</table>
+								<ul class="board_btn">
+									<li><a href="#"><img src="images/content/slider_top_btn.png"/></a></li>
+									<li><a href="#"><img src="images/content/slider_bottom_btn.png"/></a></li>
+								</ul>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					
+				
+				</div>
+				<!-- 좌측 부분-->
+			</div>
+		</div>
+	
+
+
+	</div>
+	<!--js import---->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js" integrity="sha256-JklDYODbg0X+8sPiKkcFURb5z7RvlNMIaE3RA2z97vw=" crossorigin="anonymous"></script>
+	<!-- 메인슬라이더 -->
+	<script src="js/slider.js"></script>
+	<!-- 컨텐츠슬라이더 -->
+	<script src="js/jquery.bxslider.js"></script>
+
+	<!-- 키보드 -->
+	<script type='text/javascript' src="js/hangul.js"></script>
+    <script type='text/javascript' src='js/jquery.secureKeyboard.js'></script>
+	
+	<!-- gnb 슬라이더 -->
+	<script src="js/jquery.liquidCarousel.js"></script>
+	<script src="js/main.js"></script>	
+	<!--js import end---->	
+ </body> 
+</html>

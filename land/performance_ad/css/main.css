@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+/* CSS Document */
+html,body{padding:0; margin:0;}
+
+/* Default Setting */
+html, body, div, input, label, select, textarea, button, h1, h2, h3, h4, h5, h6, strong, p, span, a, ul, li, dl, dt, dd, a, ::after, ::before { font-family: 'Noto Sans Korean', 'Malgun Gothic', 'Dotum', sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+*, ::before, ::after {margin: 0; padding: 0; box-sizing: border-box; letter-spacing: -1px;}
+html, body {font-family: 'Noto Sans Korean',  sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, strong, address {display: block;}
+ul, ol, li {list-style: none;}
+a {display: inline-block; text-decoration: none; vertical-align: top;}
+a{text-decoration: none; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+span {display: inline-block; vertical-align: top;}
+img {max-width: 100%; border: 0; vertical-align: top;}
+em, address {font-weight: normal; font-style: normal;}
+hr {border: 0; margin: 30px 0; padding: 0; border-bottom: 1px solid #000;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+table {width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; word-break: break-all;}
+textarea {resize: none; outline: 0; vertical-align: top;}
+button {display: inline-block; font-family: inherit; text-decoration: none; background: transparent; border: none; outline: 0; white-space: nowrap; vertical-align: top; cursor: pointer;}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+.white-popup {position: relative; background: #FFF; padding: 20px; width: auto; max-width: 500px; margin: 20px auto;}
+.swiper-container {width: 600px; height: 300px;}
+.container{width:1100px; margin:0 auto; overflow:hidden; }
+
+#fix_nav{position: fixed; margin:0 auto; width: 100%;    left: 0;    right: 0;max-width: 2000px; height:159px; background:#199bff; z-index: 99;}
+#section-1{position:relative; height:1319px; margin:0 auto 0 auto; background:url("../img/pgage01_bg.png") no-repeat center 0; }
+#section-2{position:relative; height:1848px; margin:0 auto; background:url("../img/pgage02_bg.png") no-repeat center 0; }
+#section-3{position:relative; height:1280px; margin:0 auto; background:url("../img/pgage03_bg.png") no-repeat center 0; }
+#section-4{position:relative; height:1166px; margin:0 auto; background:url("../img/pgage04_bg.png") no-repeat center 0; }
+#section-5{position:relative; height:1032px; margin:0 auto; background:url("../img/pgage05_bg.png") no-repeat center 0; }
+#section-6{position:relative; height:1280px; margin:0 auto; background:url("../img/pgage06_bg.png") no-repeat center 0; }
+#section-7{position:relative; height:1239px;  margin:0 auto; }
+#footer{position:relative; height:130px; margin:0 auto; background:#444444; max-width:2000px;}
+
+.fix_table{}
+.fix_table tr td{vertical-align: top;}
+.fix_left{_width:479px; display: inline-block;}
+.fix_right{width: 625px; padding-top: 20px; display: inline-block; float:right; }
+.fix_logo{padding-top:35px; }
+.fix_text{font-size:25px; font-weight: 500; color:#fff; padding-top:10px;}
+.fix_text p{font-size:38px; font-weight: 600; color:#fff; vertical-align: bottom; display: inline-block; margin-left:10px;}
+.fix_text p a{font-size:38px; font-weight: 600; color:#fff; vertical-align: bottom; display: inline-block;}
+
+.fix_table_input{width:100%; vertical-align: top;}
+.fix_table_input tr{}
+.fix_table_input tr td{vertical-align: top;;}
+.top_input{width:246px;}
+.top_input input{width:246px; height:47px; line-height: 47px; padding-left:10px; font-size: 18px; color:#b8b8b8;}
+.mb_5{margin-bottom:5px;}
+
+.top_textarea{width:224px; height:99px;}
+.top_textarea textarea{width:224px; height:99px; border:0; padding: 10px; font-size: 18px; color:#b8b8b8;}
+/*색션1`*/
+#section-1 .pgage01_01{	padding-top:210px;text-align:center;}
+#section-1 .pgage01_02{	padding-top:120px;text-align:center;}
+#section-1 .pgage01_03{position: absolute; top:670px; text-align:center; z-index:10;}
+#section-1 .pgage01_04{position: absolute; top:840px; margin-left:210px; text-align:center; z-index:10;}
+#section-1 .pgage01_05{position: absolute; top:670px; margin-left:445px; text-align:center; z-index:10;}
+#section-1 .pgage01_06{position: absolute; top:840px; margin-left:665px; text-align:center; z-index:10;}
+#section-1 .pgage01_07{position: absolute; top:670px; margin-left:880px; text-align:center; z-index:10;}
+/*색션2`*/
+#section-2 .pgage02_01{	padding-top:90px;text-align:center;}
+#section-2 .pgage02_02{	padding-top:40px;text-align:center;}
+#section-2 .pgage02_09{	padding-top:55px;text-align:center;}
+#section-2 .page2_tab{position: relative; width: 100%; padding-top:40px; padding-left: 140px;;}
+#section-2 .page2_tab li{display: inline-block; margin-right:45px; margin-bottom: 60px;;}
+#section-2 .page6_tab li:nth-child(2n){margin-right:0;}
+/*색션3`*/
+#section-3 .pgage03_01{	padding-top:65px;text-align:center;}
+#section-3 .pgage03_02{	padding-top:45px;text-align:center;}
+#section-3 .pgage03_03{	padding-top:10px;text-align:center;}
+#section-3 .pgage03_04{	padding-top:10px;text-align:center;}
+#section-3 .pgage03_05{	padding-top:10px;text-align:center;}
+#section-3 .pgage03_06{	padding-top:10px;text-align:center;}
+/*색션4`*/
+#section-4 .pgage04_01{	padding-top:85px;text-align:center;}
+#section-4 .pgage04_02{	padding-top:25px;text-align:center;}
+#section-4 .pgage04_03{	padding-top:0px;text-align:center;}
+/*색션5`*/
+#section-5 .pgage05_01{	padding-top:80px;text-align:center;}
+#section-5 .pgage05_02{	padding-top:45px;text-align:center;}
+#section-5 .pgage05_03{	padding-top:65px;text-align:center;}
+/*색션6`*/
+#section-6 .pgage06_01{	padding-top:70px;text-align:center;}
+#section-6 .page6_tab{position: relative; padding-top:60px; }
+#section-6 .page6_tab li{display: inline-block; margin-right:40px; margin-bottom: 50px;;}
+#section-6 .page6_tab li:nth-child(2n){margin-right:0;}
+/*색션7`*/
+#section-7 .pgage07_01{	padding-top:74px;text-align:center;}
+#section-7 .pgage07_02{	padding-top:23px;text-align:center;}
+#section-7 .pgage07_03{	padding-top:60px;text-align:center;}
+#section-7 .db_box{ position: relative; margin:25px 0 0 97px;background: url("../img/pgage07_inputbg.png"); width:944px; height:651px;}
+#section-7 .inputform{height:45px; line-height:45px; width:306px; border:1px solid #000000; padding-left:20px;}
+#section-7 .input_table{width:640px; margin:30px auto 0 auto;}
+#section-7 .table_text{font-size:18px; font-weight:500; color:#000000; margin-bottom: 9px;}
+#section-7 .table_text1{padding-top:40px; font-size:18px; font-weight:500; color:#000000; margin-bottom: 9px;}
+.send_bt {padding-top:65px; text-align: center;;}
+/*색션1`*/
+#footer .foot_logo{position: absolute; background: url("../img/foot_logo.png"); width:316px; height:34px; top:45px;}
+#footer .foot_text{text-align:right; color:hsl(0, 0%, 51%); padding-top: 25px; font-size:14px; line-height: 20px; }
+#footer .foot_text a{color:hsl(0, 0%, 51%); }
+.popup_ag1{position:absolute;  top:183px; margin-left:215px; width:580px; height:270px; background:#fff; padding:0px;  z-index:99; border:1px solid #000; display:none;}
+.popup_ag2{position:absolute;  top:83px; margin-left:-115px; width:580px; height:270px; background:#fff; padding:0px;  z-index:99; border:1px solid #000; display:none;}
+.agpopup_close{position:absolute; margin-top: -70px; right:-1px;}
+.long_text{width:100%; height:100%; border:0; padding:15px;}
+
+
+.checks_center {position: relative; text-align: center; padding-top:20px;}
+.checks input[type="checkbox"] {position: absolute;  width: 1px;  height: 1px;  padding: 0;  margin: -1px;  overflow: hidden; clip:rect(0,0,0,0);  border: 0}
+.checks input[type="checkbox"] + label {font-size:17px; color: #000;  display: inline-block;   position: relative;  cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none;}
+.checks span{font-size:17px; color:#000; margin-left:10px; cursor: pointer; }
+.checks input[type="checkbox"] + label:before {content: ' ';  display: inline-block;  width: 18px; height: 18px; line-height: 18px;  margin: -2px 8px 0 0;  text-align: center;   vertical-align: middle;  background: #fafafa;  color:#fff;  border-radius : 3px;  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);}
+.checks input[type="checkbox"] + label:active:before,
+.checks input[type="checkbox"]:checked + label:active:before { box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+.checks input[type="checkbox"]:checked + label:before {content: '\2714'; color: #fff; font-size:17px; background: #00aeff;}
+
+.checks_w{position: relative; padding-top:6px;}
+.checks_w input[type="checkbox"] {position: absolute;  width: 1px;  height: 1px;  padding: 0;  margin: -1px;  overflow: hidden; clip:rect(0,0,0,0);  border: 0}
+.checks_w input[type="checkbox"] + label {font-size:14px; color: #fff;  display: inline-block;   position: relative;  cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none;}
+.checks_w span{font-size:14px; color:#fff; margin-left:10px; cursor: pointer; }
+.checks_w input[type="checkbox"] + label:before {content: ' ';  display: inline-block;  width: 14px; height: 14px; line-height: 14px;  margin: -2px 8px 0 0;  text-align: center;   vertical-align: middle;  background: #fafafa;  color:#fff;  border-radius : 3px;  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);}
+.checks_w input[type="checkbox"] + label:active:before,
+.checks_w input[type="checkbox"]:checked + label:active:before { box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+.checks_w input[type="checkbox"]:checked + label:before {content: '\2714'; color: #00aeff; font-size:14px; background: #fff;}
+
+.radio_box{padding-top:20px;}
+.inline30{display: inline-block; margin-right: 35px;}
+.where {
+    display: block;
+    margin: 25px 15px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-family: verdana;
+    font-style: italic;
+  } 
+  
+  .checks {position: relative;}
+  .checks input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+  }
+  .checks input[type="radio"] + label {
+    font-size:18px;
+    font-weight: 500;;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  .checks input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #cacece;
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  }
+  .checks input[type="radio"] + label:active:before,
+  .checks input[type="radio"]:checked + label:active:before  {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  }
+  .checks input[type="radio"]:checked + label:before {
+    background: #fff;
+    border-color: #adb8c0;
+  }
+  .checks input[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    width: 13px;
+    height: 13px;
+    background: #00aeff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+  }
+  
+  .pc{display: block;}
+  .mobile{display: none;}
+
+  .input_line{display: inline-block; }
+  .mr_39{margin-right:20px;}
+  .w1{width:250px;}
+  .w2{width:229px;}
+}
+@media only screen and (max-width: 1099px){
+    .white-popup {position: relative; background: #FFF; padding: 20px; width: auto; max-width: 500px; margin: 20px auto;}
+    .swiper-container {width: 580px; height: 300px;}
+    .container{width:580px; margin:0 auto; overflow:hidden; }
+    
+    #fix_nav{position: fixed; bottom:0; margin:0 auto; width: 100%;    left: 0;    right: 0;max-width: 640px; height:250px; background:url("../img/m/fix_bottombg.jpg") repeat-x; z-index: 99;}
+    #section-1{position:relative; height:1280px; margin:0 auto 0 auto; background:url("../img/m/pgage01_bg.png") no-repeat center 0; }
+    #section-2{position:relative; height:2030px; margin:0 auto; background:url("../img/m/pgage02_bg.png") no-repeat center 0; }
+    #section-3{position:relative; height:1513px; margin:0 auto; background:url("../img/m/pgage03_bg.png") no-repeat center 0; }
+    #section-4{position:relative; height:2530px; margin:0 auto; background:url("../img/m/pgage04_bg.png") no-repeat center 0; }
+    #section-5{position:relative; height:1666px; margin:0 auto; background:url("../img/m/pgage05_bg.png") no-repeat center 0; }
+    #section-6{position:relative; height:2306px; margin:0 auto; background:url("../img/m/pgage06_bg.png") no-repeat center 0; }
+    #section-7{position:relative; height:1358px;  margin:0 auto; }
+    #footer{position:relative; height:468px; margin:0 auto; background:#444444; max-width:640px;}
+    
+    .fix_table{}
+    .fix_table tr td{vertical-align: top;}
+    .fix_left{_width: 640px;}
+    .fix_right{width: 580px; padding-top: 25px; height:168px; }
+    .fix_logo{padding-top:35px; display: inline-block; vertical-align: top;}
+    .fix_text{font-size:25px; font-weight: 500; color:#fff; padding-top:10px;  display: inline-block; vertical-align: top;     float: right;      text-align: right;}
+    .fix_text p{font-size:38px; font-weight: 600; color:#fff; vertical-align: bottom; }
+    .fix_text p a{font-size:38px; font-weight: 600; color:#fff; vertical-align: bottom; }
+    
+    .fix_table_input{width:100%; vertical-align: top;}
+    .fix_table_input tr{}
+    .fix_table_input tr td{vertical-align: top;;}
+    .top_input{width:223px;}
+    .top_input input{width:217px; height:47px; line-height: 47px; padding-left:10px; font-size: 18px; color:#b8b8b8;}
+    .mb_5{margin-bottom:5px;}
+
+    .w1{width:223px;}
+    .w2{width:202px;}
+    
+    .top_textarea{width:201px; height:99px;}
+    .top_textarea textarea{width:197px; height:99px; border:0; padding: 10px; font-size: 18px; color:#b8b8b8;}
+    /*색션1`*/
+    #section-1 .pgage01_01{	padding-top:48px;text-align:center;}
+    #section-1 .pgage01_02{	padding-top:380px;text-align:center;}
+    #section-1 .pgage01_03{position: absolute; top:557px; text-align:center; z-index:10;}
+    #section-1 .pgage01_04{position: absolute; top:730px; margin-left:95px; text-align:center; z-index:10;}
+    #section-1 .pgage01_05{position: absolute; top:557px; margin-left:196px; text-align:center; z-index:10;}
+    #section-1 .pgage01_06{position: absolute; top:730px; margin-left:295px; text-align:center; z-index:10;}
+    #section-1 .pgage01_07{position: absolute; top:557px; margin-left:395px; text-align:center; z-index:10;}
+    /*색션2`*/
+    #section-2 .pgage02_01{	padding-top:100px;text-align:center;}
+    #section-2 .pgage02_02{display: none;	padding-top:55px;text-align:center;}
+    #section-2 .pgage02_09{	padding-top:55px;text-align:center;}
+    #section-2 .page2_tab{position: relative; width:590px; padding-top:55px; padding-left: 0px;;}
+    #section-2 .page2_tab li{display: inline-block; margin-right:5px; margin-bottom: 45px;;}
+    #section-2 .page2_tab li:nth-child(2n){margin-right:0;}
+    /*색션3`*/
+    #section-3 .pgage03_01{	padding-top:70px;text-align:center;}
+    #section-3 .pgage03_02{	padding-top:75px;text-align:center;}
+    #section-3 .pgage03_03{	padding-top:10px;text-align:center;}
+    #section-3 .pgage03_04{	padding-top:10px;text-align:center;}
+    #section-3 .pgage03_05{	padding-top:10px;text-align:center;}
+    #section-3 .pgage03_06{	padding-top:10px;text-align:center;}
+    /*색션4`*/
+    #section-4 .container{width:640px;}
+    #section-4 .pgage04_01{	padding-top:65px;text-align:center;}
+    #section-4 .pgage04_02{	padding-top:60px;text-align:center;}
+    #section-4 .pgage04_03{	padding-top:0px;text-align:center;}
+    /*색션5`*/
+    #section-5 .pgage05_01{	padding-top:75px;text-align:center;}
+    #section-5 .pgage05_02{	padding-top:55px;text-align:center;}
+    #section-5 .pgage05_03{	padding-top:55px;text-align:center;}
+    /*색션6`*/
+    #section-6 .pgage06_01{	padding-top:75px;text-align:center;}
+    #section-6 .page6_tab{position: relative;   text-align: center; padding-top:45px; }
+    #section-6 .page6_tab li{display: inline-block; margin-right:0px; margin-bottom: 37px;}
+    #section-6 .page6_tab li:nth-child(2n){margin-right:0;}
+    /*색션7`*/
+    #section-7 .pgage07_01{	padding-top:95px;text-align:center;}
+    #section-7 .pgage07_02{	padding-top:30px;text-align:center;}
+    #section-7 .pgage07_03{	padding-top:40px;text-align:center;}
+    #section-7 .db_box{ position: relative; width:580px;}
+    #section-7 .inputform{height:45px; line-height:45px; width:306px; border:1px solid #000000; padding-left:20px;}
+    #section-7 .input_table{width:580px; margin:0px auto 0 auto;}
+    #section-7 .table_text{font-size:18px; font-weight:500; color:#000000; padding-top:35px;  margin-bottom: 9px;}
+    #section-7 .table_text1{padding-top:40px; font-size:18px; font-weight:500; color:#000000; margin-bottom: 9px;}
+    .send_bt {padding-top:65px; text-align: center;;}
+    /*색션1`*/
+    #footer .foot_logo{ background: url("../img/foot_logo.png") center 0; width:316px; height:34px; margin:35px auto 0 auto;}
+    #footer .foot_text{text-align:center; color:hsl(0, 0%, 51%); padding-top: 25px; font-size:14px; line-height: 20px; }
+    #footer .foot_text a{color:hsl(0, 0%, 51%); }
+    
+    .popup_ag1{position:absolute;  top:183px; margin-left:0px; width:580px; height:270px; background:#fff; padding:0px;  z-index:99; border:1px solid #000; display:none;}
+    .popup_ag2{position:absolute;  top:-83px; margin-left:-0px; width:580px; height:270px; background:#fff; padding:0px;  z-index:99; border:1px solid #000; display:none;}
+    .agpopup_close{position:absolute; margin-top: -70px; right:-1px;}
+    .long_text{width:100%; height:100%; border:0; padding:15px;}
+    
+    
+    .checks_center {position: relative; text-align: center; padding-top:20px;}
+    .checks input[type="checkbox"] {position: absolute;  width: 1px;  height: 1px;  padding: 0;  margin: -1px;  overflow: hidden; clip:rect(0,0,0,0);  border: 0}
+    .checks input[type="checkbox"] + label {font-size:17px; color: #000;  display: inline-block;   position: relative;  cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none;}
+    .checks span{font-size:17px; color:#000; margin-left:10px; cursor: pointer; }
+    .checks input[type="checkbox"] + label:before {content: ' ';  display: inline-block;  width: 18px; height: 18px; line-height: 18px;  margin: -2px 8px 0 0;  text-align: center;   vertical-align: middle;  background: #fafafa;  color:#fff;  border-radius : 3px;  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);}
+    .checks input[type="checkbox"] + label:active:before,
+    .checks input[type="checkbox"]:checked + label:active:before { box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+    .checks input[type="checkbox"]:checked + label:before {content: '\2714'; color: #fff; font-size:17px; background: #00aeff;}
+    
+    .checks_w{position: relative; padding-top:6px;}
+    .checks_w input[type="checkbox"] {position: absolute;  width: 1px;  height: 1px;  padding: 0;  margin: -1px;  overflow: hidden; clip:rect(0,0,0,0);  border: 0}
+    .checks_w input[type="checkbox"] + label {font-size:14px; color: #fff;  display: inline-block;   position: relative;  cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none;}
+    .checks_w span{font-size:14px; color:#fff; margin-left:10px; cursor: pointer; }
+    .checks_w input[type="checkbox"] + label:before {content: ' ';  display: inline-block;  width: 14px; height: 14px; line-height: 14px;  margin: -2px 8px 0 0;  text-align: center;   vertical-align: middle;  background: #fafafa;  color:#fff;  border-radius : 3px;  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);}
+    .checks_w input[type="checkbox"] + label:active:before,
+    .checks_w input[type="checkbox"]:checked + label:active:before { box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+    .checks_w input[type="checkbox"]:checked + label:before {content: '\2714'; color: #00aeff; font-size:14px; background: #fff;}
+    
+    .radio_box{padding-top:20px; text-align: center;;}
+    .inline30{display: inline-block; margin-right: 35px;}
+    .where {
+        display: block;
+        margin: 25px 15px;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        font-family: verdana;
+        font-style: italic;
+      } 
+      
+      .checks {position: relative;}
+      .checks input[type="radio"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip:rect(0,0,0,0);
+        border: 0;
+      }
+      .checks input[type="radio"] + label {
+        font-size:18px;
+        font-weight: 500;;
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+      .checks input[type="radio"] + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -4px;
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #cacece;
+        border-radius: 100%;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+      }
+      .checks input[type="radio"] + label:active:before,
+      .checks input[type="radio"]:checked + label:active:before  {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+      }
+      .checks input[type="radio"]:checked + label:before {
+        background: #fff;
+        border-color: #adb8c0;
+      }
+      .checks input[type="radio"]:checked + label:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        width: 13px;
+        height: 13px;
+        background: #00aeff;
+        border-radius: 100%;
+        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+      }
+      .pc{display: none;}
+      .mobile{display: block;}
+
+      .input_line{text-align: center;}
+      .table_text1{text-align: center;}
+      
+}

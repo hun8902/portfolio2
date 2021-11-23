@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900');
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+
+
+
+
+
+
+/* CSS Document */
+html,body{padding:0; margin:0;}
+.container{width:1100px; margin:0 auto; }
+
+
+/* Default Setting */
+
+/*html, body, div, input, label, select, textarea, button, h1, h2, h3, h4, h5, h6, strong, p, span, a, ul, li, dl, dt, dd, a, ::after, ::before {line-height: 1.4em; font-family: 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}*/
+*, ::before, ::after {margin: 0; padding: 0; box-sizing: border-box; letter-spacing: -1px;}
+html, body {font-family: 'Noto Sans KR',  sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, strong, address {display: block;}
+ul, ol, li {list-style: none;}
+a {display: inline-block; text-decoration: none; vertical-align: top;}
+span {display: inline-block; vertical-align: top;}
+img {max-width: 100%; border: 0; vertical-align: top;}
+em, address {font-weight: normal; font-style: normal;}
+hr {border: 0; margin: 30px 0; padding: 0; border-bottom: 1px solid #000;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+table {width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; word-break: break-all;}
+textarea {resize: none; outline: 0; vertical-align: top;}
+button {display: inline-block; font-family: inherit; text-decoration: none; background: transparent; border: none; outline: 0; white-space: nowrap; vertical-align: top; cursor: pointer;}
+
+
+/* 상단 */
+.page1{position:relative; overflow:hidden;  max-width:1920px;  height:675px; background:url("../images/page1/blue_bg.png") no-repeat center 0; margin:0 auto;}
+.page1 .chartbg{position:absolute;  width:1920px; height:676px; background:url("../images/page1/bg_chart.png") no-repeat center 0 ; z-index::1}
+.page1 .logo{position:relative;  text-align:center; padding-top:45px; z-index::10}
+.page1 .top_title1{position:relative;  text-align:center; padding-top:9px;  z-index::10}
+.page1 .top_title2{position:relative; text-align:center; padding-top:25px;  z-index::10}
+.page1 .top_title3{position:relative; text-align:center; font-weight:600; padding-top:20px;  z-index::10 ; font-size:52px; color:#fff; text-shadow: #010027 2px 2px 2px;}
+.page1 .top_title3 span{font-size:64px; font-weight:700; color:#ff2543; vertical-align:baseline;  text-shadow: #010027 2px 2px 2px;}
+.page1 .top_title4{position:relative;  text-align:center; padding-top:20px;  z-index::10; font-size:20px; color:#fff; font-weight:300; opacity:0.7}
+.page1 .awards{position:relative; text-align:center; padding-top:40px; min-width:1280px; margin-left:55px;  z-index::10}
+.page1 .awards li{display:inline-block; margin-right:55px;}
+
+/* 애니메이션을 위한 분리 */
+.left_bg{position:absolute; bottom:0; margin-left:-450px;}
+.right_bg{position:absolute; margin-left:962px; bottom:0;}
+
+
+/* 카운트다운 */
+.page2{position:relative; max-width:1920px; height:100px; background:#222222; margin:0 auto;}
+.page2 .stats_time{}
+.page2 .stats_time li{display:inline-block; vertical-align:top;}
+.page2 .stats_time li .stats_info{font-size: 20px;  line-height:27px; color:#ffffff; font-weight:300; padding-left: 75px;  padding-right:50px; vertical-align: bottom; text-align:right; padding-top:15px }
+.page2 .stats_time li .stats_info span{font-size:44px; line-height:44px;  color:#ffffff; font-weight:600;vertical-align: bottom; }
+.page2 .stats_time li .stats_count{_width:532px; padding-right:35px;}
+.page2 .stats_time li .stats_end{font-size: 20px;  line-height:27px; color:#ffffff; font-weight:300; vertical-align: bottom; text-align:right;   padding-top: 30px;}
+.page2 .stats_time li .stats_end span{font-size:44px; line-height:44px;  color:#ffffff; font-weight:600;vertical-align: bottom;}
+
+/* 팝업 */
+.popup_ag1{position:absolute;  top:-165px; margin-left:58px; width:480px; height:270px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none;}
+.popup_ag2{position:absolute;  top:-165px; margin-left:58px; width:480px; height:270px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none;}
+.agpopup_close{position:absolute; margin-top: -70px; right:-1px;}
+.long_text{width:100%; height:100%; border:0; padding:15px;}
+
+
+/* 정보입력 */
+.page3{position:relative; max-width:1920px; height:150px; background:#ff2543; margin:0 auto;}
+.page3 .form_data{}
+.page3 .form_data li{display:inline-block; vertical-align:top;}
+.page3 .form_data li .form_info{ padding-left: 23px;  padding-top:45px;  width:529px; }
+.page3_text1{font-size:22px; color:#fff; font-weight:300; }
+.form_box{position:relative; padding-top:10px;; }
+.form_box li{display:inline-block; vertical-align:top;  text-align:right}
+.form_agree{text-align:left; }
+.form_agree  span{margin-left:10px; color:#fff; margin-top:-2px; cursor:pointer}
+.form_box li .input_name{display:inline-block; vertical-align:middle; color:#ffffff; font-size:18px;; padding-right:10px;  width:58px;}
+.form_box li .input_css{border:0;  padding-left:10px; width:210px; height:45px; line-height:45px; font-size:16px;}
+.form_info_line2{padding-top:10px; padding-left:5px; font-size:33px;  color:#fff; font-weight:500;} 
+.page3_submit{position:relative; padding-left:9px;; padding-right:23px;}
+.submit_hand{position:absolute;  margin-top:-30px; right:20px;;}
+.float_r{float:right;}
+
+.submit_button{width:231px ;  height:97px; background:url("../images/page3/page3_submit_bg.png") no-repeat; text-align:center; font-size:28px; line-height:28px; color:#ffde00;  padding-top:17px;  font-weight:600;}
+.submit_button p{font-size:20px; color:#fff;  font-weight:500;}
+
+/* 푸터 */
+.footer{position:relative; max-width:1920px; height:50px; overflow:hidden; background:#222222; margin:0 auto;}
+.footer .copyright{color:#575757; text-align:center; font-size:14px; font-weight:300; padding-top:17px;}
+
+/*상단 퀵*/
+.left_quick{position:absolute; top:75px; width:95px; border:1px solid #000000 ; z-index:99;}
+.left_quick .quick_cont{background:url("../images/page1/quick_bg.png") no-repeat;  min-height:200px; }
+.left_quick .quick_cont .q_title{text-align:center; padding-top:15px; padding-bottom:30px;}
+.left_quick .quick_cont .q_cont{text-align:center;}
+.left_quick .quick_cont .q_cont .q_t1{font-size:19px; color:#000;  line-height:25px;  padding-bottom:20px;}
+.left_quick .quick_cont .q_cont .q_t1 span{font-size:30px; color:#ff2543; font-weight:500; }
+.left_quick .quick_cont .q_cont .q_t2{font-size:14px; line-height:16px; color:#585858;  font-weight:400;}
+.left_quick .q_top{position:relative; width:100%; text-align:center;  background:#000; color:#a8a8a8; font-size:16px; padding-top:15px; padding-bottom:10px;}
+
+/*카운터*/
+.count_pos{position:relative; width:532px; height:84px; padding-top:7px;}
+.flipper {  color: #fff;  display: block;  font-size: 55px;  font-weight:600;  padding: 0;  margin: 0;  }
+.flipper.flipper-invisible {  font-size: 55px !important;}
+.flipper-group {  position: relative;  white-space: nowrap;  display: block;  float: left;  padding: 0;  margin: 0;}
+.flipper-group label {  position: absolute;  color: #fff;  font-size: 20%;  top: 100%;  line-height: 1em;  left: 50%;  -webkit-transform: translate(-50%, 0);         transform: translate(-50%, 0);  text-align: center;  padding-top: .5em;}
+.flipper-digit {  white-space: nowrap;  position: relative;  padding: 0;  margin: 0;  display: inline-block;  float: left;  width:57px; height: 84px;;  overflow-y: hidden;}
+.flipper-digit span {  font-size: 55px;;}
+.flipper-delimiter {  white-space: nowrap;  display: block;  float: left;  padding: 0;  margin: 0;  color: #fff;  min-width: .1em;  white-space: nowrap;  display: block;  padding-top: 0.1em; padding-bottom: 0.1em;  line-height: 1em;}
+.digit-face {  display: block;  visibility: hidden;  position: relative;  border-radius: 0.1em;  top: 0;  left: 0;  right: 0;  bottom: 0;  z-index: 8;  padding-top: 0.1em;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;  box-sizing: border-box;  text-align: center;}
+.digit-next {  display: block;  position: relative;  border-radius: 0.1em;  top: 0;  left: 0;  right: 0;  bottom: 0;  z-index: 8;  height: 1.2em;  _background: #fff;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%; padding-top: 14px;  padding-bottom: 0;  padding-left: 0.1em;  padding-right: 0.1em;  box-sizing: border-box;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;}
+.digit-top {  z-index: 10;  top: 0;  left: 0;  right: 0;  height: 50%;  -webkit-backface-visibility: hidden;          backface-visibility: hidden;  pointer-events: none;  overflow: hidden;  position: absolute; _background: #fff;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;  padding-top: 14px;  padding-bottom: 0;  padding-left: 0.1em;  padding-right: 0.1em;  border-top-left-radius: 0.1em;  border-top-right-radius: 0.1em;  box-sizing: border-box;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  transition: background 0s linear, -webkit-transform 0s linear;  transition: transform 0s linear, background 0s linear;  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;  -webkit-transform-origin: 0 0.6em 0 !important;     transform-origin: 0 0.6em 0 !important;  -webkit-transform-style: preserve-3d !important;      transform-style: preserve-3d !important;  z-index: 20;}
+.digit-top.r {  transition: background 0.2s linear, -webkit-transform 0.2s linear;  transition: transform 0.2s linear, background 0.2s linear;  transition: transform 0.2s linear, background 0.2s linear, -webkit-transform 0.2s linear;  -webkit-transform: rotateX(90deg);   transform: rotateX(90deg);  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;}
+.digit-top2 {  visibility: hidden;  position: absolute;  height: 50%;  left: 0;  right: 0;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;  transition: -webkit-transform 0.2s linear;  transition: transform 0.2s linear;  transition: transform 0.2s linear, -webkit-transform 0.2s linear;  line-height: 0em !important;  top: 50% !important;  bottom: auto !important;  padding-top: 14px;  padding-left: 0.1em;  padding-right: 0.1em;  border-bottom-left-radius: 0.1em;  border-bottom-right-radius: 0.1em;  overflow: hidden;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  transition: background 0s linear, -webkit-transform 0s linear;  transition: transform 0s linear, background 0s linear;  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;  -webkit-transform: rotateX(-90deg);          transform: rotateX(-90deg);  -webkit-transform-style: preserve-3d !important;          transform-style: preserve-3d !important;  -webkit-transform-origin: 0 0 0 !important;          transform-origin: 0 0 0 !important;  z-index: 20;}
+.digit-top2.r {  visibility: visible;  transition: background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s;  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;  -webkit-transform: rotateX(0deg);          transform: rotateX(0deg);  background: #4c4c4b;    line-height: 0em;  padding-top: 0;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;}
+.digit-bottom {  -webkit-backface-visibility: hidden;          backface-visibility: hidden;  pointer-events: none;  position: absolute;  overflow: hidden;  _background: #fff;  background:url("../images/countdown/countdown_bttom.png") no-repeat;  background-size:100%;  height: 50%;  left: 0;  right: 0;  bottom: 0;  z-index: 9;  line-height: 0em;  padding-top: 0;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;  border-bottom-left-radius: 0.1em;  border-bottom-right-radius: 0.1em;  box-sizing: border-box;  text-align: center;  transition: none;}
+.digit-bottom.r {  transition: background 0.2s linear;  background:url("../images/countdown/countdown_bttom.png") no-repeat;  background-size:100%;}
+
+/* 체크박스 커스터마이징 */
+.chkB {display: inline-block; position: relative;  padding-left:58px;;}
+.chkB input {position: absolute; top: 0; left: 0; margin: 0; padding: 0 !important; width: 12px !important; height: 12px; border: 0 !important; opacity: 0; z-index: 2; cursor: pointer;}
+.chkB input + label {display: inline-block; padding: 0 0 0 19px !important; height: 12px; line-height: 12px; font-size: 14px;  font-weight:300; color: #fff;  vertical-align: top; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; z-index: 1; cursor: pointer;}
+.chkB.no-txt input + label {_padding-left: 19px !important;}
+.chkB input + label:hover {color: #000;}
+
+.chkB input[type="checkbox"] + label {background: url("../images/page3/icnChkOff.png") 0 50% no-repeat;}
+.chkB input[type="checkbox"]:checked + label {background: url("../images/page3/icnChkOn.png") 0 50% no-repeat;}
+.popup_view{vertical-align: top;    color: #fff;    font-size: 14px;    line-height: 10px;    margin-left: 10px;}
+
+.pc{display:block;}
+.mobile{display:none;}
+
+/* 여백 */
+.pt_5{padding-top:5px;}
+.pt_6{padding-top:6px;}
+.pt_7{padding-top:7px;}
+.pt_10{padding-top:10px; }
+}
+@media  (max-width: 1280px) {
+
+
+/* CSS Document */
+html,body{padding:0; margin:0;}
+.container{width:640px; margin:0 auto;  overflow:hidden;}
+
+
+/* Default Setting */
+
+/*html, body, div, input, label, select, textarea, button, h1, h2, h3, h4, h5, h6, strong, p, span, a, ul, li, dl, dt, dd, a, ::after, ::before {line-height: 1.4em; font-family: 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}*/
+*, ::before, ::after {margin: 0; padding: 0; box-sizing: border-box; letter-spacing: -1px;}
+html, body {font-family: 'Noto Sans KR',  sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, strong, address {display: block;}
+ul, ol, li {list-style: none;}
+a {display: inline-block; text-decoration: none; vertical-align: top;}
+span {display: inline-block; vertical-align: top;}
+img {max-width: 100%; border: 0; vertical-align: top;}
+em, address {font-weight: normal; font-style: normal;}
+hr {border: 0; margin: 30px 0; padding: 0; border-bottom: 1px solid #000;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+table {width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; word-break: break-all;}
+textarea {resize: none; outline: 0; vertical-align: top;}
+button {display: inline-block; font-family: inherit; text-decoration: none; background: transparent; border: none; outline: 0; white-space: nowrap; vertical-align: top; cursor: pointer;}
+
+
+/* 상단 */
+.page1{position:relative; overflow:hidden;  max-width:640px;  height:877px; background:#130ec0 no-repeat center 0; margin:0 auto;}
+.page1 .chartbg{position:absolute;  width:640px; height:676px; background:url("../images/m/page1/bg_chart.png") no-repeat center 0 ; z-index::1}
+.page1 .logo{position:relative;  text-align:center; padding-top:45px; z-index::10}
+.page1 .top_title1{position:relative;  text-align:center; padding-top:9px;  z-index::10}
+.page1 .top_title2{position:relative; text-align:center; padding-top:25px;  z-index::10}
+.page1 .top_title3{position:relative; text-align:center; padding-top:20px;  z-index::10 ; font-size:52px; color:#fff; text-shadow: #010027 2px 2px 2px; font-weight:600;}
+.page1 .top_title3 span{font-size:64px; color:#ff2543; vertical-align:baseline;  text-shadow: #010027 2px 2px 2px;}
+.page1 .top_title4{position:relative;  text-align:center; padding-top:20px;  z-index::10; font-size:28px;  line-height:32px; color:#fff; font-weight:300; width:315px ; margin:0 auto;  opacity:0.7}
+.page1 .awards{display:none; position:relative; text-align:center; padding-top:40px; margin-left:55px;  z-index::10}
+.page1 .awards li{display:inline-block; margin-right:55px;}
+.one_bg{position:absolute;  bottom:15px; left:57px; width:174px;  height:174px; background:url("../images/m/page1/count_onebg.png") no-repeat center 0 ; text-align:center; color:#ffffff; font-size:33px; font-weight:600; padding-top:35px;}
+.one_bg p{color:#ffea00; font-size:33px;  font-weight:600;}
+.one_bg p span{color:#ffea00; font-size:48px;     vertical-align: bottom;  }
+/* 애니메이션을 위한 분리 */
+.left_bg{position:absolute; bottom:0; margin-left:43px;}
+.right_bg{display:none; position:absolute; margin-left:962px; bottom:0;}
+
+
+/* 카운트다운 */
+.page2{position:relative; max-width:640px; height:119px; background:#222222; margin:0 auto;}
+.page2 .stats_time{}
+.page2 .stats_time li{display:inline-block; vertical-align:top;}
+.page2 .stats_time li .stats_info{display:none; font-size: 20px;  line-height:27px; color:#ffffff; font-weight:300; padding-left: 75px;  padding-right:50px; vertical-align: bottom; text-align:right; padding-top:15px }
+.page2 .stats_time li .stats_info span{font-size:44px; line-height:44px;  color:#ffffff; font-weight:600;vertical-align: bottom; }
+.page2 .stats_time li .stats_count{_width:532px; _padding-right:35px;}
+.page2 .stats_time li .stats_end{display:none;  font-size: 20px;  line-height:27px; color:#ffffff; font-weight:300; vertical-align: bottom; text-align:right;   padding-top: 30px;}
+.page2 .stats_time li .stats_end span{font-size:44px; line-height:44px;  color:#ffffff; font-weight:600;vertical-align: bottom;}
+
+/* 팝업 */
+.popup_ag1{position:absolute;  top:0; margin-left:0; width:532px; height:335px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none; font-size:17px;}
+.popup_ag2{position:absolute;  top:0; margin-left:0; width:532px; height:335px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none; font-size:17px;}
+.agpopup_close{position:absolute; margin-top: -70px; right:-1px;}
+.long_text{width:100%; height:100%; border:0; padding:15px; font-size:17px;}
+
+
+/* 정보입력 */
+.page3{position:relative; max-width:640px; height:591px; background:#ff2543; margin:0 auto;}
+.page3 .form_data{text-align:center;}
+.page3 .form_data li{display:inline-block; vertical-align:top;}
+.page3 .form_data li .form_info{ padding-left: 23px;  padding-top:45px;  width:529px; }
+.page3_text1 p{font-size:39px; color:#ffffff; font-weight:400; }
+.page3_text1{padding-top:25px; padding-bottom:20px;  font-size:50px; color:#ffffff; font-weight:400;  line-height:55px; text-align:center; text-shadow: -7px 5px  #010027; font-style:italic }
+.form_box{padding-top:10px;; }
+.form_box li{display:inline-block; vertical-align:top;  text-align:right}
+.form_agree{text-align:left; }
+.form_agree  span{margin-left:10px; color:#fff; margin-top:-2px; cursor:pointer; font-size:22px;}
+.form_box li .input_name{display:inline-block; vertical-align:middle; color:#ffffff; font-size:29px;; padding-right:15px;  _width:58px;}
+.form_box li .input_css{border:0;  padding-left:10px; width:436px; height:78px; line-height:78px; font-size:29px;}
+.form_info_line2{padding-top:10px; padding-left:5px; font-size:33px;  color:#fff; font-weight:500;} 
+.page3_submit{position:relative; padding-top:18px;}
+.submit_hand{position:absolute;  margin-top:-45px;  right:80px;}
+.float_r{float:right;}
+
+.submit_button{width:532px ;  height:150px; background:url("../images/m/page3/page3_submit_bg.png") no-repeat; text-align:center; font-size:53px; line-height:53px; color:#ffde00;  padding-top:14px;  font-weight:600;  z-index:99; cursor:pointer}
+.submit_button p{font-size:39px; color:#fff;  font-weight:500;}
+
+/* 푸터 */
+.footer{position:relative; max-width:640px; height:87px; overflow:hidden; background:#222222; margin:0 auto;}
+.footer .copyright{color:#575757; text-align:center; font-size:18px; font-weight:300; padding-top:34px;}
+
+/*상단 퀵*/
+.left_quick{display:none; position:absolute; top:75px; width:95px; border:1px solid #000000 ; z-index:99;}
+.left_quick .quick_cont{background:url("../images/m/page1/quick_bg.png") no-repeat;  min-height:200px; }
+.left_quick .quick_cont .q_title{text-align:center; padding-top:15px; padding-bottom:30px;}
+.left_quick .quick_cont .q_cont{text-align:center;}
+.left_quick .quick_cont .q_cont .q_t1{font-size:19px; color:#000;  line-height:25px;  padding-bottom:20px;}
+.left_quick .quick_cont .q_cont .q_t1 span{font-size:30px; color:#ff2543; font-weight:500; }
+.left_quick .quick_cont .q_cont .q_t2{font-size:14px; line-height:16px; color:#585858;  font-weight:400;}
+.left_quick .q_top{position:relative; width:100%; text-align:center;  background:#000; color:#a8a8a8; font-size:16px; padding-top:15px; padding-bottom:10px;}
+
+/*카운터*/
+.count_pos{position:relative;  text-align:center; _width:640px; height:96px; padding-top:12px; padding-left:20px;}
+.flipper {  color: #fff;  display: block;  font-size: 62px;  font-weight:600;  padding: 0;  margin: 0;  }
+.flipper.flipper-invisible {  font-size: 62px !important;}
+.flipper-group {  position: relative;  white-space: nowrap;  display: block;  float: left;  padding: 0;  margin: 0;}
+.flipper-group label {  position: absolute;  color: #fff;  font-size: 20%;  top: 100%;  line-height: 1em;  left: 50%;  -webkit-transform: translate(-50%, 0);         transform: translate(-50%, 0);  text-align: center;  padding-top: .5em;}
+.flipper-digit {  white-space: nowrap;  position: relative;  padding: 0;  margin: 0;  display: inline-block;  float: left; width:65px; height: 96px;;  font-size:62px; overflow-y: hidden;}
+.flipper-digit span {  font-size: 62px;;}
+.flipper-delimiter {  white-space: nowrap;  display: block;  float: left;  padding: 0;  margin: 0;  color: #fff;  min-width: .1em;  white-space: nowrap;  display: block;  padding-top: 0.1em; padding-bottom: 0.1em;  line-height:70px;;}
+.digit-face {  display: block;  visibility: hidden;  position: relative;  border-radius: 0.1em;  top: 0;  left: 0;  right: 0;  bottom: 0;  z-index: 8;  padding-top: 0.1em;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;  box-sizing: border-box;  text-align: center;}
+.digit-next {  display: block;  position: relative;  border-radius: 0.1em;  top: 0;  left: 0;  right: 0;  bottom: 0;  z-index: 8;  height: 1.2em;  _background: #fff;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%; padding-top: 14px;  padding-bottom: 0;  padding-left: 0.1em;  padding-right: 0.1em;  box-sizing: border-box;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;}
+.digit-top {  z-index: 10;  top: 0;  left: 0;  right: 0;  height: 50%;  -webkit-backface-visibility: hidden;          backface-visibility: hidden;  pointer-events: none;  overflow: hidden;  position: absolute; _background: #fff;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;  padding-top: 14px;  padding-bottom: 0;  padding-left: 0.1em;  padding-right: 0.1em;  border-top-left-radius: 0.1em;  border-top-right-radius: 0.1em;  box-sizing: border-box;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  transition: background 0s linear, -webkit-transform 0s linear;  transition: transform 0s linear, background 0s linear;  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;  -webkit-transform-origin: 0 0.6em 0 !important;     transform-origin: 0 0.6em 0 !important;  -webkit-transform-style: preserve-3d !important;      transform-style: preserve-3d !important;  z-index: 20;}
+.digit-top.r {  transition: background 0.2s linear, -webkit-transform 0.2s linear;  transition: transform 0.2s linear, background 0.2s linear;  transition: transform 0.2s linear, background 0.2s linear, -webkit-transform 0.2s linear;  -webkit-transform: rotateX(90deg);   transform: rotateX(90deg);  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;}
+.digit-top2 {  visibility: hidden;  position: absolute;  height: 50%;  left: 0;  right: 0;  background:url("../images/countdown/countdown_top.png") no-repeat;  background-size:100%;  transition: -webkit-transform 0.2s linear;  transition: transform 0.2s linear;  transition: transform 0.2s linear, -webkit-transform 0.2s linear;  line-height: 0em !important;  top: 50% !important;  bottom: auto !important;  padding-top: 14px;  padding-left: 0.1em;  padding-right: 0.1em;  border-bottom-left-radius: 0.1em;  border-bottom-right-radius: 0.1em;  overflow: hidden;  text-align: center;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  transition: background 0s linear, -webkit-transform 0s linear;  transition: transform 0s linear, background 0s linear;  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;  -webkit-transform: rotateX(-90deg);          transform: rotateX(-90deg);  -webkit-transform-style: preserve-3d !important;          transform-style: preserve-3d !important;  -webkit-transform-origin: 0 0 0 !important;          transform-origin: 0 0 0 !important;  z-index: 20;}
+.digit-top2.r {  visibility: visible;  transition: background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s;  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;  -webkit-transform: rotateX(0deg);          transform: rotateX(0deg);  background: #4c4c4b;    line-height: 0em;  padding-top: 0;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;}
+.digit-bottom {  -webkit-backface-visibility: hidden;          backface-visibility: hidden;  pointer-events: none;  position: absolute;  overflow: hidden;  _background: #fff;  background:url("../images/countdown/countdown_bttom.png") no-repeat;  background-size:100%;  height: 50%;  left: 0;  right: 0;  bottom: 0;  z-index: 9;  line-height: 0em;  padding-top: 0;  padding-bottom: 0.1em;  padding-left: 0.1em;  padding-right: 0.1em;  border-bottom-left-radius: 0.1em;  border-bottom-right-radius: 0.1em;  box-sizing: border-box;  text-align: center;  transition: none;}
+.digit-bottom.r {  transition: background 0.2s linear;  background:url("../images/countdown/countdown_bttom.png") no-repeat;  background-size:100%;}
+
+/* 체크박스 커스터마이징 */
+.chkB {display: inline-block; position: relative;  padding-left:93px;;}
+.chkB input {position: absolute; top: 0; left: 0; margin: 0; padding: 0 !important; width: 20px !important; height: 20px; border: 0 !important; opacity: 0; z-index: 2; cursor: pointer;}
+.chkB input + label {display: inline-block; padding: 0 0 0 32px !important; height: 20px; line-height: 20px; font-size: 22px;  font-weight:300; color: #fff;  vertical-align: top; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; z-index: 1; cursor: pointer;}
+.chkB.no-txt input + label {_padding-left: 19px !important;}
+.chkB input + label:hover {color: #000;}
+
+.chkB input[type="checkbox"] + label {background: url("../images/m/page3/icnChkOff.png") 0 50% no-repeat;}
+.chkB input[type="checkbox"]:checked + label {background: url("../images/m/page3/icnChkOn.png") 0 50% no-repeat;}
+.popup_view{vertical-align: top;    color: #fff;    font-size: 14px;    line-height: 10px;    margin-left: 10px;}
+
+.pc{display:none;}
+.mobile{display:block;}
+
+/* 여백 */
+.pt_5{padding-top:10px;}
+.pt_6{padding-top:12px;}
+.pt_7{padding-top:14px;}
+.pt_10{padding-top:20px; }
+}

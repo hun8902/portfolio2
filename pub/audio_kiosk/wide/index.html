@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="viewport" content="width=1920, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>오디오락</title>
+  <!--css import-->
+  <link rel="stylesheet" type="text/css" href="css/nanumbarungothic.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/jPages.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/keybord.css"/>
+
+  <!-- 메인슬라이더 -->
+  <link rel="stylesheet" href="css/slider.css">
+  <!-- 컨텐츠슬라이더 -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+  <!--css import end-->
+
+
+ </head>
+ <body>
+	<div id="warp">
+		<div id ="popup_mask" ></div> <!-- 팝업 배경 DIV -->
+
+		<div class="popup_style4">
+			<a href="javascript:;"><div class="popup_close4"></div></a>
+			<img src="images/content/audio_info.jpg"/>
+		</div>
+		
+		<div class="popup_style1">
+			<div class="popup_logo"></div>
+			<div class="popup_content h310">
+				<div class="popup_txt1">
+					나의 오디오북에 추가되었습니다.
+				</div>
+				<div class="popup_txt2">
+					추가된 오디오북은 오디오락 pc 및 모바일의<br/>“나의 오디오북”에서 청취가 가능합니다.
+				</div>
+				<a href="javascript:;"><div class="popup_close">닫 기</div></a>
+			</div>		
+		</div>
+
+		<div class="popup_style2">
+			<div class="popup_logo">
+				<div class="popup_close1"><a href="javascript:;"><img src="images/popup_login_close.png"/></a></div>
+			</div>
+			<div class="popup_content h388">
+				<div class="popup_txt1">
+					이용자 인증
+				</div>
+				<div class="popup_txt3">
+					인증을 위해 아이디와 성명을 입력하여 주세요.
+				</div>
+				<div class="popup_txt4">
+					*PC에서 1회 이상 로그인한 이용자만 인증이 가능합니다.
+				</div>
+				<div class="popup_form">
+					<input type="text"  class="nameField poup_input" placeholder="아이디" value=""/>
+					<input type="text"  class="nameField poup_input" placeholder="성명" value=""/>
+				</div>
+				<a href="javascript:;"><div class="popup_close">닫 기</div></a>
+			</div>		
+		</div>
+
+		<div class="popup_style3">
+			<div class="popup_tab">
+				<div class="tab_close"><a href="javascript:;"class="close_popup3"><img src="images/popup_style2_close.png"/></a></div>
+				<ul class="tab">
+					<li class="current" data-tab="tab1"><a href="javascript:;">간편검색</a></li>
+					<li data-tab="tab2"><a href="javascript:;">상세검색</a></li>
+				</ul>
+
+				<div id="tab1" class="tabcontent current">
+					<form id="search_1">
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+				
+						</div>
+						<input  type="image" src="images/btn_popup_search.png" class="btn_popup_search" alt="검색"/>
+						<div class="clear"></div>
+						
+					</div>
+					</form>
+					
+					
+				</div>
+
+				<div id="tab2" class="tabcontent">
+					<form id="search_2">
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+							<div class="serach_select1">
+								<select id="" name="" size="" class="w90" data-msg="">
+									<option value="">AND</option>
+									<option value="">OR</option>
+								</select>
+							</div>
+						</div>
+						<input  type="image" src="images/btn_popup_search.png" class="btn_popup_search" alt="검색"/>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+							<div class="serach_select1">
+								<select id="" name="" size="" class="w90" data-msg="">
+									<option value="">AND</option>
+									<option value="">OR</option>
+								</select>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select">
+								<select id="" name="" size="" class="w115" data-msg="">
+									<option value="">전  체</option>
+									<option value="">출판사</option>
+									<option value="">저자명</option>
+									<option value="">오디오북명</option>
+									<option value="">차시명</option>
+								</select>
+							</div>
+							<div class="popup_s_input"><input type="text" class="nameField"  id="" value=""></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="pd_10">
+						<div class="serach_box">
+							<div class="serach_select_year">
+								<select id="" name="" size="" class="w115_b" data-msg="">			
+									<option value="">제작년도</option>
+								</select>
+							</div>
+							<div class="serach_select_month">
+								<select id="year_start" name="" size="" class="w145" data-msg="">
+									<option value="">선 택</option>
+								</select>
+							</div>
+							<div class="serach_select_day">
+								<select id="year_end" name="" size="" class="w166" data-msg="">
+									<option value="">선 택</option>
+								</select>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					</form>
+
+
+				</div>
+
+
+			</div>
+		</div>
+		
+
+		<div class="slider" id="slider">
+			<div class="container">
+				<!-- <div class="top_btn_pos">
+					<ul class="top_qbtn">
+						<li><a href="#"><img src="images/btn_logout.png"/></a></li>
+						<li><a href="index.html"><img src="images/btn_home.png"/></a></li>
+						<li><a href="javascript:;"class="popup_search"><img src="images/btn_search.png"/></a></li>
+					</ul>
+				</div> -->
+			</div>
+			<div class="slItems">
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+				<div class="slItem" style="background-image: url('images/header/visual_img.png');"></div>
+			</div>
+		</div>
+
+		<div id="top_gnb">
+			<div class="container">
+				<div class="gnb_slide_more">
+					<div class="gnb_slide_prev"><span id="gnb_slide_prev"><a href="#"><img src="images/visual_left.png"></a></span></div>
+					<div class="gnb_slide_next"><span id="gnb_slide_next"><a href="#"><img src="images/visual_right.png"></a></span></div>
+				</div>
+				
+				<div id="sample2-4" class="carousel horizontal unit" style="width:860px; padding:0 0 0 60px;">
+					<div class="container-fluid">
+						<div class="carousel-listWrapper">
+							<ul class="ui-carousel-list gnb_ul">
+								<li class="ui-carousel-item menu" style="width:110px;"><a class="gnb_tit">자기개발</a></li>			 
+								<li class="ui-carousel-item menu" style="width:160px;"><a class="gnb_tit">CEO/리더십</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">글로벌 경제/트렌드</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">커뮤니케이션/심리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:170px;"><a class="gnb_tit">경제/자산관리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:90px;"><a class="gnb_tit">소설</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">글로벌 경제/트렌드</a></li>
+								<li class="ui-carousel-item menu" style="width:190px;"><a class="gnb_tit">커뮤니케이션/심리</a>	</li>
+								<li class="ui-carousel-item menu" style="width:170px;"><a class="gnb_tit">경제/자산관리</a>	</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="top_gnb2">
+			<ul class="sub_tit">
+				<div class="container">
+					<li><a href="#">유머 (47)</a></li>
+					<li><a href="#">자기계발 (47)</a></li>
+					<li><a href="#">자녀교육 (47)</a></li>
+					<li><a href="#">인문 (47)</a></li>
+					<li><a href="#">성공/Biz특강 (47)</a></li>
+					<li><a href="#">취업/창업 (47)</a></li>
+					<li><a href="#">지식마을 투어 (47)</a></li>
+					<li><a href="#">소통 (47)</a></li>
+					<li><a href="#">건강 (47)</a></li>
+					<li><a href="#">면접 (47)</a></li>
+					<li><a href="#">직무 (47)</a></li>
+					<li><a href="#">철학/풍수지리 (47)</a></li>
+					<li><a href="#">교육지도 (47)</a></li>
+					<li><a href="#">문학 (47)</a></li>		
+				</div>
+			</ul>
+			<ul class="sub_tit">
+				<div class="container">
+					<li><a href="#">두번째 탭 (47)</a></li>
+				</div>
+			</ul>
+		</div>
+
+		
+
+		<div id="main_content">
+			<div class="container">
+				<!-- 좌측 -->
+				<div class="main_left">
+					<div id="icon_menu">
+						<ul class="icon_list">
+							<li class="">
+								<div class="qrcode">
+									<div class="qrcode_iphone">
+										<!-- <a href="#"><img src="images/iphone_qrcode.png"/></a>	 -->
+									</div>	
+									<div class="qrcode_android">
+										<!-- <a href="#"><img src="images/android_qrcode.png"/></a>	 -->
+									</div>
+								</div>
+							</li>
+							<li class="left pr_26">
+								<div class="info_icon">
+									<a href="javascript:;" class="popup_info">
+										<div>
+											<img src="images/info_icon.png"/>
+											<p>이용안내</p>
+										</div>
+									</a>				
+								</div>
+							</li>
+							<li class="left">
+								<div class="seach_icon">
+									<div>
+										<a href="javascript:;" class="popup_search">
+											<img src="images/seach_icon.png"/>
+											<p>오디오북 검색</p>
+										</a>		
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 좌측 -->
+				<div class="main_right">
+					<ul class="main_tabs">
+						<li rel="main_tab1"><a href="#"><img src="images/icon_star.png" /><p>인기 오디오북</p></a></li>
+						<li class="current" rel="main_tab2"><a href="#"><img src="images/icon_new.png" /><p>신착 오디오북</p></a></li>
+						<li rel="main_tab3"><a href="#"><img src="images/icon_good.png" /><p>추천 오디오북</p></a></li>
+					</ul>
+					<div class="tab_container">
+						<div id="main_tab1" class="maintab_content">
+							<div id="g1_prev" class="gallery_list_prev"></div>
+							<div id="g1_next" class="gallery_list_next"></div>
+							<div class="gallery_list_ul">
+								<ul class="bxslider1">
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+								</ul>
+							</div>			
+
+							<div class="btn_alllist"><a href="갤러리리스트.html"><p class="more">전체보기</p></a></div>
+
+
+
+						</div>
+						<!-- #tab1 -->
+						<div id="main_tab2" class="maintab_content">
+							<div id="g2_prev" class="gallery_list_prev"></div>
+							<div id="g2_next" class="gallery_list_next"></div>
+							<div class="gallery_list_ul">
+								<ul class="bxslider2">
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+								</ul>
+							</div>			
+
+							<div class="btn_alllist"><a href="갤러리리스트.html"><p class="more">전체보기</p></a></div>
+
+
+						</div>
+						<!-- #tab2 -->
+						<div id="main_tab3" class="maintab_content">
+							<div id="g3_prev" class="gallery_list_prev"></div>
+							<div id="g3_next" class="gallery_list_next"></div>
+							<div class="gallery_list_ul">
+								<ul class="bxslider3">
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img1.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="line2box">
+														<a href="갤러리뷰.html">
+															<div class="audio_list_img"><img src="images/content/exmaple_img3.png" alt=""/></div>
+															<div class="audio_list_text1">우유통에 빠진 개구리</div>
+															<div class="audio_list_text2">여우별</div>
+														</a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+								</ul>
+							</div>			
+
+							<div class="btn_alllist"><a href="갤러리리스트.html"><p class="more">전체보기</p></a></div>
+						</div>
+						<!-- #tab3 -->
+					</div>
+					<!-- .tab_container -->
+
+				</div>
+			</div>
+		</div>
+
+	
+
+
+	</div>
+	<!--js import---->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js" integrity="sha256-JklDYODbg0X+8sPiKkcFURb5z7RvlNMIaE3RA2z97vw=" crossorigin="anonymous"></script>
+	<!-- 메인슬라이더 -->
+	<script src="js/slider.js"></script>
+	<!-- 컨텐츠슬라이더 -->
+	<script src="js/jquery.bxslider.js"></script>
+
+	<!-- 키보드 -->
+	<script type='text/javascript' src="js/hangul.js"></script>
+    <script type='text/javascript' src='js/jquery.secureKeyboard.js'></script>
+	
+	<!-- gnb 슬라이더 -->
+	<script src="js/jquery.liquidCarousel.js"></script>
+	<script src="js/main.js"></script>	
+	<!--js import end---->	
+ </body> 
+</html>

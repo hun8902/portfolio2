@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900');
+
+/* CSS Document */
+html,body{padding:0; margin:0;}
+.container{width:680px; margin:0 auto; }
+
+/* Default Setting */
+html, body, div, input, label, select, textarea, button, h1, h2, h3, h4, h5, h6, strong, p, span, a, ul, li, dl, dt, dd, a, ::after, ::before { font-family: 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+*, ::before, ::after {margin: 0; padding: 0; box-sizing: border-box; letter-spacing: -1px;}
+html, body {font-family: 'Noto Sans KR',  sans-serif; font-size: 14px; color: #000; font-weight: normal; letter-spacing: -1px;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, strong, address {display: block;}
+ul, ol, li {list-style: none;}
+a {display: inline-block; text-decoration: none; vertical-align: top;}
+span {display: inline-block; vertical-align: top;}
+img {max-width: 100%; border: 0; vertical-align: top;}
+em, address {font-weight: normal; font-style: normal;}
+hr {border: 0; margin: 30px 0; padding: 0; border-bottom: 1px solid #000;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+table {width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; word-break: break-all;}
+textarea {resize: none; outline: 0; vertical-align: top;}
+button {display: inline-block; font-family: inherit; text-decoration: none; background: transparent; border: none; outline: 0; white-space: nowrap; vertical-align: top; cursor: pointer;}
+
+
+.logo{position:relative; text-align:center; padding-top:44px;}
+.title{position:relative; text-align:center; padding-top:15px;}
+.input_form{position:relative; text-align:center;  }
+.title_sub{position:relative; text-align:center; padding-top:20px; font-size:24px; color:#000000; padding-bottom:24px;}
+.slider{padding-top:20px; margin-bottom:38px;}
+.slider .container{position:relative;}
+/* sldier img */
+.swiper-container {
+	position: relative;
+	width: 594px;
+	height: 322px;	
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	position:absolute;
+	background: url("../img/right.png") no-repeat !important;
+	margin-top: 115px !important;
+	width:95px !important;
+	height:95px !important;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	position:absolute;
+	background: url("../img/left.png") no-repeat !important;
+	margin-top: 115px !important;
+	width:95px !important;
+	height:95px !important;
+}
+/* sldier img */
+.box_input{position:relative; width:597px; height:87px;  font-size:55px; text-align:right; padding-right:100px; margin-bottom:10px; border-top:1px solid #000; border-left:2px solid #9b9b9b; border-right:2px solid #9b9b9b; border-bottom:2px solid #9b9b9b}
+
+/* 신청 폼 */
+.won_text{
+	position: absolute;
+    right: 90px;
+    font-size: 34px;
+    line-height: 87px;
+    font-weight: 600;
+    z-index: 9;
+}
+.input_box{
+	position:relative;
+	background:#de0000; 
+	height:460px;	
+}
+.box_title1{
+	position:relative;
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:30px;
+}	
+.input_table {
+	position:relative;
+	table-layout: auto !important;
+	margin-left:19px;
+	width:640px;
+}
+.input_table tr td{
+	vertical-align:top;
+}
+.input_box .table_input {
+	position: relative;
+	width:428px;
+	height:96px;
+	font-size:24px; 
+	line-height:96px;
+	padding-left:27px;
+}
+.vb{vertical-align:bottom}
+.chkB { position: relative;  padding-bottom:8px;}
+.chkB input {position: absolute; top: 0; left: 0; margin: 0; padding: 0 !important; width: 26px !important; height: 26px; border: 0 !important; opacity: 0; z-index: 2; cursor: pointer;}
+.chkB input + label {display: inline-block; padding: 0 0 0 40px !important; height: 26px; line-height: 26px; font-size: 14px;  font-weight:300; color: #fff;  vertical-align: top; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; z-index: 1; cursor: pointer;}
+.chkB.no-txt input + label {}
+.chkB input + label:hover {_color: #000;}
+.chkB input[type="checkbox"] + label {background: url("../img/check_off.png") 0 50% no-repeat;}
+.chkB input[type="checkbox"]:checked + label {background: url("../img/check_on.png") 0 50% no-repeat;}
+.popup_view{vertical-align: top;    color: #fff;    font-size: 14px;    line-height: 10px;    margin-left: 10px;}
+.chkB  span{margin-left:10px; color:#fff; font-size: 14px; line-height: 26px; cursor:pointer}
+/* 신청 폼 */
+
+.footer{height:130px; background:#444444; padding-top:20px; color:#8e8e8e; text-align:center; font-size:17px; line-height:24px; font-weight:400;}
+.form_agree{display:inline-block; margin-left:10px;}
+.popup_ag1{position:absolute;  top:0; margin-left:0; width:480px; height:270px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none;}
+.popup_ag2{position:absolute;  top:0; margin-left:0; width:480px; height:270px; background:#fff; padding::10px;  z-index:99; border:1px solid #000; display:none;}
+.agpopup_close{position:absolute; margin-top: -70px; right:-1px;}
+.long_text{width:100%; height:100%; border:0; padding:15px;}
+
+.input_form1{display:none;}
+.won_text1 {position: relative; text-align:center; font-size:65px;color:#000000;}
+.won_text1 span {font-size:98px;  font-weight:600;  vertical-align:bottom}
+.won_text2 {position: relative; text-align:center; font-size:22px; color:#686868; padding-top:30px; padding-bottom:70px;}
+
+
+.gray_bg{background:#dedede}
+
+
+.box_input::-webkit-input-placeholder {
+	font-size:45px;
+}
+.box_input:-ms-input-placeholder {
+	font-size:45px;
+}
+ .box_input:placeholder {
+ 	font-size:45px;
+  }

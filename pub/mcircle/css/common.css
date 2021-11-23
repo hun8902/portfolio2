@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+/* ========================================================================================================
+	2017, KLCNS, all right reserved.
+	Author: boganjung@me.com
+======================================================================================================== */
+
+/* @import url("theme/jquery.ui.all.css"); */
+
+
+/* 모든 태그 공백과 테두리, 아웃라인 제거 */
+* { margin: 0; padding: 0; border: none; outline: none; /* box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; */ }
+
+header, div, nav, ul, li, a, aside, h1, h2, h3, h4, h5, h6, article, section, p, footer {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; cursor: default; }
+
+body {
+	position: relative; color: /* #23262a */#555; min-width: 1240px; background: #f1f1f1;
+	font: 14px/24px 'Nanum Gothic', 'Apple SD Gothic Neo', Helvetica; font-weight: 300; }
+
+/* 테이블 전역 설정 */
+table { border-collapse: collapse; white-space: nowrap; }
+
+/* 리스트 태그의 불릿 제거 */
+ul, ol { list-style: none; }
+
+/* 링크 텍스트 리셋 */
+a { display: inline-block; color: #02bdd6; text-decoration: none; cursor: pointer; }
+a:visited { color: #02bdd6; }
+a:hover { color: #02bdd6; text-decoration: underline; }
+a:active { color: #02bdd6; }
+
+/* 텍스트 버튼 공통 */
+.text_btn, .text_btn_y { display: inline-block; color: #888; cursor: pointer; }
+.text_btn:visited, .text_btn_y:visited { color: #888; }
+
+/* 하늘색(기본) */
+.text_btn { display: inline-block; color: #02bdd6; cursor: pointer; }
+.text_btn:visited { color: #02bdd6; }
+.text_btn:hover { color: #02bdd6; text-decoration: underline; }
+.text_btn:active { color: #02bdd6; }
+
+.text_btn_y:hover { color: #ad7c26; /* text-decoration: underline; */ }
+.text_btn_y:active { color: #ad7c26; }
+
+/* heading tag weight 설정 */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/* Clearfix */
+.clear { clear: both !important; }
+/* .clearfix { zoom: 1; } */
+.clearfix:after { display: block; visibility: hidden; font-size: 0; content: ""; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+
+/* block object 정렬 */
+.left	{ float: left !important; } /* 좌측정렬 */
+.right 	{ float: right !important; } /* 우측정렬 */
+.clear	{ clear: both !important; } /* 개행 */
+.none	{ float: none !important; } /* 플롯 해제 */
+.inline	{ display: inline-block; }
+.overflow { overflow: visible; }
+
+/* form Tag */
+input, label { display: inline-block; vertical-align: middle; }
+label {  }
+
+/* 마우스 커서 */
+.mouse_pointer	{ cursor: pointer !important; }
+.mouse_help		{ cursor: help !important; }
+.mouse_default	{ cursor: default !important; }
+
+/* 화면 숨김 */	.dp_off, .display_1440_over	{ display: none; }
+
+/* 마진 제거 */	.margin_none { margin: 0 !important; }
+/* 마진(상단) 제거 */	.margin_top_none { margin-top: 0 !important; }
+/* 마진(우측) 제거 */	.margin_right_none { margin-right: 0 !important; }
+
+/* 패딩 제거 */	.padding_none { padding: 0 !important; }
+/* 패딩(상단) 제거 */	.padding_top_none { padding-top: 0 !important; }
+/* 패딩(우측) 제거 */	.padding_right_none { padding-right: 0 !important; }
+/* 패딩(하단) 제거 */	.padding_bottom_none { padding-bottom: 0 !important; }
+/* 패딩(좌측) 제거 */	.padding_left_none { padding-left: 0 !important; }
+
+
+
+/* ========================================================================================================
+	Aside 네비게이션
+======================================================================================================== */
+aside { position: fixed; top: 0; left: 0; width: 60px; height: 100%; background: /* #383838 */#1c2b36; color: #888; border-top: 1px solid #1c2b36; z-index: 5000; }
+
+/* Navigation */
+aside>nav { font-weight: 400; }
+aside>nav ul li.root { height: 50px; text-align: center; cursor: default; }
+aside>nav ul li:hover { color: #fff; background: /* #515151 */#0f1922; }
+
+/* 마우스 오버했을때 서브메뉴 보여주기 */
+aside>nav ul li:hover ul { display: block; margin-top: -50px; }
+
+/* 네비게이션 내부의 폰트 아이콘 */
+aside>nav ul li i { line-height: 50px !important; float: none !important; margin: 0 !important; vertical-align: inherit !important; }
+
+/* 네비게이션 앵커 색상 */
+aside>nav ul li a.nav { display: block; width: 60px; height: 50px; color: #888; cursor: pointer; }
+aside>nav ul li a.nav:visited { color: #888; }
+aside>nav ul li a.nav:hover { color: #fff; }
+aside>nav ul li a.nav:active { color: #fff; }
+
+/* 서브메뉴는 안보여요 */
+aside>nav ul li ul { display: none; }
+
+/* 서브메뉴의 포지션 */
+aside>nav ul li ul {
+	position: absolute; left: 60px; padding: 9px 0; background: /* #515151 */#0f1922;
+	/* 박스모델 초기화 */ /* box-sizing: initial; padding: 0; background: #fff; box-shadow: 0 0 4px #666; */
+	/* max-height: 350px; */ overflow-y: auto;
+}
+
+/* 서브메뉴의 리스트 스타일 */
+aside>nav ul li ul li { box-sizing: initial; margin: 0; }
+
+/* 서브메뉴의 앵커 */
+aside>nav ul li ul li a {
+	width: 164px; padding: 8px 10px 8px 14px; color: #afafaf; font-size: 13px; line-height: 17px; text-align: left;
+	/* border-left: 4px solid #515151; */ background: #0f1922; text-decoration: none;
+}
+aside>nav ul li ul li a:visited { color: #afafaf; }
+aside>nav ul li ul li a:hover { color: #fff; background: #02bdd6; transition: all .2s ease; -webkit-transition: all .2s ease; text-decoration: none; }
+aside>nav ul li ul li a:active { color: #fff; }
+
+
+
+/* ========================================================================================================
+	컨텐츠 
+======================================================================================================== */
+.contents { position: static; top: 0; left: /* 74px */0; width: 100%; min-width: 1240px; /* height: 100%; */ }
+
+
+/* ----------------------------------------------------
+	헤더 (Header), 글로벌 헤더 바(ghb, Global Header Bar)
+---------------------------------------------------- */
+header.top {
+	position: fixed; top: 0; left: 0; width: 100%; min-width: 1240px; height: 51px;
+	transition: all .3s ease; background: #fff; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; z-index: 3000;
+}
+header.top.sticky { height: 51px; font-weight: 300; transition: all .3s ease; background-color: rgba(255, 255, 255, 0.85); box-shadow: 0 1px 4px #ddd; }
+header.top.sticky:hover { background: #fff; transition: all .3s ease; }
+
+div.scb { padding: 0 20px 0 80px; font-size: 15px; line-height: 51px; }
+p.scb { float: left; transition: all .3s ease; }
+p.scb a { display: block; margin-left: 14px; text-decoration: none; }
+p.scb a:visited { color: #555; }
+p.scb a:hover { color: #555; }
+p.scb a:active { color: #555; }
+
+/* 계정정보 구글 아이콘 마우스 오버 시 상세 계정정보 표시 */
+div.current_account { float: right; }
+div.current_account span { font-size: 15px; line-height: 51px; transition: all .3s ease; }
+div.current_account p.user_name { padding-left: 26px; background: transparent url(../img/ic_account_box_black_48dp_1x.png) left center no-repeat; background-size: 21px; }
+div.current_account p.user_name span.account_roll_info { font-size: 14px; }
+
+/* 세션 사용자 이름에 마우스 오버하는 경우 계정정보 상세를 보여준다 */
+div.current_account:hover div.account_info {
+	display: block; position: absolute; top: 44px; right: 14px; max-width: 280px; padding: 10px 14px 8px 14px;
+	font-size: 14px; line-height: 24px; background: /* #b3dce2 */#e8e8e8; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 0 3px #ddd;
+}
+
+/* 계정정보 상세는 감춰진다 */
+div.account_info { display: none; }
+div.account_info i/* 구글 아이콘폰트 */ { line-height: 24px; }
+div.account_info p { font-size: 15px; font-weight: 400; color: #333; }
+div.account_info p.depth2 { margin-top: 2px; font-size: .8em; line-height: 1.4em; }
+div.account_info div.bottom { margin-top: 8px; padding-top: 6px; text-align: right; border-top: 1px solid #b1b1b1; }
+div.account_info div.bottom i { float: left; margin-right: 4px; font-size: 17px !important; line-height: 26px !important; }
+div.account_info div.bottom a { margin-left: 10px; color: #555; text-decoration: none; font-weight: 400; }
+div.account_info div.bottom a:hover { color: #02bdd6; }
+
+/* Sticky style */
+header.top.sticky p.scb {  transition: all .3s ease; }
+header.top.sticky div.current_account span { font-size: 15px; line-height: 51px; transition: all .3s ease; }
+header.top.sticky div.current_account i/* 구글 아이콘폰트 */ { font-size: 19px; line-height: 51px; }
+header.top.sticky div.current_account div.account_info { top: 43px; }
+header.top.sticky div.current_account div.account_info i/* 구글 아이콘폰트 */ { font-size: 24px; line-height: 24px; }
+header.top.sticky div.current_account p.user_name span.account_roll_info { display: none; }
+
+
+/* ----------------------------------------------------
+	최상단 알림 메세지 박스
+---------------------------------------------------- */
+.top_alert {
+	position: absolute; width: 100%; height: 75px; padding-left: 60px; color: #fff; font-size: 19px; line-height: 73px; text-align: center;
+	transition: all .3s ease;
+}
+
+/* Sticky style */
+header.top.sticky .top_alert, header.top.sticky .top_alert i,
+header.cti.sticky .top_alert, header.cti.sticky .top_alert i { font-size: 15px; height: 51px; line-height: 51px; transition: all .3s ease; }
+
+/* 최상단 알림 닫기 버튼 */
+.top_alert:hover i { color: #ddd; transition: all .2s ease; -webkit-transition: all .2s ease; }
+.top_alert i { float: right !important; padding-right: 20px; line-height: 75px; color: transparent; }
+.top_alert i:hover { color: #fff; }
+
+/* Case 1, 성공(Success) 메세지 */
+.top_alert.case_1 { background: #02bdd6; }
+.top_alert.case_1 span { padding-left: 30px; background: transparent url(../img/ic_done_white_48dp_1x.png) left center no-repeat; background-size: 24px; }
+
+/* Case 2, 에러(Error) 메세지 */
+.top_alert.case_2 { background: #ff0000; }
+.top_alert.case_2 span { padding-left: 30px; background: transparent url(../img/ic_error_outline_white_48dp_1x.png) left center no-repeat; background-size: 24px; }
+
+/* Case 3, 알림(Information) 메세지 */
+.top_alert.case_3 { background: #000; }
+.top_alert.case_3 span { padding-left: 30px; background: transparent url(../img/ic_info_outline_white_48dp_1x.png) left center no-repeat; background-size: 24px; }
+.top_alert.case_3 i { color: #666; }
+.top_alert.case_3 i:hover { color: #fff; }
+
+#minWidthAlert { display: none; }
+
+
+
+/* ========================================================================================================
+	Article
+======================================================================================================== */
+article { position: relative; top: 50px; /* left: 60px; */ margin: 0; padding: 20px 20px 6px 80px; min-width: 1180px; }
+/* article i { float: left; margin: 4px 4px 0 0; font-size: 17px !important; } */
+
+
+
+/* ========================================================================================================
+	Section
+======================================================================================================== */
+section {
+	margin-bottom: 14px; /* 아티클 하단에 6픽셀 패딩과 합해 20픽셀 유지 */
+	padding: 16px 14px 2px 14px; background: #fff; border: 1px solid /* #ddd */#e3e3e3;
+}
+section:after { display: block; visible: hidden; font-size: 0; content: ""; clear: both; height: 0; }
+section:hover { border: 1px solid /* #ddd */#d0d0d0; box-shadow: 0 0 6px #ddd; }
+
+/* 섹션안의 폼 오브젝트에 관한 패딩 설정 */
+section div.obj { padding-right: 10px; }
+section div.obj:last-of-type { padding-right: 0; }
+
+/* 섹션 안에 있는 문장 */
+section p.sentence { margin-bottom: 4px; line-height: 22px; }
+section p.sentence:last-of-type { margin-bottom: 12px; }
+
+/* 섹션 안에 있는 컨텐츠 */
+section .content { overflow: auto; padding-bottom: 12px; }
+
+
+/* ----------------------------------------------------
+	섹션 헤더
+---------------------------------------------------- */
+section header {
+	height: 44px; margin-bottom: 14px;
+	background: transparent url(../img/wall_section_title.gif) repeat-x 0 100%; background-size: 3px;
+}
+
+/* 섹션 헤더의 좌측 영역(큰글씨) */
+section header p.title { float: left; font-size: 18px; line-height: 30px; text-shadow: 0 1px 0 #f1f1f1; }
+section header p.title i { line-height: 30px; padding-right: 6px; }
+
+/* 섹션 헤더의 우측 영역(작은글씨) */
+section header div.sub_title { float: right; line-height: 30px; }
+
+/* 섹션 헤더의 우측 영역의 작은글씨가 텍스트 버튼일 때! */
+section header div.sub_title p.text_btn { font-size: 13px; color: #555; }
+section:hover header div.sub_title p.text_btn { color: #02bdd6; transition: all .3s ease; }
+section header div.sub_title p i { padding-right: 4px; font-size: 16px; line-height: 30px; }
+
+/* 섹션 헤더 안의 "obj" 패딩 제거 */
+section header div.obj { padding-top: 0; }
+
+
+
+/* ========================================================================================================
+	분할 섹션 레이아웃
+======================================================================================================== */
+
+/* 왼쪽 섹션랩 */
+div.section_wrap_l30 { float: left; width: 30%; padding-right: 7px; }
+div.section_wrap_l33 { float: left; width: 33.333%; padding-right: 7px; }
+div.section_wrap_l50 { float: left; width: 50%; padding-right: 7px; }
+div.section_wrap_l60 { float: left; width: 60%; padding-right: 7px; }
+/* div:after { display: block; visible: hidden; font-size: 0; content: ""; clear: both; height: 0; } */
+
+/* 두번째 섹션 */
+div.section_wrap_r33 { float: right; width: 33.333%; padding-left: 7px; }
+div.section_wrap_r40 { float: right; width: 40%; padding-left: 7px; }
+div.section_wrap_r50 { float: right; width: 50%; padding-left: 7px; }
+
+
+/* ----------------------------------------------------
+	위젯(Widget) : widget-101, widget-102
+	// 콜 및 상담원 상태 현황
+---------------------------------------------------- */
+#widget-101 table, #widget-102 table { width: 100%; text-align: center; }
+
+/* td의 보더 설정 */
+#widget-101 table tbody tr td, #widget-102 table tbody tr td {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing;
+	height: 74px; border-right: 8px solid #fff; /* border: 1px solid #e3e3e3; */
+	/* background: #f9f9f9; */ overflow: hidden;
+}
+#widget-101 table tbody tr td:last-of-type, #widget-102 table tbody tr td:last-of-type { border-right: none; }
+
+#widget-101 table tbody tr td>div, #widget-102 table tbody tr td>div { padding: 8px; padding-top: 4px; border-radius: 2px; }
+
+/* 상단 타이틀 표시 */
+#widget-101 table tbody tr td p.title, #widget-102 table tbody tr td p.title {
+	padding-bottom: 4px; margin-bottom: 5px; font-size: 15px; border-bottom: 1px solid #e3e3e3;
+}
+#widget-101 table tbody tr td p span, #widget-102 table tbody tr td p span { font-size: 12px; line-height: 1em; }
+
+/* 하단 데이터 표시 */
+#widget-101 table tbody tr td p.data, #widget-102 table tbody tr td p.data { color: #333; font-size: 20px; font-weight: 400; text-shadow: 0 1px 0 #f1f1f1; }
+#widget-101 table tbody tr td p.data span, #widget-102 table tbody tr td p.data span { font-size: 13px; }
+
+/* 컬러 배경에서의 폰트 색상 조정 : 흰색으로... */
+#widget-102 table tbody tr td>div.bg_dark p, #widget-102 table tbody tr td>div.bg_blue p, #widget-102 table tbody tr td>div.bg_sky p,
+#widget-102 table tbody tr td>div.bg_red p, #widget-102 table tbody tr td>div.bg_green p, #widget-102 table tbody tr td>div.bg_orange p {
+	color: #fff; text-shadow: /* none */0 1px 0 #333;
+}
+
+
+/* ----------------------------------------------------
+	위젯(Widget) : widget-103
+	// 서비스레벨
+---------------------------------------------------- */
+#widget-103 { min-height: 358px; }
+#widget-103 .c_obj { padding: 12px 16px; width: 100%; /* text-align: center; */ border-radius: 2px; }
+#widget-103 .c_obj span { font-size: 20px; line-height: 30px; font-weight: 400; }
+#widget-103 .c_obj span i { margin-right: 6px; font-size: 30px; }
+#widget-103 .c_obj span:last-of-type { float: right; }
+#widget-103 .c_obj span.upper { font-size: 8px; vertical-align: super; }
+
+#serviceLevel ul { margin: 6px 0 0 0; }
+#serviceLevel ul li { padding: 6px 8px; line-height: 23px; font-size: 13px; border-bottom: 1px dotted #e3e3e3; }
+#serviceLevel ul li:last-of-type { border-bottom: 1px solid #e3e3e3; }
+#serviceLevel ul li span:first-of-type { padding-left: 6px; }
+#serviceLevel ul li span:last-of-type { float: right; font-size: 18px; }
+#serviceLevel ul li span.data { color: #000; font-weight: 400; }
+#serviceLevel ul li span small { padding-left: 4px; font-size: 12px; font-weight: 300; }
+#serviceLevel ul li i { font-size: 18px; line-height: 24px; }
+
+
+/* ----------------------------------------------------
+	위젯(Widget) : widget-104
+	// 수발신 통화 집계
+---------------------------------------------------- */
+#widget-104 { min-height: 358px; }
+#widget-104 table { width: 100%; text-align: center; text-shadow: 0 1px 0 #f1f1f1; }
+
+#widget-104 table tr { border-top: 5px solid #fff; border-bottom: 5px solid #fff; }
+#widget-104 table thead tr:first-of-type { border-top: none; }
+#widget-104 table tr:last-of-type { border-bottom: none; }
+#widget-104 table tr td { width: 20%; padding: 12px 4px; border-left: 5px solid #fff; border-right: 5px solid #fff; }
+#widget-104 table tr td:first-of-type { border-left: none; }
+#widget-104 table tr td:last-of-type { border-right: none; }
+
+/* 테이블 헤더 */
+#widget-104 table thead tr td { background: /* #f5f5f5 */#e3e3e3; color: #333; }
+#widget-104 table thead tr td.none { background: #fff; }
+#widget-104 table thead tr td.cti { background: #c9da98; }
+
+/* 테이블 바디 */
+#widget-104 table tbody tr td { background: #f1f1f1; }
+#widget-104 table tbody tr td.cti { background: #dbe8b5; }
+
+#widget-104 span.data { font-size: 18px; font-weight: 400; color: #000; }
+#widget-104 span.small { font-size: 12px; }
+
+
+/* ----------------------------------------------------
+	위젯(Widget) : widget-900
+	// 이 시스템에 관하여
+---------------------------------------------------- */
+#widget-900 table { width: 100%; text-shadow: 0 1px 0 #f1f1f1; }
+
+/* 테이블 바디 */
+#widget-900 table tbody tr { border: 1px dotted #e3e3e3; border-top: none; border-left: none; border-right: none; }
+#widget-900 table tbody tr td { padding: 6px 0 2px 12px; border-left: 1px dotted #e3e3e3; }
+#widget-900 table tbody tr td:first-of-type { padding-left: 6px; min-width: 110px; border-left: none; }
+
+#widget-900 table tbody tr td p { float: left; min-width: 150px; padding-right: 10px }
+
+#widget-900 span.data { font-size: 14px; font-weight: 400; color: #000; }
+#widget-900 span.small { font-size: 12px; }
+
+/* 우측 섹션의 들여쓰기 */
+#widget-900 .section_wrap_r40 { padding-left: 14px; }
+
+/* 디스크 용량 정보의 타이틀 */
+#widget-900 #storageUsage { height: 34px; line-height: 34px; }
+#widget-900 #storageUsage i { line-height: 34px; }
+
+
+/* ----------------------------------------------------
+	섹션에 관한 추가 정보
+---------------------------------------------------- */
+/* 섹션내의 추가 정보 텍스트 버튼 */
+section p.text_btn.btn_open_info { float: right; margin-top: 8px; font-size: 13px; line-height: 16px; }
+section p.text_btn.btn_open_info i { float: left; margin: 0 4px 0 0; font-size: 16px !important; line-height: 16px !important; }
+
+/* 섹션에 관한 추가 정보 박스 */
+.info_box {
+	display: none; position: relative; margin-top: 12px; padding: 15px 19px; font-weight: 400; text-shadow: 0 1px 0 #fff;
+	background: #f1f1f1; border: 1px solid #e3e3e3; border-left: 4px solid #ad7c26; border-radius: 3px;
+}
+.status>.info_box { position: relative; top: 6px; margin-bottom: 6px; }
+
+/* 추가 정보 박스 닫기 버튼 */
+.info_box i.btn_close_info { display: none; cursor: pointer; }
+.info_box:hover i.btn_close_info {
+	display: block; position: absolute; top: 17px; right: 0; height: 24px; width: 40px; color: #999; 
+	background: transparent; transition: all .3s ease; text-align: center;
+}
+.info_box i.btn_close_info:hover { color: #000 !important; }
+
+/* 추가 정보 박스의 내용 */
+.info_box ul li { line-height: 20px; }
+.info_box ul li.title { margin-top: 2px; height: 26px; line-height: 23px; color: #ad7c26; font-size: 16px; }
+.info_box ul li.title i { margin-top: 0; }
+.info_box ul li.depth1 { padding: 8px 0 4px 29px; }
+.info_box ul li.depth2 {
+	padding: 2px 0 0 57px; font-weight: 300; color: #222; font-size: 13px; line-height: 18px;
+	background: transparent url(../img/ic_circle_black_48dp_50.png) no-repeat 43px 6px; background-size: 10px;
+}
+
+
+
+/* ========================================================================================================
+	Footer
+======================================================================================================== */
+footer.main {
+	position: fixed; bottom: 0; right: 34px; background-color: rgba(232, 232, 232, 0.1); padding: 4px 14px; font-size: 11px; line-height: 16px;
+	border: 1px solid #e2e2e2; border-top-left-radius: 6px; border-top-right-radius: 6px;
+	/* transition: all .3s ease; */ opacity: .2;
+}
+footer.main div.left { padding-right: 6px; }
+footer.main:hover { padding: 8px 14px; background: #e8e8e8; transition: all .2s ease; opacity: 1; box-shadow: 0 0 3px #ddd; }
+
+
+
+/* ========================================================================================================
+	폼 엘리먼트의 정의
+======================================================================================================== */
+form { margin: 0; padding: 0; -webkit-appearance: none; }
+
+/* 거지같은 IE 텍스트필드 삭제 아이콘을 감추기 위한 Hack..!! */
+input[type="text"]::-ms-clear { display: none; width: 0; height: 0; }
+input[type="text"]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* Placeholder의 위치 조정을 위한 Hack..!! */
+::-webkit-input-placeholder { padding-top: 2px; color: #999; }
+:-moz-placeholder { /* Firefox 18- */ color: #999; }
+::-moz-placeholder { /* Firefox 19+ */ color: #999; }
+:-ms-input-placeholder { color: #999; }
+
+
+
+/* ========================================================================================================
+	폼 스타일
+======================================================================================================== */
+form { margin: 0; padding: 0; -webkit-appearance: none; }
+
+/* 거지같은 IE 텍스트필드 삭제 아이콘을 감추기 위한 Hack..!! */
+input[type="text"]::-ms-clear { display: none; width: 0; height: 0; }
+input[type="text"]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* Placeholder의 위치 조정을 위한 Hack..!! */
+::-webkit-input-placeholder { padding-top: 2px; color: #999; }
+:-moz-placeholder { /* Firefox 18- */ color: #999; }
+::-moz-placeholder { /* Firefox 19+ */ color: #999; }
+:-ms-input-placeholder { color: #999; }
+
+
+/* ----------------------------------------------------
+	1. 데이터 랩: class="obj"
+		- 모든 폼 오브젝트는 이걸로 감싸야 한다..!!
+	2. 데이터 랩의 컬럼 폭 지정: class="obj w00"
+		- 컬럼 폭 지정을 생략해서는 안된다..!!
+---------------------------------------------------- */
+/* 폼 엘리먼트의 폭 지정(숫자는 퍼센트를 의미) */
+.w100	{ clear: both; width: 100%; }
+.w95	{ float: left; width: 95%; }
+.w90	{ float: left; width: 90%; }
+.w85	{ float: left; width: 85%; }
+.w80	{ float: left; width: 80%; }
+.w75	{ float: left; width: 75%; }
+.w70	{ float: left; width: 70%; }
+.w65	{ float: left; width: 65%; }
+.w60	{ float: left; width: 60%; }
+.w55	{ float: left; width: 55%; }
+.w50	{ float: left; width: 50%; }
+.w45	{ float: left; width: 45%; }
+.w40	{ float: left; width: 40%; }
+.w35	{ float: left; width: 35%; }
+.w33	{ float: left; width: 33.33333333%; }
+.w30	{ float: left; width: 30%; }
+.w25	{ float: left; width: 25%; }
+.w20	{ float: left; width: 20%; }
+.w15	{ float: left; width: 15%; }
+.w10	{ float: left; width: 10%; }
+.w5		{ float: left; width: 5%; }
+
+/* 폼 엘리먼트 랩 선언 */
+/* .w5, .w10, .w15, .w20, .w25, .w30, .w33, .w35, .w40, .w45, .w50, .w55, .w60, .w65, .w70, .w75, .w80, .w85, .w90, .w95, .w100 { padding: 0 0 12px 0; } */
+.obj { padding-bottom: 12px; }
+
+
+
+/* ========================================================================================================
+	리치컬러
+======================================================================================================== */
+/* 기본색 : Gray color */
+.bg_gray {
+	border: 1px solid #e3e3e3;
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #dbdbdb), color-stop(0.77, #f9f9f9) );
+	background-image: -o-linear-gradient(top, #dbdbdb 0%, #f9f9f9 77%);
+	background-image: -moz-linear-gradient(top, #dbdbdb 0%, #f9f9f9 77%);
+	background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #f9f9f9 77%);
+	background-image: -ms-linear-gradient(top, #dbdbdb 0%, #f9f9f9 77%);
+	background-image: linear-gradient(to top, #dbdbdb 0%, #f9f9f9 77%);
+}
+
+/* 다크그레이 : Dark gray color */
+.bg_dark {
+	border: 1px solid #666; opacity: .8; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #999), color-stop(1, #666));
+	background-image: -o-linear-gradient(bottom, #999 0%, #666 100%);
+	background-image: -moz-linear-gradient(bottom, #999 0%, #666 100%);
+	background-image: -webkit-linear-gradient(bottom, #999 0%, #666 100%);
+	background-image: -ms-linear-gradient(bottom, #999 0%, #666 100%);
+	background-image: linear-gradient(to bottom, #999 0%, #666 100%);
+}
+
+/* 하늘색 : Sky blue color */
+.bg_sky {
+	border: 1px solid #0290a4; opacity: .7; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #02bdd6), color-stop(1, #016471) );
+	background-image: -o-linear-gradient(bottom, #02bdd6 0%, #016471 100%);
+	background-image: -moz-linear-gradient(bottom, #02bdd6 0%, #016471 100%);
+	background-image: -webkit-linear-gradient(bottom, #02bdd6 0%, #016471 100%);
+	background-image: -ms-linear-gradient(bottom, #02bdd6 0%, #016471 100%);
+	background-image: linear-gradient(to bottom, #02bdd6 0%, #016471 100%);
+}
+
+/* 파란색 : Blue color */
+.bg_blue {
+	border: 1px solid #2a7dc4; opacity: .8; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #5aa3e1), color-stop(1, #2a7dc4) );
+	background-image: -o-linear-gradient(bottom, #5aa3e1 0%, #2a7dc4 100%);
+	background-image: -moz-linear-gradient(bottom, #5aa3e1 0%, #2a7dc4 100%);
+	background-image: -webkit-linear-gradient(bottom, #5aa3e1 0%, #2a7dc4 100%);
+	background-image: -ms-linear-gradient(bottom, #5aa3e1 0%, #2a7dc4 100%);
+	background-image: linear-gradient(to bottom, #5aa3e1 0%, #2a7dc4 100%);
+}
+
+/* 뻘거죽죽 : Red color */
+.bg_red {
+	border: 1px solid #b00; opacity: .8; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #f44), color-stop(1, #b00) );
+	background-image: -o-linear-gradient(bottom, #f44 0%, #b00 100%);
+	background-image: -moz-linear-gradient(bottom, #f44 0%, #b00 100%);
+	background-image: -webkit-linear-gradient(bottom, #f44 0%, #b00 100%);
+	background-image: -ms-linear-gradient(bottom, #f44 0%, #b00 100%);
+	background-image: linear-gradient(to bottom, #f44 0%, #b00 100%);
+}
+
+/* 푸르스름 : Green color */
+.bg_green {
+	border: 1px solid #597a00; opacity: .8; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #8bbe00), color-stop(1, #597a00) );
+	background-image: -o-linear-gradient(bottom, #8bbe00 0%, #597a00 100%);
+	background-image: -moz-linear-gradient(bottom, #8bbe00 0%, #597a00 100%);
+	background-image: -webkit-linear-gradient(bottom, #8bbe00 0%, #597a00 100%);
+	background-image: -ms-linear-gradient(bottom, #8bbe00 0%, #597a00 100%);
+	background-image: linear-gradient(to bottom, #8bbe00 0%, #597a00 100%);
+}
+
+/* 누리팅팅 : Orange color */
+.bg_orange {
+	border: 1px solid #b47600; opacity: .8; color: #fff; text-shadow: 0 1px 0 #333;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #ffa101), color-stop(1, #b47600) );
+	background-image: -o-linear-gradient(bottom, #f8a200 0%, #b47600 100%);
+	background-image: -moz-linear-gradient(bottom, #f8a200 0%, #b47600 100%);
+	background-image: -webkit-linear-gradient(bottom, #f8a200 0%, #b47600 100%);
+	background-image: -ms-linear-gradient(bottom, #f8a200 0%, #b47600 100%);
+	background-image: linear-gradient(to bottom, #f8a200 0%, #b47600 100%);
+}
+
+
+
+/* ========================================================================================================
+	미디어 쿼리
+======================================================================================================== */
+/* 스크린 가로폭이 1439픽셀 이하일 경우 */
+@media only screen and (min-width: 10px) and (max-width: 1239px) {
+	#minWidthAlert { display: block !important; }
+
+
+} /* @media only screen and (min-width: 600px) and (max-width: 1239px) end */
+
+
+/* This CSS End */

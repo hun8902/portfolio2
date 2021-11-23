@@ -1,0 +1,40 @@
+#main section.category .list.appearContainer .appearItem,
+#sub section.store .contBody .storeList.appearContainer .appearItem { opacity: 0; transform: translateY(30px); transition: all 1s; }
+#main section.category .list.appearContainer .appearItem.appearing,
+#sub section.store .contBody .storeList.appearContainer .appearItem.appearing { opacity: 1; transform: translate(0); }
+#main section.category .list.appearContainer .appearItem.appeared,
+#sub section.store .contBody .storeList.appearContainer .appearItem.appeared { transition: none; }
+
+.appearContainer .appearItem,
+.appearContainer .appearItem.img img { transition: all 1s; }
+.appearContainer .appearItem.img { overflow: hidden; }
+.appearContainer .appearItem,
+.appearContainer .appearItem.img img { opacity: 0; }
+.appearContainer .appearItem.img,
+.appearContainer .appearItem.appearing,
+.appearContainer .appearItem.img.appearing img { opacity: 1; }
+.appearContainer .appearItem.appearBgCover { transform: scale(1.1); opacity: 0; }
+.appearContainer .appearItem.appearBgCover.appearing { transform: scale(1); opacity: 1; }
+.appearContainer .appearItem.appearBg { background-size: auto 120% !important; background-position: center !important; opacity: 0; transform: none; }
+.appearContainer .appearItem.appearBg.appearing { background-size: auto 100% !important; background-position: center !important; opacity: 1; }
+.appearContainer .appearItem.img.appearCenter { transform: none; }
+.appearContainer .appearItem.img.appearCenter img { transform: scale(1.2); }
+.appearContainer .appearItem.img.appearCenter.appearing img { transform: scale(1); }
+.appearContainer .appearItem.img.appearLeft img { transform: translateX(-50px); }
+.appearContainer .appearItem.img.appearRight img { transform: translateX(50px); }
+.appearContainer .appearItem.img.appearTop img { transform: translateY(-50px); }
+.appearContainer .appearItem.img.appearBottom img { transform: translateY(50px); }
+.appearContainer .appearItem.img.appearLeft.appearing img,
+.appearContainer .appearItem.img.appearRight.appearing img,
+.appearContainer .appearItem.img.appearTop.appearing img,
+.appearContainer .appearItem.img.appearBottom.appearing img { transform: translate(0,0); }
+.appearContainer .appearItem.appearCenter { transform: scale(1.2); }
+.appearContainer .appearItem.appearCenter.appearing { transform: scale(1); }
+.appearContainer .appearItem.appearLeft { transform: translateX(-50px); }
+.appearContainer .appearItem.appearRight { transform: translateX(50px); }
+.appearContainer .appearItem.appearTop { transform: translateY(-50px); }
+.appearContainer .appearItem.appearBottom { transform: translateY(50px); }
+.appearContainer .appearItem.appearLeft.appearing,
+.appearContainer .appearItem.appearRight.appearing,
+.appearContainer .appearItem.appearTop.appearing,
+.appearContainer .appearItem.appearBottom.appearing { transform: translate(0,0); }

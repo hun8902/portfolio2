@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* 
+ * CALLRABi 2.6 버전용 new CSS
+ */
+
+input:read-only, textarea:read-only { 
+    background-color: #f7f7f7;
+}
+
+button[disabled=disabled], button[disabled=true], button:disabled { 
+	color:#999; 
+}
+
+select {
+    border: 1px solid #d5d8dd;
+    background: #fff;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    padding-left: 8px;
+    height: 25px;
+    cursor: pointer;
+}
+
+select option {
+    min-height: 1.5em;
+    padding: 0px 2px 1px;
+}
+
+form select {
+	width: 100%;
+}
+
+select#service {
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding: 0px 8px 0px 8px;
+    height: 25px;
+}
+
+input[type="text"]:not(readonly):hover, input[type="password"]:hover, textarea:hover {
+    border-color: #9da5af;
+}
+
+
+/******* 테이블 **************/
+table.tablesorter tbody tr.on {
+	background-color: #f0f7ff;
+}
+
+.no-record {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	text-align: center !important;
+}
+
+
+/******* common ************/
+.al { text-align: left !important; }
+.ac { text-align: center !important; }
+.ar { text-align: right !important; }
+
+
+/******* 고객 정보 ***********/
+form[name=frmSearch] #keyword {
+	margin-left: 5px;
+}
+
+form[name=frmClientInfo] footer div:nth-child(2) button {
+	margin-top: 10px;
+}
+

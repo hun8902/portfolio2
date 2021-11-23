@@ -8333,6 +8333,14 @@ textarea.form-control {
     _border-radius: 50%;
     margin: 0 auto;
     position: relative; }
+    .testimony-wrap .imgbox {
+      height:300px; overflow:hidden;
+      position: relative; }
+
+      .testimony-wrap .imgbox img {
+      position: absolute;}
+
+
     .testimony-wrap .user-img .quote {
       position: absolute;
       bottom: -10px;

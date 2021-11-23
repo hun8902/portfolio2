@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta name="viewport" content="width=1200, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">  
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>오디오락</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
+	<script src="js/jquery-3.2.1.min.js"></script>	
+	<script src="js/jquery-migrate-3.0.0.min.js"></script>	
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.rollingslider.js"></script>
+
+
+	<script src="js/main.js"></script>	
+	<script src="js/app.js"></script>
+ </head>
+ <body>
+ 	
+	<div id="warp">
+		<div id="header">
+			<div class="container">
+				<div class="title">컨텐츠포탈 도서관에 오신 것을 환영합니다.</div>
+			</div>
+		</div>
+
+		<div id="main_content">
+			<div class="container">
+				<div class="left_content">
+					<!-- 왼쪽 내용-->
+					<div class="left_box h195">
+						<div class="weather1"></div>	
+							
+					</div>
+					<div class="left_box h255">
+						<div class="more"><a href="#">더보기+</a></div>
+						<div class="list_title">공지사항</div>
+						<ul class="list_style">
+							<li>ㆍ<a href="javascript:;" class="popup_open">[카이스트 주최] 4차산업혁명에 대한 미래 관련...</a></li>
+							<li>ㆍ<a href="javascript:;" class="popup_open">[yes24] 일주일만 따라 해도 내몸에 ‘영어’가 새겨...</a></li>
+							<li>ㆍ<a href="javascript:;" class="popup_open">[알라딘] 세계를 알고 싶다면 참고도서 선물을,...</a></li>
+							<li>ㆍ<a href="javascript:;" class="popup_open">[사은품 증정] 클립보트 & 리갈노트 증정 이벤트...</a></li>
+						</ul>
+					</div>
+					<div class="left_box h168">
+						<div class="info_img"></div>
+						<div class="info_1">이용시간 안내</div>
+						<div class="info_2">평일 00:00~00:00<br/>주말/휴일 00:00~00:00</div>		
+					</div>
+					<div class="left_box h160">
+						<div class="info2_select3"></div>
+						<div class="info2_select3_text">9</div>
+						<div class="info2_1">대출 안내</div>
+						<div class="info2_2">1인당 대출 가능한 도서는<br/>1회 3권입니다</div>		
+					</div>
+					<!-- 왼쪽 내용-->
+				</div>
+				<div class="right_content">
+					<div class="banner_img">
+						<ul class="banner_slider">
+							<li><img src="img/banner_1.png"/></li>
+							<li><img src="img/banner_1.png"/></li>
+							<li><img src="img/banner_1.png"/></li>
+						</ul>						
+					</div>
+					<div class="banner_btn">
+						<ul>
+							<li><div class="banner_prev"></div></li>
+							<li><div class="banner_next"></div></li>
+						</ul>
+					</div>
+				</div>
+				<div class="right_content_plus">
+					<ul class="tabs">
+						<li class="active" rel="tab1">신간도서</li>
+						<li rel="tab2">추천도서</li>
+					</ul>
+					<div class="tab_container">
+						<div id="tab1" class="tab_content">
+							<!--tab1 슬라이더 -->
+							<div class="book_slider">
+								<ul class="tab1_ul">
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+								</ul>
+							</div>
+							<!--tab1 슬라이더 -->
+						</div>
+						<!-- #tab1 -->
+						<div id="tab2" class="tab_content">
+							<!--tab2 슬라이더 -->
+							<div class="book_slider">
+								<ul class="tab2_ul">
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li>
+										<table class="book_table">
+											<tr>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td class="pr_125">
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+												<td class="book_img">
+													<img src="img/book_eaxmple.png"/>
+												</td>
+												<td>
+													<div class="book_right_1">
+														소크라테스 재판부터<br/>
+														미란다 재판까지 세계를<br/>
+														뒤흔든 세기의 재판을 만난다!
+													</div>
+													<div class="book_right_2">
+														고대 아테네부터 현대 미국까지 사회
+														적 상황과 갈등이 잘 드러나는 세기
+														적 재판을 선정해 재판 과정을 생생
+														하고 재미있게 소개하면서 사건이 일
+														어난 사회적 배경과 판결이 사회에
+														미친 울림을 살펴보는 [재판으로 본
+														세계사]
+													</div>
+												</td>
+											</tr>
+										</table>
+									</li>
+								</ul>
+							</div>
+							<!--tab2 슬라이더 -->
+						</div>
+						<!-- #tab2 -->
+					</div>
+					<div id="footer">
+							<a href="#" class="foot_link">바로가기</a>
+					</div>
+
+				</div>
+
+				<div class="clear"></div>
+
+
+
+				
+				
+
+			
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<!--팝업-->
+	<div id ="popup_mask" ></div>
+	<div class="popup-wrap">
+		<div id="notice_popup" class="notice_popup">
+			<ul class="slide-wrap" id="example">
+				<li class="pos2">
+					<div class="inner">
+						<div class="popup_title">
+							<p>공지사항</p>
+						</div>
+						<div class="popup_text">
+							<div class="popup_text_box">
+								<div class="p_text1">도서관 대청소 안내</div>
+								<div class="p_text2">작성일 : 2018-09-03</div>
+								<div style="clear:both"></div>
+								<div class="popup_textbox">
+									<div class="p_text3">08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다.<br/>08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="pos3">
+					<div class="inner">
+						<div class="popup_title">
+							<p>공지사항</p>
+						</div>
+						<div class="popup_text">
+							<div class="popup_text_box">
+								<div class="p_text1">도서관 대청소 안내</div>
+								<div class="p_text2">작성일 : 2018-09-03</div>
+								<div style="clear:both"></div>
+								<div class="popup_textbox">
+									<div class="p_text3">08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다. 08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="pos4">
+					<div class="inner">
+						<div class="popup_title">
+							<p>공지사항</p>
+						</div>
+						<div class="popup_text">
+							<div class="popup_text_box">
+								<div class="p_text1">도서관 대청소 안내</div>
+								<div class="p_text2">작성일 : 2018-09-03</div>
+								<div style="clear:both"></div>
+								<div class="popup_textbox">
+									<div class="p_text3">08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="inner">
+						<div class="popup_title">
+							<p>공지사항</p>
+						</div>
+						<div class="popup_text">
+							<div class="popup_text_box">
+								<div class="p_text1">도서관 대청소 안내</div>
+								<div class="p_text2">작성일 : 2018-09-03</div>
+								<div style="clear:both"></div>
+								<div class="popup_textbox">
+									<div class="p_text3">08월 09일 도서관 대청소로 도서관 일부 시설의 이용이 제한됩니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+			<i class="arrow prev" id="jprev"><img src="img/popup_prev.png"/></i>
+			<i class="arrow next" id="jnext"><img src="img/popup_next.png"/></i>
+			<div class="popup_clcose"><img src="img/popup_clcose.png"/></div>
+		</div>
+	</div>
+		
+	<!--팝업-->
+	
+	
+ </body> 
+</html>

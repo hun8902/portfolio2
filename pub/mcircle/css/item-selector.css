@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+#plugin-help {
+	margin-bottom: 10px;
+}
+
+#item-list {
+	display: inline-block;
+	float: left;
+}
+
+#item-list > #item {
+	display: inline-block;
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0px 0px 0px 3px;
+	margin-right: 5px;
+	user-select: none;
+	height: 20px;
+	line-height: 20px;
+}
+
+#item-list > #item.invalid {
+	background: #f00;
+	border: 1px solid #f00;
+	color: #fff;
+}
+
+#item-list > #item:last-child {
+	margin-right: 10px;
+}
+
+#item-list #item > .btn-delete {
+	display: inline-block;
+	background: url('/img/close_.png') no-repeat center center;
+	background-size: 12px auto;
+	margin: 0px 4px 0px 2px;
+	width: 12px;
+	height: 9px;
+	cursor: pointer;
+} 
+
+#item-list #item > .btn-delete:hover {
+	background: url('/img/close.png') no-repeat center center;
+	background-size: 12px auto;
+}
+
+#search-item {
+	display: inline-block;
+}
+
+#search-item > input, #search-item > input:focus {
+	display: block;
+	background: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+    -moz-transition: none;
+    -ms-transition: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+	min-width: 100px;
+	width: 100px;
+    height: 22px;
+}
+
+#search-item > #underline {
+	display: block;
+	background: #daecfa;
+	margin-top: -1px;
+	min-width: 100px;
+	width: 100px;
+	height: 1px;
+}
+
+#search-item > #underline.hover, #search-item > #underline.focus {
+	background: #0e87ef !important;
+}
+
+.combo-box {
+	
+}
+
+.combo-box > .edit-box {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	background-color: #fff;
+	padding-left: 3px;
+	border: 1px solid #ccbca8;
+	line-height: 22px;
+	text-align: left;
+	color: #5b533f;
+	min-width: 100px;
+	height: 22px;
+}
+
+.combo-box > .button {
+	display: inline-block;
+	float: left;
+	margin-left: -1px;
+	border-right: 1px solid #ccbca8;
+	border-top: 1px solid #ccbca8;
+	border-bottom: 1px solid #ccbca8;
+	text-align: center;
+	width: 26px;
+	height: 22px;
+}
+
+.combo-box > .button::before {
+	content: '▼';
+	line-height: 23px;
+}
+
+.combo-box > .button.on {
+	background: none;
+}
+
+.combo-box > .button.on::before {
+	content: '▲';
+	line-height: 23px;
+}
+
+
+#result {
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	min-width: 100px;
+	z-index: 1001;
+}
+
+.context-menu {
+    position: absolute;
+    display: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+	padding: 3px 10px;
+    font-size: 12px;
+    background-color: #FFF;
+    min-width: 100px;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.5);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=135, Strength=4);
+    z-index: 1;
+}
+
+.context-menu option[value='']:first-child {
+    color: #999;
+}
+
+.context-menu li {
+    list-style: none;
+    text-align: left;
+}
+
+.context-menu li:hover, .context-menu li.active {
+    background-color: #54a9ac;
+    color: #fff;
+}
+
+.context-menu li a {
+    display: block;
+    padding: 3px 10px;
+    color: inherit;
+    text-shadow: none;
+    height: 24px;
+    line-height: 20px;
+}
+
+.context-menu li a:hover {
+	text-decoration: none;
+}
+
+.strong {
+    color: purple;
+    font-size: 110%;
+    font-weight: bold;
+}

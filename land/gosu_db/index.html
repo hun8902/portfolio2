@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <meta name="viewport" content="width=640, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>랜딩페이지</title>
+  <!--css import-->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link  rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <!-- js import -->
+  <script type="text/javascript" src="./js/jquery-3.x-git.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-migrate-git.min.js"></script>
+  <script src="js/jquery.flipper-responsive.js"></script>
+  
+  <script src="js/main.js"></script>
+ </head>
+ <body>
+	<div id="warp" >
+		
+		<!-- 상단 -->
+		<div class="page1" >
+			
+			
+			<div class="chartbg" ></div> 
+			<div class="container">
+				<div class="left_quick">
+				<div class="quick_cont">
+					<div class="q_title"><img src="images/page1/popup_txt1.png"></div>
+					<div class="q_cont">
+						<div class="q_t1"><span>12명</span><br/>남음</div>
+						<div class="q_t2">현재<br/>(13명 방문중)</div>
+					</div>
+				</div>
+					<a href="#" class="q_top ">TOP</a>
+				</div>
+		
+				
+				<div class="left_bg animate__animated animate__fadeInBottomLeft animate__delay-0.5s" ><img src="images/page1/left_bg.png" alt="left_bg"/></div>
+				<div class="right_bg animate__animated animate__backInRight animate__delay-0.5s"><img src="images/page1/right_bg.png" alt="right_bg"/></div>
+				<div class="logo "><img src="images/page1/logo.png" alt="logo"/></div>
+				<div class="top_title1 animate__animated animate__flipInX animate__delay-0.5s"><img src="images/page1/top_title1.png" alt="연 1억! 특/급등주 플랜의 주인공은 누구?!"/></div>
+				<div class="top_title2 animate__animated animate__bounceInLeft animate__delay-0.5s"><img src="images/page1/top_title2.png" alt="특/급등주!"/></div>
+				<div class="top_title3 animate__animated animate__zoomInDown animate__delay-0.5s ">
+					선착순 <span>200명 한정 </span>이벤트
+				</div>
+				<div class="top_title4">*본 이벤트는 200명 모집 시 자동으로 일체 종료됩니다.</div>
+				
+			</div>
+			<ul class="awards logo animate__animated animate__jackInTheBox animate__delay-0.9s">
+				<li><img src="images/page1/awards_01.png" alt="어워드"/></li>
+				<li><img src="images/page1/awards_02.png" alt="어워드"/></li>
+				<li><img src="images/page1/awards_03.png" alt="어워드"/></li>
+			</ul>
+			<div class="one_bg mobile animate__animated animate__jackInTheBox animate__delay-0.9s"><p><span>20</span>명</p>선착순!</div>
+		
+		</div>
+		<!-- 중간 -->
+		<div class="page2">
+			<div class="container">
+				<ul class="stats_time">
+					<li><div class="stats_info">선착순 <span>200명</span><br/>에게만 드리는 혜택!</div></li>
+					<li>
+					<div class="stats_count">
+							<div class="count_pos">
+								<div class="flipper" data-reverse="true" data-datetime="2020-07-31 00:00:00" data-template="dd|HH|ii|ss" data-labels="|||" id="myFlipper"></div>
+							</div>
+					</div></li>
+					<li><div class="stats_end">마감까지 <span>12명</span>남음</div></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 상단 -->
+		<div class="page3">
+			<div class="container">
+
+		  	<div class="page3_text1 mobile"><p>오직 20명에게만!</p>아낌없는 VIP정보 대방출!</div>
+
+				<ul class="form_data">
+					<li class="pc"><div class="form_info pc">
+							<div class="page3_text1">오직 200명에게만 아낌없는 (특)VIP정보 대방출!</div>
+							<div class="form_info_line2">특/급등주 시황정보 한정 이벤트!</div>
+						</div>
+					</li>
+					<li class="float_r">
+						<form name="sentMessage" method="post" action="" class="landing_form" novalidate="">
+						<input name="has_data" type="hidden" value="1">
+						<input name="page" type="hidden" value="PC">
+						<ul class="form_box">
+							<li>
+								<div class="form_line">
+									<div class="input_name">이름 </div> <input type="text" name="representative" class="input_css input-control form" value="" placeholder="이름을 입력해주세요" data-message="이름을 입력해주세요"/>
+								</div>
+								<div class="form_line pt_5">
+									<div class="input_name">연락처 </div> <input type="text"  name="phone[]" class="input_css phone_check " value="" placeholder="숫자만 입력해주세요"data-message="연락처를 입력해주세요"/>
+								</div>
+								<div class="form_agree  pt_6">
+									<div class="chkB"><input type="checkbox"  id="agree_mo1" class="agree form-control form"  data-message="개인정보이용약관에 동의 해주세요"><label for="agree_mo1">개인정보이용약관 동의</label><span class="popup_view1"> [보기]</span></div>
+								</div>
+								<div class="form_agree pt_5 ">
+									<div class="chkB"><input type="checkbox" id="agree_mo2" class="agree form-control form" data-message="마켓팅활용 수신에 동의 해주세요"><label for="agree_mo2">마켓팅활용 수신 동의</label><span class="popup_view2 "> [보기]</span></div>
+								</div>
+								<!-- 개인정보이용약관 동의 팝업 --->
+								<div class="popup_ag1 agp" >
+									<a href="" class="agpopup_close"><img src="images/page3/ag_close.png" alt="닫기"></a>
+									<textarea class="long_text" style="width:100%">개인정보취급방침
+
+									(주)고수경제티브이(이하 '회사'이라 합니다)는 회원님들이 회사의 인터넷 서비스(이하 '서비스'라 합니다)를 이용함에 있어 회원님이 회사에 제공하신 개인정보가 엄격하게 보호받을 수 있도록 최선을 다하고 있으며 이를 위한 시책으로 개인정보 정책을 제정하여 시행하고 있습니다. 
+
+									또한 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신 서비스 제공자가 준수하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가 제정한 개인정보보호지침을 준수하고 있습니다. 
+
+									1. 수집하는 개인정보의 항목 및 수집방법 
+									2. 개인정보의 수집 및 이용목적 
+
+
+
+									회사 개인정보보호정책은 정부의 법률 및 지침의 변경과 회사의 정책 변화에 따라 변경될 수 있습니다. 
+
+									회원님께서는 회사 사이트 방문 시에 수시로 확인하시기 바랍니다. 회사의 개인정보 보호정책은 다음과 같은 내용을 담고 있습니다. 
+									 </textarea>
+								</div>
+								<!-- 마켓팅활용 수신 동의 팝업 --->
+								<div class="popup_ag2 agp" >
+									<a href="" class="agpopup_close"><img src="images/page3/ag_close.png" alt="닫기"></a>
+									<textarea class="long_text" style="width:100%">마켓팅활용 
+
+									(주)고수경제티브이(이하 '회사'이라 합니다)는 회원님들이 회사의 인터넷 서비스(이하 '서비스'라 합니다)를 이용함에 있어 회원님이 회사에 제공하신 개인정보가 엄격하게 보호받을 수 있도록 최선을 다하고 있으며 이를 위한 시책으로 개인정보 정책을 제정하여 시행하고 있습니다. 
+
+									또한 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신 서비스 제공자가 준수하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가 제정한 개인정보보호지침을 준수하고 있습니다. 
+
+									1. 수집하는 개인정보의 항목 및 수집방법 
+									2. 개인정보의 수집 및 이용목적 
+
+
+
+									회사 개인정보보호정책은 정부의 법률 및 지침의 변경과 회사의 정책 변화에 따라 변경될 수 있습니다. 
+
+									회원님께서는 회사 사이트 방문 시에 수시로 확인하시기 바랍니다. 회사의 개인정보 보호정책은 다음과 같은 내용을 담고 있습니다. 
+									 </textarea>
+								</div>
+							</li>
+							<li>
+								<button name="mysubmitbutton" id="mysubmitbutton" type="submit" class="page3_submit">  
+									<div class="submit_button  " >
+											<p>200명 한정 특급주</p>무료체험신청
+									</div>
+								</button>  
+									<!-- <input type="image" src="images/page3/page3_submit.png" alt="무료체험"  class="landing_form" > -->
+									<div class="submit_hand"><input type="image" src="images/page3/submit_hand.png" alt="커서"></div>
+								</div>
+							</li>
+						</ul>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 푸터 -->
+		<div class="footer"> 
+			<div class="copyright">Copyrightⓒ GOSUECOTV Co.,Ltd all right served</div> 
+		</div>
+	</div>
+ </body> 
+</html>
+
+

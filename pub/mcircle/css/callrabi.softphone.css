@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/* ----------------------------------------------------
+	헤더 (Header), CTI Softphone Bar
+---------------------------------------------------- */
+
+header.cti {
+	position: fixed;
+	padding: 0 20px 0 20px;
+	background:#0e277c; 
+	top: 0; 
+	left: 0; 
+	color:#fff;
+	width: 100%; 
+	min-width: 1580px; 
+	height: 59px; 
+	z-index: 5000;
+}
+
+header.cti > div.ci {
+	float: left;
+	background: transparent url("../../img/logo.png") center center no-repeat;
+	background-size: contain; 
+	margin-top: 15px;
+	text-indent: -99999px;
+	width: 178px;
+	height: 31px;	
+}
+
+.top_search {
+	display:inline-block;
+	float: left;
+	position: relative;
+	margin-top: 17px;
+	margin-left:31px;
+    width: 210px;
+}
+
+.top_search input {
+	border-color: #d5d8dd;
+	_border-right: none !important;
+	_border-bottom: 1px solid #bec0c4;
+	border-radius:15px;  
+	-moz-border-radius: 15px;  
+	-webkit-border-radius: 15px; 
+	padding: 0 40px 0 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.top_search input:hover, .top_search input:focus {
+	border-color: #9da5af; 
+}
+
+/* 번호검출(전화번호 검색 버튼) */
+.top_search button {
+	position:absolute; 
+	top:0; 
+	right:10px; 
+	margin-left: 0 !important; 
+	padding: 5px 6px 4px 6px !important;  
+	background: none;  
+	min-width:18px !important;
+	cursor: pointer;
+}
+
+button.search_cid i { font-size: 15px; }
+
+/********** 소프트폰 UI *************/
+div.cti_wrap { 
+	float: right;
+	margin: 16px 1px 0 0px;
+	height: 26px;
+}
+
+div.cti_wrap > div {
+	float: left;
+}
+
+/* 전화걸기, 받기, 당겨받기, 돌려주기 초록색 계열 버튼 */
+div.cti_wrap button:hover {
+	background-color: #658b00 !important; 
+}
+
+div.cti_wrap button:focus, div.cti_wrap button.on {
+	background-color: #4d6900 !important;
+}
+
+div.cti_wrap button i {
+    float: left;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+	width: 1em;
+    height: 1em;    
+}
+
+
+/* 돌려주기 버튼 레이어 */
+.transfer.control-group .panel {
+	float: left;
+	display: none;
+	margin-left: 14px;
+	min-width: 400px; 
+}
+
+input[name=trans_dial_number] {
+	float: left;
+	border-color: #aaa;
+	margin-top: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	width: 110px;
+}
+
+button#toggle-agent-list {
+    background: #6cc1e5 url(../img/ic_arrow_drop_down_white_48dp_1x.png) center center no-repeat;
+    background-size: 90%;
+    border-radius: 0;
+    margin: 1px 0px 0px 0px;
+    width: 24px;
+    min-width: 24px;
+    height: 26px;
+}
+
+button#btn-close-transfer {
+    width: 24px;
+    min-width: 24px;
+    background: #9da5af url(../img/ic_close_white_48dp_1x.png) center center no-repeat;
+    background-size: 70%;
+}
+button#btn-close-transfer:hover { background-color: #788290 !important; }
+
+.transfer.control-group #agent-list {
+	clear: both;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #b4b4b4; 
+	top: 4px; 
+	left: 0; 
+	width: 188px; 
+	overflow-y: auto; /* box-shadow: 0 0 8px #5b5b5b; */
+}
+
+/* 돌려주기 내선 리스트 */
+.transfer.control-group #agent-list ul {
+	padding: 6px; 
+	line-height: 24px; 
+}
+
+.transfer.control-group #agent-list ul li {
+	display: block; 
+	clear: both; 
+	border-bottom: 1px solid #d5d8dd;
+	color: #000;
+	line-height: 30px;
+    height: 30px;
+	cursor: pointer;
+}
+
+.transfer.control-group #agent-list li:last-child { border-bottom: none; }
+.transfer.control-group #agent-list li:hover { background: #f1f2f4;  }
+.transfer.control-group #agent-list li span { display: inline-block; white-space: nowrap; overflow: hidden; }
+.transfer.control-group #agent-list li .code { padding-left: 3px; width: 40px; text-overflow: ellipsis; }
+.transfer.control-group #agent-list li .name { width: 75px; }
+.transfer.control-group #agent-list li .icon {
+    font-size: 16px;
+    font-family: 'Material Icons';
+    line-height: 18px;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+	width: 30px;
+    height: 24px;
+}
+
+
+/************ 전화끊기 ************/
+.hangup.control-group {
+    margin-left: 12px;
+}
+#btn-hangup-call{ background-color: #4696b8 !important;}
+#btn-hangup-call:hover { background-color: #f44 !important; }
+#btn-hangup-call:focus, #btn-hangup-call.on { background-color: #b00 !important; }
+
+/*+++++++++++ 상담원 상태-타이머 ************/
+.session_status {
+	float: left; font-size: 15px; font-weight:600; min-width: 120px; height: 30px; line-height:30px;  
+	padding: 0 7px; text-align: center; margin: 0 0px 0px 30px;
+}
+.session_status[data-status='1']  { color: #ffffff; }
+.session_status[data-status='2']  { color: #f44; }	    /* 자리비움 */
+.session_status[data-status='3']  { color: #4d6900 }	/* 통화중 */
+.session_status[data-status='5']  { color: #f44; }	    /* 휴식중 */
+.session_status[data-status='6']  { color: #f44; }	    /* 교육중 */
+.session_status[data-status='7']  { color: #2a7dc4; }	/* 후처리 */
+.session_status[data-status='15'] { color: #1e9e89; }	/* 회의중 */
+.session_status[data-status='17'] { color: #f44; }	    /* 다른업무 */
+
+.session_status .text { margin-right:20px; }
+
+
+/*+++++++++++ 상담대기 ************/
+#btn-ready { 
+	border-top-right-radius:0px !important;  
+	border-bottom-right-radius:0px !important; 
+	background: #4696b8; 
+	margin-right: 19px; 
+}
+#btn-ready:hover { background-color: #4696b8 !important; }
+#btn-ready:focus, #btn-ready.on { background-color: #2a7dc4 !important; }
+
+#btn-open-status { border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important; }
+
+
+/************ 상담원 상태 ***********/
+#btn-open-status {
+	position: absolute; 
+	background: #4696b8 url(../img/ic_arrow_drop_down_white_48dp_1x.png) center center no-repeat; 
+	background-size: 90%;
+	right: 10px; 
+	width: 24px; 
+	min-width:24px;
+	z-index: 1000;
+}
+
+#btn-open-status:hover { _background-color: #f8a200 !important; }
+#btn-open-status.on { 
+	_background: #9da5af url(../img/ic_arrow_drop_up_white_48dp_1x.png) center center no-repeat !important; 
+	background-size: 90% !important; 
+}
+
+#agent_status_panel { display: none; position: relative; top: 5px; left: 160px; width: 170px; padding-top: 6px; z-index: 200; }
+#agent_status_panel button { float: none; min-width: 138px !important; margin: 0 0 4px 0;  background:#4696b8;  text-align:left;}
+
+
+/************ 라인 팝업 ****************/
+#line_popup > div {
+	display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: center;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+#line_popup > div.on {
+   top: 59px;
+}
+
+#line_popup > div.alert {
+	background: #ff3b00;
+	color: #fff;
+	z-index: 4001;
+}
+
+#line_popup > div.status {
+	background: #0c910c;
+	z-index: 4000;
+}
+
+#line_popup > div.confirm { 
+	background: #000;
+	border-bottom: 1px solid #FF9800;
+	box-shadow: 5px 10px 10px rgba(50, 50, 50, 0.5);
+	color: cyan;
+	z-index: 4002;
+}
+
+#line_popup > div.confirm button {
+	float: right;
+	background: #f00;
+    margin: 10px 10px 0px 0px;
+    padding-top: 3.5px;
+    vertical-align: middle;
+    color: #fff;
+    height: 25px;
+}
+
+#line_popup > div.confirm button#btnAlt {
+	background: #ff8d8d;
+	color: #534b4b;
+}
+
+#line_popup > div.confirm button#btnCancel {
+	background: #5fe8ff;
+	color: #756565;
+}
+
+#line_popup > div div.btn.close {
+	float: right;
+	margin: 10px 10px 0px 20px;
+	opacity: 0.7;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+#line_popup > div div.btn.close:hover {
+	opacity: 1.0;
+}
+
+#minWidthAlert { 
+	position: absolute;
+	display: none;
+	top: 54px; 
+	color: #fff; 
+	font-size: 15px; 
+	line-height: 44px; 
+	text-align: center; 
+	transition: all .3s ease;
+	width: 100%;
+}
+
+/* 스크린 가로폭이 1170픽셀 이하일 경우 */
+@media only screen and (max-width: 1170px) {
+	#line_popup .layout-alert {
+		display: block !important; 
+		top: 59px;
+		background: #ff0000;
+	}
+}
+
+
+
+
+/****************/
+.service {
+	display: inline-block;
+	margin: 17px 0px 0px 10px;
+	width: 100px;
+
+}
+

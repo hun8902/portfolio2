@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+body{padding:0; margin:0;}
+.container{width:1100px; margin:0 auto; }
+
+.page1{position:relative; overflow:hidden; height:676px; background:url("../images/page1/blue_bg.png") no-repeat center 0 ;}
+.page1 .chartbg{height:676px; background:url("../images/page1/bg_chart.png") no-repeat center 0 ;}
+.page1 .logo{}

@@ -1,0 +1,91 @@
+﻿{"frames": {
+
+"Assets/50":
+{
+	"frame": {"x":722,"y":52,"w":110,"h":92},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":92},
+	"sourceSize": {"w":110,"h":92}
+},
+"Assets/M포인트":
+{
+	"frame": {"x":931,"y":94,"w":93,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":93,"h":25},
+	"sourceSize": {"w":93,"h":25}
+},
+"Assets/SUPER":
+{
+	"frame": {"x":832,"y":100,"w":96,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":46},
+	"sourceSize": {"w":96,"h":46}
+},
+"Assets/bg":
+{
+	"frame": {"x":0,"y":0,"w":722,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":722,"h":122},
+	"sourceSize": {"w":722,"h":122}
+},
+"Assets/black":
+{
+	"frame": {"x":832,"y":52,"w":99,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":48},
+	"sourceSize": {"w":99,"h":48}
+},
+"Assets/light":
+{
+	"frame": {"x":722,"y":0,"w":236,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":236,"h":52},
+	"sourceSize": {"w":236,"h":52}
+},
+"Assets/per":
+{
+	"frame": {"x":958,"y":0,"w":32,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":37},
+	"sourceSize": {"w":32,"h":37}
+},
+"Assets/sale":
+{
+	"frame": {"x":931,"y":52,"w":72,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":42},
+	"sourceSize": {"w":72,"h":42}
+},
+"Assets/지마켓로고":
+{
+	"frame": {"x":0,"y":122,"w":74,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":24},
+	"sourceSize": {"w":74,"h":24}
+},
+"Assets/현대카드":
+{
+	"frame": {"x":928,"y":119,"w":89,"h":26},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":26},
+	"sourceSize": {"w":89,"h":26}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "15.0.1.179",
+	"image": "bigbang_html5_640x96_atlas.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

@@ -1,0 +1,23 @@
+
+http://www.purplefriends.co.kr/mail_form/images/new3/bottom_banner.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/btn_recommend.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/icon_f.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/logo.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/title_bigtrend3.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/title_freetalk4.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/title_hotissue.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/freetalk/img63.png
+(img42.png부터 img63.png까지 모두 같은 경로에 넣어주세요~)
+
+http://www.purplefriends.co.kr/mail_form/images/new3/title_news.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/title_news2.png
+
+http://www.purplefriends.co.kr/mail_form/images/new3/top_images.png

@@ -1,0 +1,547 @@
+<?php
+/*--------------------------------------------------------------------------------------------
+|    @desc:        pagination index.php
+|    @author:      Aravind Buddha
+|    @url:         http://www.techumber.com
+|    @date:        12 August 2012
+|    @email        aravind@techumber.com
+|    @license:     Free!, to Share,copy, distribute and transmit , 
+|                  but i'll be glad if i my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+include('config.php');    //include of db config file
+include ('paginate.php'); //include of paginat page
+
+$per_page = 5;         // number of results to show per page
+$result = mysql_query("SELECT title, content FROM  `bbs` WHERE 1 ORDER BY  `seq` DESC ");
+$total_results = mysql_num_rows($result);
+$total_pages = ceil($total_results / $per_page);//total pages we going to have
+
+//-------------if page is setcheck------------------//
+if (isset($_GET['page'])) {
+    $show_page = $_GET['page'];             //it will telles the current page
+    if ($show_page > 0 && $show_page <= $total_pages) {
+        $start = ($show_page - 1) * $per_page;
+        $end = $start + $per_page;
+    } else {
+        // error - show first set of results
+        $start = 0;              
+        $end = $per_page;
+    }
+} else {
+    // if page isn't set, show first set of results
+    $start = 0;
+    $end = $per_page;
+}
+// display pagination
+$page = intval($_GET['page']);
+
+$tpages=$total_pages;
+if ($page <= 0)
+    $page = 1;
+?>
+
+
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<meta name="viewport" content="width=640, user-scalable=yes">
+	<meta name="apple-mobile-web-app-title" content="Company" />
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>옐로디지털마케팅그룹의 no.1 모바일마케팅대행사 퍼플프렌즈</title>
+	<!-- Jquery cdn -->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!-- reset -->
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<!-- css , js -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/jquery.slider.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<script src="./js/func.js" language="javascript"></script>
+	<script src="./js/common.js" language="javascript"></script>
+	<script src="./js/list.js" language="javascript"></script>
+	<script src="./js/write.js" language="javascript"></script>
+	<script src="./js/view.js" language="javascript"></script>
+
+
+	<link rel="stylesheet" href="css/jPages.css">
+
+	<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="./js/jquery.slider.js"></script>
+	<script src="./js/jquery.easing.1.3.js"></script>
+	<script src="./js/jquery.malihu.PageScroll2id.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<link rel="stylesheet" type="text/css" href="helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script src="helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script src="helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script src="helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script src="./js/accordion.js"></script>
+	<script src="./js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			$('#st-accordion').accordion({
+				
+			});
+			
+		});
+	</script>
+	<style>
+		.st-accordion ul li{
+			height:auto;
+		}
+		.st-accordion ul li > a span{
+			_visibility:hidden;
+		}
+	</style>
+		
+	
+
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				/* Page Scroll to id fn call */
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"#navigation-menu a"
+				});
+
+				/* Page Scroll to id fn call */
+				$("#slider a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"#slider a"
+				});
+
+				/* Page Scroll to id fn call */
+				$("#works a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"#works a"
+				});
+
+				/* demo functions */
+				$("a[rel='next']").click(function(e){
+					e.preventDefault();
+					var to=$(this).parent().parent("section").next().attr("id");
+					$.mPageScroll2id("scrollTo",to);
+				});
+
+
+				
+			});
+		})(jQuery);
+	</script>
+
+	<script type = "text/javascript">
+
+	$( document ).ready(function() {
+
+
+	  // setup the initial display on page load
+	  var menu_state = $.cookie('mydomain_menuflag');
+
+	  if( typeof menu_state !== "undefined" && menu_state == "visible" ) {
+		$('#work_open').show; // visible, and cookie is set
+	  } else {
+		$('#work_open').hide; // hidden or cookie is not set, set just in case
+		$.cookie('mydomain_menuflag', 'hidden'); // update (or set) the cookie
+	  }
+
+	  $(".works_button").click(function(){
+		 $("#work_open").slideToggle("slow");
+		 $.cookie('mydomain_menuflag', 'visible'); // update (or set) the cookie
+	  });
+
+	   $(".works_close").click(function(){
+		   $("div.st-content").hide();
+	  });
+
+	  // listen for the clicks
+	  $('.show_menu').click(function() {
+		 $('#nav').toggle();
+		 $.cookie('mydomain_menuflag', 'visible'); // update (or set) the cookie
+		 $("#page_cont").css("width", "80%");
+		 $(".hide_menu").css("display", "block");
+		 $(".show_menu").css("display", "none");
+	  });
+	  $('.hide_menu').click(function() {
+		 $('#nav').toggle();
+		 $.cookie('mydomain_menuflag', 'hidden'); // update (or set) the cookie
+		 $("#page_cont").css("width", "100%");
+		 $(".hide_menu").css("display", "none");
+		 $(".show_menu").css("display", "block");
+	  });
+
+	});
+
+	</script>
+ </head>
+ <body>
+  <!--해더 -->
+  <div id="m_header">
+	<div class="logo"><a href="index.php"><img src="img/m_logo.png" alt="logo"></a></div>
+	<div id="navigation-menu" class="gnb">
+		<ul>
+			<li class="navli_1"><a href="#works"><img src="img/m_works.jpg"></a></li>
+			<li class="navli_2"><a href="#company"><img src="img/m_company.jpg"></a></li>
+			<li class="navli_3"><a href="#recruit"><img src="img/m_recrult.jpg"></a></li>
+			<li><a href="#contactus"><img src="img/m_contact.jpg"></a></li>
+		</ul>
+	</div>
+  </div>
+   <!--슬라이더 -->
+   <div id="slider">
+		<div class="light" style="background-image: url(img/m_slider_1.png);">
+			<q class="m_slider_1_more"><a href="http://blog.naver.com/purplefrs" target="_blank"><img src="img/m_slider_1_more.png"></a></q>
+			<q class="m_slider_call"><a href="#request" ><img src="img/m_slider_call.png"></a></q>
+		</div>
+		<div class="light" style="background-image: url(img/m_slider_2.png);">
+			<q class="m_slider_more"><a class="fancybox" href="img/work_popup_m14.png" target="_blank"><img src="img/m_slider_more.png"></a></q>
+		</div>
+		<div class="light" style="background-image: url(img/m_slider_3.png);">
+			<q class="m_slider_more"><a class="fancybox"  href="img/work_popup_m12.png" target="_blank"><img src="img/m_slider_more.png"></a></q>
+		</div>
+		<div class="light" style="background-image: url(img/m_slider_4.png);">
+			<q class="m_slider_more"><a href="https://www.facebook.com/mmcbymmc/photos/a.235456443276216.1073741828.234604946694699/319869014834958/?type=1&theater" target="_blank"><img src="img/m_slider_more.png"></a></q>
+		</div>
+		<div class="light" style="background-image: url(img/m_slider_5.png);">
+			<q class="m_slider_more"><a class="fancybox-media" href="http://www.youtube.com/embed/HfkUH4agglY" target="_blank"><img src="img/m_slider_more.png"></a></q>
+		</div>
+	</div>
+
+						
+					
+
+
+
+	<!--works -->
+	<div id="works">
+		<a href="http://www.mmcbymmc.com/" target="_blank" class="mmc_button">mmc</a>
+		<a href="#work_open" class="works_button">works</a>
+		<a href="#contactus" class="contact_button">contact us</a>
+		
+	</div>
+
+	
+	<div id="work_open">
+		<div class="mr_40"><img src="img/m_works.png" alt="works"/></div>
+		<div class="title_sub" style="margin:20px 0 20px 40px; "> 전문적이고 보다 창의적인 발상의 통합디지털 마케팅 <br/>서비스를  제공하는 퍼플의 크리에이티브.</div>
+
+		<!-- <ul>
+			<li>
+				<div class="accordion"><img src="http://m.purplefriends.co.kr/img/works_m15.png"></div>
+				<div class="container"><img src="http://m.purplefriends.co.kr/img/work_popup_m15.png"></div>
+			</li>
+		</ul> -->
+
+    <div style="clear:both"></div>
+	
+	<div id="st-accordion" class="st-accordion">
+		<style>
+			#itemContainer1{width:640px; margin:80px 0;}
+			#itemContainer1 .sum_img{margin:0 0 0 40px;}
+			#work_open1{width:640px; _margin:40px 0;}
+			.pagination{ float: right;  position: relative; left: -50%; clear:both; height:20px; } 
+			.pagination ul li{float:left; position: relative; left: 50%; margin:0 20px; font-family:NG; font-size:22px} 
+			.closebtn{position:absolute; right:20px; margin:60px 0 0 0; display:none}
+		</style>
+
+			<?php
+				$reload = $_SERVER['PHP_SELF'] . "?tpages=" . $tpages;
+			   
+				// display data in table
+				echo '<ul id="itemContainer1">';
+				
+				// loop through results of database query, displaying them in the table 
+				for ($i = $start; $i < $end; $i++) {
+					echo '<li>';
+					// make sure that PHP doesn't try to show results that don't exist
+					if ($i == $total_results) {
+						break;
+					}
+				  
+					echo '<a href="#"><div class="sum_img"><img src="img/' . mysql_result($result, $i, 'title') . '"></div>';
+					echo '<div class="closebtn"><img src="./helpers/close.png"></div></a><div class="st-content">';
+					echo '<img src="img/' . mysql_result($result, $i, 'content') . '">';
+					echo '</div>';
+
+					echo '</li>';
+				}  
+				echo "</ul>";
+				echo '<div style="clear:both"></div>';
+				echo '<div class="pagination"><ul>';
+					if ($total_pages > 1) {
+						echo paginate($reload, $show_page, $total_pages);
+					}
+				echo "</ul></div>";
+				echo '<div style="clear:both"></div>';
+			?>
+	</div>
+	<div style="clear:both"></div>
+	</div>
+
+	<!--news -->
+	<div id="news">
+		<div class="t40r37"><img src="img/m_news.png" alt="news"/></div>
+		<!-- <div class="news_more"><a href="#"><img src="img/m_news_more.png" alt="more"/></a></div> -->
+		<ul class="news_text">
+		   <li><div class="news_content"><a href="http://www.hankyung.com/news/app/newsview.php?aid=201411128838i" target="_blank">PF, 마이크로애드와 DSP 광고시장 넓힌다</a></div><div class="date">2014.10.15</div></li>
+           <li><div class="news_content"><a href="http://m.media.daum.net/m/media/world/newsview/20141015163605593" target="_blank">이수형 대표,한국소셜콘텐츠진흥협회장 취임</a></div><div class="date">2014.10.15</div></li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<div id="company">
+		<div class="t40r37"><img src="img/m_company.png" alt="Company"/></div>
+		<div id="slider1">
+			<div class="light" style="background-image: url(img/company_slider_m1.png);"></div>
+			<div class="light" style="background-image: url(img/company_slider_m2.png);"></div>
+			<div class="light" style="background-image: url(img/company_slider_m3.png);"></div>
+		</div>
+	</div>
+
+	<div id="company">
+		<div class="m_company_bg">
+			<a href="./purplefriends_2015.pdf" target="_blank" class="m_company_donwnload">회사 소개서download</a>
+			<ul class="company_menu">
+				<li class="m_compnay_m1"><a href="http://yellomobile.com/" target="_blank"><div class="m_compnay_libox">Yello Mobile</div></a></li>
+				<li class="m_compnay_m2"><a href="#"><div class="m_compnay_libox">About YDM</div></a></li>
+				<li class="m_compnay_m2"><a href="https://www.facebook.com/purplefriends" target="_blank"><div class="m_compnay_libox">purple's Facebook</div></a></li>
+				<li><a href="http://blog.naver.com/purplefrs" target="_blank"><div class="m_compnay_libox">purple's Blog</div></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="request">
+		<div class="img_title" style="margin:40px 0 0 0;"><img src="img/m_request.png" alt="request"/></div>
+		<div class="title_sub">등록하여주신 내용들은 퍼플 프렌즈 고객리스트에 <br/>자동등록 됩니다.</div>
+		<form method="post" name="form" enctype="multipart/form-data" action="mail_send.php" onSubmit="return checkForm();">
+		<input type="hidden" name="to_name" size="15" value="Purple Friends">
+		<input type="hidden" name="to" size="30" value="hun8902@naver.com">
+
+		<div class="project_rq_table">
+			<table>
+				<tr style="height:56px;">
+					<td style="width:150px;">
+						<p class="text1">Your Company</p>
+					</td>
+					<td>
+						<input type="text" class="pq_input" name="compnany" id="compnany">
+					</td>
+				</tr>
+				<tr  style="height:56px;">
+					<td style="width:150px;">
+						<p class="text1">Name</p>
+					</td>
+					<td>
+						<input type="text" class="pq_input" name="from_name" id="company_name">
+					</td>
+				</tr>
+				<tr  style="height:56px;">
+					<td style="width:150px;">
+						<p class="text1">Phone Number</p>
+					</td>
+					<td>
+						<input type="text" class="pq_input" name="phone_number" id="phone_number">
+					</td>
+				</tr>
+				<tr  style="height:56px;">
+					<td style="width:150px;">
+						<p class="text1">E-mail</p>
+					</td>
+					<td>
+						<input type="text" class="pq_input" name="from" id="e-mail">
+					</td>
+				</tr>
+				<tr  style="height:56px;">
+					<td style="width:150px;">
+						<p class="text1">Title</p>
+					</td>
+					<td>
+						<input type="text" class="pq_input_l" name="subject" id="title">
+					</td>
+				</tr>
+				<tr>
+					<td style="width:150px; vertical-align:top;">
+						<p class="text1">Inquiry Detail</p>
+					</td>
+					<td>
+						<textarea name="content" class="pq_input_2"></textarea>
+					</td>
+				</tr>
+			</table>
+			
+		<div style="margin:30px 0 65px 200px;">
+			<input type="image"  name="send" src="img/mail_apply.png" alt="apply"/>
+		</div>
+		</div>
+		</form>
+	</div>
+
+	<div id="recruit">
+		<div class="img_title"><img src="img/m_recruit.png" alt="recruit"/></div>
+		<div class="title_sub">즐겁게 일하는 퍼플프렌즈는 항상 인재를 찾고 있습니다.</div>
+		<img src="img/m_sub5_img.png" style="margin:40px 0 40px 0"/>
+		<div class="s5_link">입사지원 : <a href="mailto:recruit@purplefriends.co.kr">recruit@purplefriends.co.kr </a></div>
+	</div>
+
+
+	<div id="contactus">
+		<div class="img_title"><img src="img/m_contactus.png" alt="contactus" style="margin:0 0 30px 40px;"/></div>
+		<div style="width:640px; height:400px;;  background:url('./img/contactus_img.png') no-repeat"></div>
+	</div>
+
+	<div id="footer">
+		<div class="footer1">2014 copyright    <span class="purple_span">purple Friends.</span> All rights Reserved.</div>
+		<div class="footer2">
+			2F Olympus tower. 114-9 <br/>samsung-dong. kangnam-gu.  <br/>Seoul. Korea.
+		</div>
+		<div class="footer3">
+			Tel : 02-515-1174     Fax ; 02-515-1184 <br/>    
+			E-mail ; <a href="mailto:recruit@purplefriends.co.kr">rang@purplefriends.co.kr</a>
+
+		</div>
+	</div>
+
+
+ </body>
+</html>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+		
+		$('#slider').slider({
+			width:      640,
+			height:     688
+		});
+		$('#slider1').slider({
+			width:      640,
+			height:     505,
+			'showProgress'  :   false,
+			'showControls'  :   true
+
+		});
+
+		$('.fancybox').fancybox();
+
+		$('.fancybox-buttons').fancybox({
+			closeBtn  : false,
+
+			helpers : {
+				
+				buttons	: {}
+			},
+
+			afterLoad : function() {
+				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+			}
+		});
+		$('.fancybox-media')
+		.attr('rel', 'media-gallery')
+		.fancybox({
+
+			arrows : false,
+			helpers : {
+				media : {},
+				buttons : false
+			}
+		});
+
+		$("#cp_identity").click( function () {
+				$('#cp_identity').addClass("active");
+				$('#cp_identity1').addClass("active");
+				$('#cp_organization').removeClass("active");
+				$('#cp_client').removeClass("active");
+				$('#cp_organization1').removeClass("active");
+				$('#cp_client1').removeClass("active");
+				$('.clsBannerScreen').fadeIn("slow");
+				$('.clsBannerButton').fadeIn("slow");
+				$('#company_content1_2').hide();
+				$('#company_content1_3').hide();
+				$('#company_content2').hide();
+				$('#company_content3').hide();
+				$('#cp_identity1').fadeIn("slow");
+				$('#cp_organization1').fadeIn("slow");
+				$('#cp_client1').fadeIn("slow");
+
+			});
+			$("#cp_organization").click( function () {
+				$('#cp_identity').removeClass("active");
+				$('#cp_organization').addClass("active");
+				$('#cp_client').removeClass("active");
+				$('#cp_client1').hide();
+				$('#cp_identity1').hide();
+				$('#cp_organization1').hide();
+				$('.clsBannerScreen').hide();
+				$('.clsBannerButton').hide();
+				$('#company_content1_3').hide();
+				$('#company_content2').fadeIn("slow");
+				$('#company_content3').hide();
+
+			});
+			$("#cp_client").click( function () {
+				$('#cp_identity').removeClass("active");
+				$('#cp_organization').removeClass("active");
+				$('#cp_client').addClass("active");
+				$('#cp_client1').hide();
+				$('#cp_organization1').hide();
+				$('#cp_identity1').hide();
+				$('.clsBannerScreen').hide();
+				$('.clsBannerButton').hide();
+				$('#company_content1_3').hide();
+				$('#company_content2').hide();
+				$('#company_content3').fadeIn("slow");
+
+			});
+			$("#cp_identity1").click( function () {
+				$('#cp_identity').addClass("active");
+				$('#cp_identity1').addClass("active");
+				$('#cp_organization').removeClass("active");
+				$('#cp_client').removeClass("active");
+				$('#cp_organization1').removeClass("active");
+				$('#cp_client1').removeClass("active");
+				$("#company_content1_1").fadeIn("slow");
+				//$('#company_content1_1').show();
+				$('#company_content1_2').hide();
+				$('#company_content1_3').hide();
+				$('#company_content2').hide();
+				$('#company_content3').hide();
+
+
+			});
+			$("#cp_organization1").click( function () {
+				$('#cp_identity').addClass("active");
+				$('#cp_organization').removeClass("active");
+				$('#cp_organization1').addClass("active");;
+				$('#cp_identity1').removeClass("active");
+				$('#cp_client').removeClass("active");
+				$('#cp_client1').removeClass("active");
+				$('#company_content1_1').hide();
+				$("#company_content1_2").fadeIn("slow");
+				//$('#company_content1_2').show();
+				$('#company_content1_3').hide();
+				$('#company_content2').hide();
+				$('#company_content3').hide();
+
+			});
+			$("#cp_client1").click( function () {
+				$('#cp_identity').addClass("active");
+				$('#cp_organization').removeClass("active");
+				$('#cp_client').removeClass("active");
+				$('#cp_client1').addClass("active");
+				$('#cp_identity1').removeClass("active");
+				$('#cp_organization1').removeClass("active");
+				$('#company_content1_1').hide();
+				$('#company_content1_2').hide();
+				$("#company_content1_3").fadeIn("slow");
+				//$('#company_content1_3').show();
+				$('#company_content2').hide();
+				$('#company_content3').hide();
+
+			});
+			
+	  });
+	</script>
+	

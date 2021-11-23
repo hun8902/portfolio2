@@ -1,0 +1,100 @@
+* {-webkit-text-size-adjust:none}
+html,body{width:100%; min-width:640px; max-width:640px; overflow-x:hidden;}
+#m_header{position:fixed;background:#49484a url('../img/header_bg.png') no-repeat left bottom; width:640px; height: 120px; z-index:2000; }
+#m_header .logo{padding:15px 0 25px 20px;}
+#m_header .gnb{padding:0 0 0 46px;}
+#m_header .gnb ul li{float:left;}
+#slider {margin:120px 0 0 0;}
+#slider, #news, #company, #works {width:640px; overflow:hidden; }
+#work_open1{width:640px; margin:60px 0 60px 0px; _overflow-x:hidden;  display:none;}
+#request{width:600px; margin:0 0 0 40px; overflow:hidden;}
+#recruit{width:600px; padding:40px 0 0 0; margin:0 0 0 40px; overflow:hidden;}
+#works{width:640px; height:293px; background:url('../img/works.png') no-repeat; overflow:hidden;}
+#contactus{width:640px; height:474px; overflow:hidden; padding:0; margin:0; }
+#footer{width:640px; height:220px; background:#444444;}
+.mmc_button{position:absolute; margin:30px 0 0 30px; width:180px; height: 240px; text-indent:-9999px;}
+.works_button{position:absolute; cursor:pointer; margin:30px 0 0 230px; width:180px; height: 240px; text-indent:-9999px;}
+.contact_button{position:absolute; margin:30px 0 0 430px; width:180px; height: 240px; text-indent:-9999px;}
+.footer1{font-family:NG; font-size:20px; letter-spacing:0.30; padding:40px 0 15px 40px; color:#fff;}
+.footer2{font-family:NG; font-size:19px; line-height:21px; padding:0 0 0 40px; color:#fff;}
+.footer3{font-family:NG; font-size:19px; line-height:21px;padding:20px 0 0 40px; color:#8d8d8d;}
+.footer3 a{color:#8d8d8d;}
+.purple_span{font-weight:bold; color:#bb77f4;}
+.title_sub{font-family:NG; font-size:21px; line-height:29px;  margin:20px 0 0 0;  color:#000; text-rendering: optimizeSpeed;}
+.s5_link{font-family:NG; font-size:20px; margin:0 0 70px 90px; color:#7a18d2;}
+.s5_link a{color:#7a18d2;}
+.project_rq_table{padding:35px 0 0 0; font-family:NG; font-size:16px; color:#232323;}
+.pq_input{width:268px;font-size:16px; padding:12px 0 12px 10px; background:#ebebeb; border:1px solid #d4d3d3;}
+.pq_input_l{width:402px; font-size:16px; padding:12px 0 12px 10px; background:#ebebeb; border:1px solid #d4d3d3;}
+.pq_input_2{width:412px;height:136px; font-size:16px; background:#ebebeb; border:1px solid #d4d3d3;}
+.company_menu{position:absolute; margin:530px 0 0 70px;}
+.company_menu li{float:left; text-indent:-9999px;}
+.news_text{margin:15px 0 20px 40px;width:560px; overflow:hidden; font-family:NG; font-size:22px; line-height:29px;}
+.news_content{width:425px; overflow:hidden; float:left;}
+.news_more{position:absolute; margin:70px 0 0 515px; color:#282727;}
+.paging_work_m a, .paging_work_m b{margin:0 20px;}
+#slider1{margin:45px 0;}
+.works_mcontent{margin:60px 0 60px 0px;}
+.works_mcontent li{margin:0 0 60px 0;}
+.works_mcontent_over{margin:40px 0 0 0}
+.paging_work_m{margin:0 auto; text-align:center;  font-family:NG; font-size:22px; }
+.navli_1{margin-right:95px;}
+.navli_2{margin-right:112px;}
+.navli_3{margin-right:103px;}
+.m_slider_1_more{position:absolute; margin:530px 0 0 414px}
+.m_slider_call{position:absolute; margin:575px 0 0 414px}
+.m_slider_more{position:absolute; margin:619px 0 0 476px}
+.mr_40{margin:0 0 0 40px}
+.t40r37{margin:40px 0 0 37px;}
+.m_company_bg{width:640px; height:731px;;  background:url('../img/m_company_banner.png') no-repeat}
+.m_company_donwnload{position:absolute; width:210px; height:42px; margin:292px 0 0 130px; text-indent:-9999px;}
+.m_compnay_libox{width:92px; height:148px;}
+.m_compnay_m1{margin-right:45px;}
+.m_compnay_m1_temp{margin-right:188px;}
+.m_compnay_m2{margin-right:50px;}
+.date{float:right;}
+
+.sum_img{position: relative; height:100%;}
+
+.st-accordion{
+    width:640px;
+
+	padding:40px 0 0 0;
+}
+.st-accordion ul li{
+	  position: relative;
+	  height:450px;
+
+.st-accordion ul li > a:hover{
+  text-decoration: none;
+  color:#5c159f;
+}
+.st-accordion ul li > a:hover span{
+	opacity:1;
+	right: 10px;
+}
+.st-accordion ul li.st-open > a{
+    color: #5c159f;
+}
+
+
+.st-content{
+	position: relative;
+    padding: 30px 0px 100px 0px;
+}
+
+.work-sum{
+	width:600px;
+	margin:0 0 40px 0px;
+}
+
+
+.pupup_close_pos{
+	position:absolute; margiN:0px 0 0 600px; cursor:pointer
+}
+
+
+.popup_absolute{
+	position:absolute; background:#fff; z-index:2000; width:640px; padding:40px 0 0 0; display:none;
+
+}

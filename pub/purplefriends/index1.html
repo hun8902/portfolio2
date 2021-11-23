@@ -1,0 +1,776 @@
+<!DOCTYPE HTML>
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>MMC2015</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- stylesheet for demo and examples -->
+	<link rel="stylesheet" href="css/style.css">
+		<!-- reset -->
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Google CDN jQuery -->
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.accordion.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+		$('.accordion').accordion({
+			defaultOpen: 'section1',
+			cookieName: 'accordion_nav'
+		});
+	  });
+	</script>
+	<link rel="stylesheet" href="css/jPages.css">
+
+	<script src="js/jPages.js"></script>
+
+	<script>
+	/* when document is ready */
+	$(function() {
+	/* initiate plugin */
+	$("div.holder").jPages({
+	  containerID: "itemContainer",
+	   previous    : "span.arrowPrev",
+       next        : "span.arrowNext"
+	});
+	$("div.holder").jPages({
+	  containerID: "itemContainer1",
+	   perPage: 4,
+	   previous    : "span.arrowPrev",
+       next        : "span.arrowNext"
+	});
+	});
+	</script>
+	
+	
+
+	<script src="js/jquery.fractionslider.js"></script>
+	<link rel="stylesheet" href="css/fractionslider.css"/>
+	<script>
+		$(window).load(function(){
+			$('.slider').fractionSlider({
+				'fullWidth': 			true,
+				'controls': 			false, 
+				'pager': 				true,
+				'responsive': 			false,
+				'dimensions': 			"992,452",
+				'increase': 			false,
+				'pauseOnHover': 		true,
+				'slideEndAnimation': 	false
+			});
+
+		});
+
+
+	</script>
+
+	<!-- Page Scroll to id plugin -->
+	<script src="js/jquery.malihu.PageScroll2id.js"></script>
+	
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				/* Page Scroll to id fn call */
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"#navigation-menu a"
+				});
+				/* Page Scroll to id fn call */
+				$(".s1_news_more a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:".s1_news_more a"
+				});
+				
+				
+				/* demo functions */
+				$("a[rel='next']").click(function(e){
+					e.preventDefault();
+					var to=$(this).parent().parent("section").next().attr("id");
+					$.mPageScroll2id("scrollTo",to);
+				});
+				
+			});
+		})(jQuery);
+	</script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 상단 네비 -->
+	<nav id="navigation-menu">
+		<div class="container">
+			<div class="logo"><a href="#section-0"><img src="img/logo.png" alt="logo"/></a></div>
+			<ul class="scroll_nav">
+				<li class="nav_img1"><a href="#section-1">WORKS</a></li>
+				<li class="nav_img2"><a href="#section-2">COMPANY</a></li>
+				<li class="nav_img3"><a href="#section-3">NEWS</a></li>
+				<li class="nav_img4"><a href="#section-4">PROJECT REQUEST</a></li>
+				<li class="nav_img5"><a href="#section-5">RECRUIT</a></li>
+				<li class="nav_img6"><a href="#section-6">CONTACT</a></li>
+			</ul>
+			<ul class="top_sns">
+				<li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+				<li><a href="#"><img src="img/blog.png" alt="blog"></a></li>
+			</ul>
+		</div>
+		
+	
+	</nav>
+	<!-- 상단 네비 -->
+
+	
+	
+	<div id="content">
+		<!-- 1번쨰 영역 -->
+		<section id="section-0">
+			<div class="container">
+				<div class="content">
+					<div class="slider-wrapper">
+						<div class="responisve-container">
+							<div class="slider">
+								<div class="fs_loader"></div>
+								<div class="slide">
+									<img src="img/1.png" data-position="0,0" data-in="fade" data-delay="" data-out="left">
+									<p  data-position="350,0" data-in="fade" data-delay="" data-out="left"><a href="#" target="_blank"><img src="img/more.png"></a></p>
+								</div>
+								<div class="slide">
+									<img src="img/2.png" data-position="0,0" data-in="fade" data-delay="" data-out="left">
+									<p  data-position="350,0" data-in="fade" data-delay="" data-out="left"><a href="#" target="_blank"><img src="img/more.png"></a></p>
+								</div>
+								<div class="slide">
+									<img src="img/3.png" data-position="0,0" data-in="fade" data-delay="" data-out="left">
+									<p  data-position="350,0" data-in="fade" data-delay="" data-out="left"><a href="#" target="_blank"><img src="img/more.png"></a></p>
+								</div>
+								<div class="slide">
+									<img src="img/4.png" data-position="0,0" data-in="fade" data-delay="" data-out="left">
+									<p  data-position="350,0" data-in="fade" data-delay="" data-out="left"><a href="#" target="_blank"><img src="img/more.png"></a></p>
+								</div>
+								<div class="slide">
+									<img src="img/5.png" data-position="0,0" data-in="fade" data-delay="" data-out="left">
+									<p  data-position="350,0" data-in="fade" data-delay="" data-out="left"><a href="#" target="_blank"><img src="img/more.png"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s1_news">
+						<div>
+							<img src="img/tab1_news.png" alt="NEWs"/>
+						</div>
+						<div class="s1_news_text">
+							<ul>
+								<li><a href="#section-3">4년차 이상의 경력의 모바일 마케팅 AE 채용 </a><div class="date">2014.08.06</div></li>
+								<li><a href="#section-3">4년차 이상의 경력의 모바일 마케팅 AE 채용</a> <div class="date">2014.08.06</div></li>
+							<ul>
+						</div>
+						<div class="s1_news_more">
+							<a href="#section-3"><img src="img/sm_more.png" alt="more"/></a>
+						</div>
+					</div>
+					
+					<div class="s1_banner">
+						<div>
+							<a href="#"><img src="img/yello.png" alt="yello"/></a><img src="img/yello_prt.png" alt="yello_prt"/>
+						</div>
+						<div class="banner2">
+							<a href="#"><img src="img/mmc_logo_sm.png" alt="mmc_logo"/></a>
+							<a href="#"><img src="img/s1_facebook.png" alt="facebook"/></a>
+							<a href="#"><img src="img/s1_blog.png" alt="blog"/></a>
+							<a href="#" class="newslatter_p"><img src="img/s1_newslatter.png" alt="newslatter"/></a>
+						</div>
+					</div>
+					
+
+					
+					<!-- <hr /><a href="#top">&uarr; Back to top</a> <a href="#" rel="next">&darr; Next section</a> -->
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-1">
+			<div class="container">
+				<div class="content">
+					<div class="img_title"><img src="img/works_title.jpg" alt="works"/></div>
+					 <!-- item container -->
+					  <ul id="itemContainer">
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_16o.png"><img src="img/works_16.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_15o.png"><img src="img/works_15.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_14o.png"><img src="img/works_14.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_13o.png"><img src="img/works_13.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_12o.png"><img src="img/works_12.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_11o.png"><img src="img/works_11.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_10o.png"><img src="img/works_10.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_9o.png"><img src="img/works_9.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_8o.png"><img src="img/works_8.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_7o.png"><img src="img/works_7.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_6o.png"><img src="img/works_6.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_5o.png"><img src="img/works_5.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_4o.png"><img src="img/works_4.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_3o.png"><img src="img/works_3.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_2o.png"><img src="img/works_2.png" alt="" /></a></li>
+						<li><a class="fancybox-buttons" data-fancybox-group="button" href="img/works_1o.png"><img src="img/works_1.png" alt="" /></a></li>
+					  </ul>
+					  <!-- navigation holder -->
+					  <div class="holder">
+					  </div>
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-2">
+			<div class="container">
+				<div class="content">
+					<div class="img_title"><img src="img/company_title.jpg" alt="company"/></div>
+<script type="text/javascript">
+function cp_tab1() {
+document.getElementById('cp_identity').className="cp_identity_active";
+document.getElementById('cp_organization').className="cp_organization";
+document.getElementById('cp_client').className="cp_client";
+document.all.company_content1.style.display = "block";
+document.all.company_content2.style.display = "none";
+document.all.company_content3.style.display = "none";
+}
+function cp_tab2() {
+document.getElementById('cp_identity').className="cp_identity";
+document.getElementById('cp_organization').className="cp_organization_active";
+document.getElementById('cp_client').className="cp_client";
+document.all.company_content2.style.display = "block";
+document.all.company_content1.style.display = "none";
+document.all.company_content3.style.display = "none";
+}
+function cp_tab3() {
+document.getElementById('cp_identity').className="cp_identity";
+document.getElementById('cp_organization').className="cp_organization";
+document.getElementById('cp_client').className="cp_client_active";
+document.all.company_content3.style.display = "block";
+document.all.company_content1.style.display = "none";
+document.all.company_content2.style.display = "none";
+}
+
+</script>
+					<div class="compnay_tab">
+						<span id="cp_identity" class="cp_identity" onclick="cp_tab1()">identity</span>
+						<span id="cp_organization" class="cp_organization" onclick="cp_tab2()">cp_organization</span>
+						<span id="cp_client" class="cp_client" onclick="cp_tab3()">cp_client</span>
+					</div>
+					<div id="company_content1" class="company_content"><img src="img/company_1.png" alt="company_1"/></div>
+					<div id="company_content2" class="company_content"><img src="img/company_2.png" alt="company_2"/></div>
+					<div id="company_content3" class="company_content"><img src="img/company_3.png" alt="company_3"/></div>
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-3">
+			<div class="container">
+				<div class="content">
+					<div class="img_title"><img src="img/news_title.jpg" alt="news"/></div>
+		
+					 <!-- item container -->
+					  <ul id="itemContainer1">
+					    <!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						<!-- 글 묶음-->
+					    <!-- 글 내용-->
+						<li class="accordion" id="nav-section1">
+							<div class="news_1">07</div>
+							<div class="news_2">
+								<div class="news_title">
+								[etnws] 옐로 모바일, 로컬 넘어 모바일 전역으로 ‘진격’
+								</div>
+								<div class="news_text">
+								로컬 플랫폼을 뛰어넘는 모바일 미디어 지향<br/>
+								‘굿닥’, ‘호펜모아’, ‘쿠폰모아’, ‘디자인호텔‘ 등 15개 지역 기반 서비스 인수<br/>
+								‘카울리’ , ‘퍼플프렌즈’ , ‘위드블로그‘ 등 6개 회사를 합친 ‘옐로디지털마케팅’ 설립
+								</div>
+							</div>
+							<div class="news_date">2014.01.10</div>
+							<div style="clear:both;"></div>
+						</li>
+						<!-- 글 내용-->
+						<!-- 오버 내용-->
+						<div class="news_content">
+							<div class="news_over">
+								<div class="over_title">퍼플 프렌즈 에서는 매월 첫째주 월요일 monthly가 열리는데요~</div>
+								<div class="over_text">
+									각각의 본부와 분야가 다르고 일하느라 바쁘지만  매월 본부 별로 서로의 업무를 교류하는 시간을 가지면서<br/>
+									역량을 키워나가는 퍼플의 배움문화 입니다! 
+								</div>
+							</div>
+						</div>
+						<!-- 오버 내용-->
+						<!-- 글 묶음-->
+						
+						
+					  </ul>
+
+		
+					  <!-- navigation holder -->
+					  <div class="holder">
+					  </div>
+					
+
+
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-4">
+			<div class="container">
+				<div class="content">
+					<div class="img_title"><img src="img/project_request_title.jpg" alt="project request"/></div>
+					<div class="project_rq_table">
+						<table>
+							<tr>
+								<td style="width:195px; height:80px;"><img src="img/projectscope.png" alt="projectscope"></td>
+								<td colspan="4">
+									<input type="checkbox" name="cb1[]" class="cb1" value="digital">
+									<img src="img/digital.png" class="cama" alt="digital"/>
+									<input type="checkbox" name="cb1[]" class="cb1" value="brand consult">
+									<img src="img/brand_consult.png" class="cama" alt="brand consult"/>
+									<input type="checkbox" name="cb1[]" class="cb1" value="online_da">
+									<img src="img/online_da.png" class="cama" alt="online da"/>
+									<input type="checkbox" name="cb1[]" class="cb1" value="mobile_da">
+									<img src="img/mobile_da.png" class="cama" alt="mobile da"/>
+									<input type="checkbox" name="cb1[]" class="cb1" value="mobile_da">
+									<img src="img/mobile_da.png" class="cama" alt="mobile da"/>
+								</td>
+							</tr>
+							<tr>
+								<td style="width:195px; height:80px;"><img src="img/project_type.png" alt="project type"></td>
+								<td colspan="4">
+									<input type="radio" name="cb2[]" class="cb1" value="annual project">
+									<img src="img/annual_project.png" class="cama" alt="annual project"/>
+									<input type="radio" name="cb2[]" class="cb1" value="short team project">
+									<img src="img/short_team_project.png" class="cama" alt="short team project"/>
+									<input type="radio" name="cb2[]" class="cb1" value="renewal">
+									<img src="img/renewal.png" class="cama" alt="renewal"/>
+									<input type="radio" name="cb2[]" class="cb1" value="maintenance">
+									<img src="img/maintenance.png" class="cama" alt="maintenance"/>
+									<input type="radio" name="cb2[]" class="cb1" value="others">
+									<img src="img/others.png" class="cama" alt="others"/>
+								</td>
+							</tr>
+							<tr>
+								<td style="width:195px; height:35px;"></td>
+								<td style="width:90px;">
+									<img src="img/compnany.png" alt="compnany"/>
+								</td>
+								<td style="width:300px;">
+									<input type="text" class="pq_input" name="compnany" id="compnany">
+								</td>
+								<td>
+									<img src="img/name.png" alt="name"/>
+								</td>
+								<td>
+									<input type="text" class="pq_input" name="company_name" id="company_name">
+								</td>
+							</tr>
+							<tr>
+								<td style="width:195px; height:35px;"></td>
+								<td>
+									<img src="img/position.png" alt="position"/>
+								</td>
+								<td>
+									<input type="text" class="pq_input" name="position" id="position">
+								</td>
+								<td>
+									<img src="img/phone_number.png" alt="phone_number"/>
+								</td>
+								<td>
+									<input type="text" class="pq_input" name="phone_number" id="phone_number">
+								</td>
+							</tr>
+							<tr>
+								<td style="width:195px; height:35px;"></td>
+								<td >
+									<img src="img/mobile_numbers.png" alt="mobile_numbers"/>
+								</td>
+								<td>
+									<input type="text" class="pq_input" name="mobile_numbers" id="mobile_numbers">
+								</td>
+								<td>
+									<img src="img/e-mail.png" alt="e-mail"/>
+								</td>
+								<td>
+									<input type="text" class="pq_input" name="e-mail" id="e-mail">
+								</td>
+							</tr>
+							<tr>
+								<td style="width:195px; height:35px;"></td>
+								<td>
+									<img src="img/title.png" alt="title"/>
+								</td>
+								<td colspan="3">
+									<input type="text" class="pq_input_l" name="e-mail" id="e-mail">
+								</td>
+							</tr>
+							<tr>
+								<td class="vmiddle" style="width:195px; height:245px;"><img src="img/inquiry.png" alt="inquiry" ></td>
+								<td class="vtop">
+									<img src="img/inquiry_detail.png" alt="inquiry_detail"/>
+								</td>
+								<td colspan="3">
+									<textarea style="width:618px; height:185px;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="vmiddle" style="width:195px"><img src="img/attachment.png" alt="attachment" ></td>
+								<td class="vtop">
+									<img src="img/file.png" alt="file"/>
+								</td>
+								<td colspan="3">
+									 <div style="position:absolute; margin:0 0 0 412px"><input type="image" src="img/apply.png"></div>
+									 <div class="fileDiv">
+											<input class="buttonImg" type="button"/>
+											<input class="realFile" name="upfile" onchange="javascript:document.getElementById('fakeFileTxt').value=this.value" type="file"/>
+										</div>
+									 <input class="fakeFileTxt" id="fakeFileTxt" readonly="readonly" type="text">
+										
+									
+								</td>
+							</tr>
+							<tr>
+								<td class="vmiddle" style="width:195px; height:80px;"></td>
+								<td class="vtop">
+									<img src="img/file.png" alt="file"/>
+								</td>
+								<td colspan="3">
+									 <div class="fileDiv">
+											<input class="buttonImg" type="button"/>
+											<input class="realFile" name="upfile" onchange="javascript:document.getElementById('fakeFileTxt').value=this.value" type="file"/>
+										</div>
+									 <input class="fakeFileTxt" id="fakeFileTxt" readonly="readonly" type="text">
+										
+									
+								</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-5">
+			<div class="container">
+				<div class="content">
+					<img src="img/sub5_img.png"/>
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+		<section id="section-6">
+			<div class="container">
+				<div class="content">
+					<img src="img/sub6_img.png"/>
+				</div>
+			</div>
+		</section>
+		<!-- 1번쨰 영역 -->
+		<!-- 1번쨰 영역 -->
+
+	</div>
+	
+	<footer>
+		<div class="container">
+			<img src="img/footer.png"/>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

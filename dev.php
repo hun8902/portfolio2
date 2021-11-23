@@ -122,8 +122,62 @@
             </div>
           </div>
 
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="#" class="image " style="background-image: url('img/rdl.jpg');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+               <h4 class="subheading">PHP, MYSQL, 후이즈 프레임워크</h4>
+              <h2 class="heading"><a href="#">(주)리얼디자인랩 건축사사무소</a></h2>
+              <p>후이즈 재직시 후이즈 프레임워크를 통한 관리자페이지 제작, 디자인팀에서 넘어온 퍼블 수정, 게시판, contact us 등 개발 </p>
+              <p><a href="http://www.ysmic.com/index.php?tpf=main/index" target="_blank" class="btn btn-primary px-4">웹사이트 보기</a></p>
+              <p><a href="https://web.archive.org/web/20211123131921/http://rdl.co.kr/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
+            </div>
+          </div>
 
-          
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="#" class="image image-2 order-2" style="background-image: url('img/purplefriends.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+               <h4 class="subheading">PHP, MYSQL</h4>
+              <h2 class="heading"><a href="#">퍼플프렌즈</a></h2>
+              <p>프리랜서 활동으로 제작한 홈페이지 2015년 당시에 원스크롤 형태와 ajax형태로 게시판 제작, PHP5 버전을 통한 관리자 페이지 제작, 사이트가 폐업하여 퍼블리싱 결과물과 아카이브로 대체</p>
+              <p><a href="https://web.archive.org/web/20170717031412/http://www.purplefriends.co.kr/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
+              <p><a href="./pub/purplefriends/" class="btn btn-primary px-4">결과물 보기</a></p>
+            </div>
+          </div>
+
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="#" class="image " style="background-image: url('img/psyjhso.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+               <h4 class="subheading">PHP, MYSQL, 그누보드</h4>
+              <h2 class="heading"><a href="#">칠곡경대정신건강의학과</a></h2>
+              <p>프리랜서 활동을 통한 퍼블리싱 + 개발 작업을 진행, 퍼블리싱은 PC, 모바일 버전으로 나누어 작업하였고 관리자 및 게시판은 그누보드로 작업 </p>
+              <p><a href="http://psyjhso.cafe24.com/" target="_blank" class="btn btn-primary px-4">웹사이트 보기</a></p>
+              <p><a href="https://web.archive.org/web/20211123134125/http://psyjhso.cafe24.com/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="#" class="image image-2 order-2" style="background-image: url('img/seoulhidc13.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+               <h4 class="subheading">PHP, MYSQL, 그누보드</h4>
+              <h2 class="heading"><a href="#">칠곡경대정신건강의학과</a></h2>
+              <p>프리랜서 활동을 통한 퍼블리싱 + 개발 작업을 진행, 퍼블리싱은 PC, 모바일 버전으로 나누어 작업하였고 관리자 및 게시판은 그누보드로 작업 </p>
+              <p><a href="http://seoulhidc13.cafe24.com/" target="_blank" class="btn btn-primary px-4">웹사이트 보기</a></p>
+              <p><a href="https://web.archive.org/web/20211123134422/http://seoulhidc13.cafe24.com/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="#" class="image " style="background-image: url('img/kuclinic.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text order-1">
+               <h4 class="subheading">PHP, MYSQL, 그누보드</h4>
+              <h2 class="heading"><a href="#">황승욱 K유외과</a></h2>
+              <p>프리랜서 활동을 통한 퍼블리싱 + 개발 작업을 진행, 퍼블리싱은 PC, 모바일 버전으로 나누어 작업하였고 관리자 및 게시판은 그누보드로 작업 </p>
+              <p><a href="http://kuclinic.com/" target="_blank" class="btn btn-primary px-4">웹사이트 보기</a></p>
+              <p><a href="https://web.archive.org/web/20211123134606/http://kuclinic.com/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
+            </div>
+          </div>
+
 
 
 

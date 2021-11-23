@@ -1,0 +1,91 @@
+#fancybox-buttons {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 8050;
+}
+
+#fancybox-buttons.top {
+	top: 280px;
+	padding:0 0 0 430px;
+}
+
+#fancybox-buttons.bottom {
+	bottom: 100px;
+}
+
+#fancybox-buttons ul {
+	display: block;
+	width: 166px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	
+}
+
+#fancybox-buttons ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#fancybox-buttons a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background-color: transparent;
+	background-image: url('fancybox_buttons.png');
+	background-repeat: no-repeat;
+	outline: none;
+	opacity: 0.8;
+}
+
+#fancybox-buttons a:hover {
+	opacity: 1;
+}
+
+#fancybox-buttons a.btnPrev {
+	width: 25px;
+	background-image: url('prev.png');
+	background-repeat: no-repeat;
+	margin-right:7px;
+}
+
+#fancybox-buttons a.btnNext {
+	width: 25px;
+	background-image: url('next.png');
+	background-repeat: no-repeat;
+	margin-right:30px;
+}
+
+#fancybox-buttons a.btnPlay {
+	background-position: 0 -30px;
+}
+
+#fancybox-buttons a.btnPlayOn {
+	background-position: -30px -30px;
+}
+
+#fancybox-buttons a.btnToggle {
+	background-position: 3px -60px;
+
+	width: 35px
+}
+
+#fancybox-buttons a.btnToggleOn {
+	background-position: -27px -60px;
+}
+
+#fancybox-buttons a.btnClose {
+
+	width: 25px;
+	background-image: url('close.png');
+	background-repeat: no-repeat;
+}
+
+#fancybox-buttons a.btnDisabled {
+	opacity : 0.4;
+	cursor: default;
+}

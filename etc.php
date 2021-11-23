@@ -31,26 +31,17 @@
         
         <div class="row">
             <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="portfolio.html" class="image" style="background-image: url('img/coolsoft.png'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
+              <a href="" class="image" style="background-image: url('img/coolsoft.png'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
               <div class="text">
                 <h4 class="subheading">개인사업</h4>
-                <h2 class="heading"><a href="portfolio.html">쿨소프트</a></h2>
+                <h2 class="heading"><a href="#?">쿨소프트</a></h2>
                 <p>리버스 엔지니어링을 시작으로 보안을 주제로 하는 커뮤니티 사이트를 만듬 사이트 수익은 당시 애드센스와 삼성전자 광고등으로 유지해왔으며 개인사업자를 내고 개인사업을 계속하다가 수익에 관한 모델을 찾지 못하여 여러가지 도전을 하다가 개발적인 한계와 운영의 한계를 느끼고 잠시 접게 되었습니다. 나중에 기회가 된다면 다른 주제로 다른 커뮤니티 사이트를 만들려고 합니다.</p>
 
               </div>
           </div>
 
           
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-          <a href="portfolio.html" class="image image-2 order-2" style="background-image: url('img/koramedu.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
-            <div class="text order-1">
-              <h4 class="subheading">PHP, MYSQL</h4>
-              <h2 class="heading"><a href="portfolio.html">한미교육원 사이트 제작 </a></h2>
-              <p>CTS 프레임워크를 사용하여 퍼블리싱 1차 작업후 CTS 프레임워크에 맞춰 테마형태로 파일들을 분리하여 사이트 제작</p>
-              <p><a href="http://www.koramedu.com/" target="_blank" class="btn btn-primary px-4">웹사이트 보기</a></p>
-              <p><a href="https://web.archive.org/web/20211122064117/http://www.koramedu.com/" target="_blank"  class="btn btn-primary px-4">아카이브 보기</a></p>
-            </div>
-          </div>
+          
 
 
 

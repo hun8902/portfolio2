@@ -1,0 +1,77 @@
+﻿A {
+	cursor: hand;
+	color: #FFFFFF;
+	text-decoration: underline;
+	line-height: 150%;
+}
+
+A:hover {
+	color: #FF0000;
+	text-decoration: underline;
+	line-height: 150%;
+}
+
+.layout_table {
+	border-top: 3px double #CCCCCC;
+	border-bottom: 3px double #CCCCCC;
+	font-size: 12px;
+	line-height: 150%;
+}
+
+.list_table {
+	font-size: 12px;
+	width: 100%;
+	line-height: 150%;
+}
+
+.comment_form_table {
+	border-top: 1px dotted #777777;
+	border-bottom: 1px dotted #777777;
+	font-size: 12px;
+	width: 70%;
+	line-height: 150%;
+}
+
+.comment_table {
+	border-top: 1px dotted #777777;
+	font-size: 11px;
+	width: 90%;
+	line-height: 150%;
+}
+
+.comment_td {
+	border-bottom: 1px dotted #777777;
+	line-height: 150%;
+}
+
+.list_th {
+	border-bottom: 1px solid #777777;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+.list_td {
+	border-bottom: 1px dotted #777777;
+	font-size: 12px;
+	line-height: 150%;
+}
+
+.paging_td {
+	font-size: 12px;
+	line-height: 150%;
+}
+
+.inputM {
+	font-family: "돋움", "돋움체";
+	font-size: 12px;
+	line-height: 150%;
+}
+
+BODY {
+	background-color: #333333;
+	font-family: "돋움", "돋움체";
+	color: #CCCCCC;
+	font-size: 12px;
+	line-height: 150%;
+}

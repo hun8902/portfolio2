@@ -1,0 +1,39 @@
+.holder {
+	width:1000px;
+	text-align:center;
+	margin: 20px 0 40px 0;
+}
+
+.holder a {
+	font-family:dotum;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #555555;
+	font-weight: bold;
+}
+
+.holder a:hover {
+	font-weight: bold;
+	color: #030303;
+}
+.holder a.jp-previous { margin-right: 15px; text-indent:-99999px; display:inline-block; width:10px; height:13px; background:url("../img/prev.png") no-repeat; }
+.holder a.jp-next { margin-left: 15px;  text-indent:-99999px; display:inline-block;  width:10px; height:13px; background:url("../img/next.png") no-repeat; }
+
+.holder a.jp-current, a.jp-current:hover { 
+	color: #030303;
+	font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+
+}
+
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+
+.holder span { margin: 0 5px; }
